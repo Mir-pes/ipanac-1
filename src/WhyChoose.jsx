@@ -16,11 +16,11 @@ function Workflow() {
           Our Mission
         </h3>
         <div className="mission-image-wrapper">
-          <img 
+{/*           <img 
             src="/api/placeholder/800/400" 
             alt="Team of relocation professionals helping clients"
             className="mission-image"
-          />
+          /> */}
         </div>
         <div className="statement-container">
           <p className="statement-text">
@@ -58,11 +58,11 @@ function Workflow() {
           Our Vision
         </h3>
         <div className="vision-image-wrapper">
-          <img 
+{/*           <img 
             src="/api/placeholder/800/400" 
             alt="Global network of connected cities representing relocation"
             className="vision-image"
-          />
+          /> */}
         </div>
         <div className="statement-container">
           <p className="statement-text">
