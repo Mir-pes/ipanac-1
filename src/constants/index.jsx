@@ -48,39 +48,39 @@ import { Globe, MapPin, Package, Archive, Briefcase, BarChart , HandshakeIcon } 
 
 export const features = [
   {
-    icon: <Globe/>,
+    icon: <FaGlobe/>,
     text: "International Relocation",
     description:
     "We simplify the complexities of moving to a new country, handling everything from visas to customs clearance",
   },
   {
-    icon: <MapPin/>,
+    icon: <FaMapPin/>,
     text: "Local Relocation:",
     description:
     "Moving within GCC region? Our local services ensure that every detail is taken care of,from packing to delivery at your new doorstep.",
   },
   {
-    icon: <Package />,
+    icon: <FaPackage />,
     text: "Packing and Unpacking:",
     description:
     "We offer professional packing services to protect your valuables during transit and unpacking services to help you settle in quickly."
     ,
   },
   {
-    icon: <Archive/>,
+    icon: <FaArchive/>,
     text: "Storage Solution",
     description:
     " Need temporary storage? Our secure storage facilities ensure your items are safe and accessible whenever you need them."
     ,
   },
   {
-    icon: <Briefcase />,
+    icon: <FaBriefcase />,
     text: "Corporate Relocation: ",
     description:
     "We cater to businesses relocating employees, offering tailored solutions to ensure a smooth transition for both the individual and the company.",
   },
   {
-    icon: <HandshakeIcon />,
+    icon: <FaHandshakeIcon />,
     text: "Customer Care",
     description:
       "Gain valuable insights into our Client service policy and behavior within our organization and how we keep our Client needs as our topmost priority and ensure their demands are fulfilled within the right time.",
