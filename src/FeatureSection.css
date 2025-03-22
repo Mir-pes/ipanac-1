@@ -50,9 +50,9 @@
 .heading {
   display: block;
   position: relative;
-  font-size: 30px !important;
+  font-size: 20px !important;
   top: -125.2px;
-  letter-spacing: 0.025em;
+  letter-spacing: 1px;
 }
 
 .gradient-text {
@@ -80,15 +80,15 @@
   height: 2.5rem;
   width: 2.5rem;
   padding: 0.5rem;
-  background-color: #171717;
-  color: lightcoral;
+ 
+  color: black;
   justify-content: center;
   align-items: center;
-  border-radius: 9999px;
+  
 }
 
 .feature-title {
-  margin-top: -2.1rem;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
   font-size: 1.25rem;
 }
@@ -97,7 +97,7 @@
   font-size: 1rem;
   padding: 0.5rem;
   margin-bottom: 5rem;
-  color: #737373;
+  color: #333;
 }
 
 /* Improved Mobile-specific styles */
