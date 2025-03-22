@@ -1,0 +1,259 @@
+.about-page {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== About Section ===== */
+.about-section {
+  padding: 5rem 0;
+  background-color: #ffffff;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-image:hover img {
+  transform: translateY(-5px);
+}
+
+/* ===== Headers ===== */
+.head{
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  left:130px;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  
+}
+
+.head1{
+  color: #2d2d2d;
+  font-size: 20px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+  left:230px;
+  padding-bottom: 1.5rem;
+  margin-top: -58px;
+  
+  margin-bottom: 30px;
+  
+  
+}
+
+.head::after{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.head1::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.head:hover::after, .head1:hover::after {
+  width: 140px;
+}
+
+/* ===== Content Styles ===== */
+.Location {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Story{
+  font-size: 18px;
+ 
+  color: #4a4a4a;
+  max-width: 1000px;
+  margin: 0 50px;
+}
+
+.para {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #2d2d2d;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+b {
+  
+  font-weight: 600;
+}
+
+/* ===== Story Section ===== */
+.story-section {
+  padding: 5rem 0;
+  background-color: #f8f9fa;
+}
+
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ===== CTA Section ===== */
+.cta-section {
+  
+ 
+  color: black;
+  text-align: center;
+}
+
+/* .container3 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+} */
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+ 
+  background-color: red;
+  color: black;
+  padding: 1.2rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  cursor: pointer;
+  margin: 1.5rem 0;
+}
+
+.cta-button:hover {
+  background-color: transparent;
+  
+  border-color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.cta-subtext {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-top: 1rem;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 1024px) {
+  .about-grid {
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    order: -1;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .head, .head1 {
+    font-size: 2rem !important;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-grid, .container2, .container3 {
+    padding: 0 1rem;
+  }
+
+  .head::after, .head1::after {
+    width: 60px;
+  }
+
+  .cta-button {
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ===== Animation Enhancements ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section, .story-section, .cta-section {
+  animation: fadeInUp 0.6s ease forwards;
+}
