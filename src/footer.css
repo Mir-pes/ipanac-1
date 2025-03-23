@@ -1,6 +1,7 @@
 .footer-container {
   margin-top: 80px;
   position: relative; /* Added to establish a new positioning context */
+
 }
 
 .footer {
@@ -22,8 +23,8 @@
   padding-top: 40px;
   padding-left: 50px;
   border-top: red; /* Remove the original border */
-  color: whitesmoke;
-  background-color: black;
+  color: black;
+  background-color: red;
 }
 
 .footer-grid {
@@ -61,7 +62,7 @@
 }
 
 .footer-link {
-  color: whitesmoke;
+  color: black;
   text-decoration: none;
 }
 
