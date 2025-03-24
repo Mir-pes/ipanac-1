@@ -28,9 +28,10 @@ function Footer() {
                             ))}
                         </ul>
                     </div>
-{/* 
+
+
                     <div>
-                        <h3 className="footer-heading">Community</h3>
+                        <h3 className="footer-heading">Additional Services</h3>
                         <ul className="footer-list">
                             {communityLinks.map((link, index) => (
                                 <li key={index}>
@@ -38,7 +39,8 @@ function Footer() {
                                 </li>
                             ))}
                         </ul>
-                    </div> */}
+                    </div>
+
                 </div>
                 <div className="copyright-section">
                     <p>© Copyright 2024 by abc.com</p>
