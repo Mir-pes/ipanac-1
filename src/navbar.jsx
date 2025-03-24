@@ -18,7 +18,7 @@ function Navbar() {
             <div className="container">
                 {/* Contact Info Section */}
                 <div className="contact-info">
-                    <span className="address">104 | Khalid Bin Al Waleed Bldg | Near Sharaf DG Metro Stn | Bur Dubai | P.O.Box – 111923 | Dubai | UAE</span>
+                    <span className="address">Khalid Bin Al Waleed Bldg | P.O.Box – 111923 | Dubai | UAE</span>
                     <span className="phone">+971-4-3272129</span>
                     <span className="emailid">relocation@ipanacllc.com</span>
                 </div>
