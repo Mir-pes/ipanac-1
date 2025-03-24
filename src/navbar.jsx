@@ -19,7 +19,7 @@ function Navbar() {
                 {/* Contact Info Section */}
                 <div className="contact-info">
                     <span className="address"><b>123 Main Street, City, Country</b></span>
-                    <span className="phone"><b>+1 (123) 456-7890</b></span>
+                    <span className="phone"><b>+971-4-3272129</b></span>
                     <span className="emailid"><b>relocation@ipanacllc.com</b></span>
                 </div>
 
