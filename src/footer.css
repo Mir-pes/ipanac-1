@@ -33,6 +33,10 @@
   gap: 16px;
 }
 
+.footer-list{
+  color:red;
+
+}
 .copyright-section{
   text-align: center;
   margin-top: 55px;
