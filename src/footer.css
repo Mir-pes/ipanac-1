@@ -1,7 +1,6 @@
 .footer-container {
   margin-top: 80px;
-  position: relative; /* Added to establish a new positioning context */
-
+  
 }
 
 .footer {
@@ -10,6 +9,7 @@
   bottom: 30px;
   padding-left: 50px;
   margin-top: -50px;
+  
 }
 
 /* Fixed footer border positioning */
@@ -33,10 +33,7 @@
   gap: 16px;
 }
 
-.footer-list{
-  color:red;
 
-}
 .copyright-section{
   text-align: center;
   margin-top: 55px;
@@ -66,10 +63,10 @@
 }
 
 .footer-link {
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
 }
 
 .footer-link:hover {
-  color: #ffffff;
+  color: red;
 }
