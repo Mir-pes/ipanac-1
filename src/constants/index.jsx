@@ -184,7 +184,7 @@ export const checklistItems = [
 
 
 export const resourcesLinks = [
-  { href: "#", text: "Canada Migration" },
+  { href: "https://ipanacllc.com/immigration/canada-immigration-overview", text: "Canada Migration" },
   { href: "#", text: "Visa" },
   { href: "#", text: "Business Overview" },
   { href: "#", text: "Citizenship" },
