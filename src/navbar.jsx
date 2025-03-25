@@ -17,8 +17,8 @@ function Navbar() {
             <div className="container">
                 {/* Contact Info Section */}
                 <div className="contact-info">
-                    <span className="address">123 Main Street, City, Country</span>
-                    <span className="phone">+1 (123) 456-7890</span>
+                    <span className="address">Office-104 | Khalid Bin Al Waleed Building | Bur Dubai | P.O.Box – 111923 | Dubai | UAE</span>
+                    <span className="phone">+971-4-3272129</span>
                     <div className="email-and-social">
                         <span className="emailid">relocation@ipanacllc.com</span>
                         <div className="social-handles">
