@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css"; // Import the CSS file
-import { Menu, X, Instagram, Linkedin } from "lucide-react"; // Add Instagram and Linkedin icons
+import { Menu, X, InstagramIcon, LinkedinIcon, MapPin, Phone, Mail } from "lucide-react"; // Add MapPin, Phone, and Mail icons
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import img from "./assets/IPANAC.jpg";
@@ -17,16 +17,25 @@ function Navbar() {
             <div className="container">
                 {/* Contact Info Section */}
                 <div className="contact-info">
-                    <span className="address">104 | Khalid Bin Al Waleed Building | P.O.Box – 111923 | Dubai | UAE</span>
-                    <span className="phone">+971-4-3272129</span>
+                    <div className="contact-item">
+                        <MapPin className="contact-icon-address" size={20} />
+                        <span className="address">104 | Khalid Bin Al Waleed Building | P.O.Box – 111923 | Dubai | UAE</span>
+                    </div>
+                    <div className="contact-item">
+                        <Phone className="contact-icon" size={20} />
+                        <span className="phone">+971-4-3272129</span>
+                    </div>
                     <div className="email-and-social">
-                        <span className="emailid">relocation@ipanacllc.com</span>
+                        <div className="contact-item">
+                            <Mail className="contact-icon" size={20} />
+                            <span className="emailid">relocation@ipanacllc.com</span>
+                        </div>
                         <div className="social-handles">
                             <a href="https://www.instagram.com/ipanacrelocation/" target="_blank" rel="noopener noreferrer">
-                                <Instagram className="social-icon" size={20} />
+                                <InstagramIcon className="social-icon" size={20} />
                             </a>
                             <a href="https://www.linkedin.com/company/ipanac-relocation/" target="_blank" rel="noopener noreferrer">
-                                <Linkedin className="social-icon" size={20} />
+                                <LinkedinIcon className="social-icon" size={20} />
                             </a>
                         </div>
                     </div>
