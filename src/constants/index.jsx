@@ -82,7 +82,38 @@ export const features = [
     text: "Customer Care",
     description:
       "Gain valuable insights into our Client service policy and behavior within our organization and how we keep our Client needs as our topmost priority and ensure their demands are fulfilled within the right time."
+  },
+  {
+    icon: <ClipboardCheck size={24} />,
+    text: "Free Consulting Survey",
+    description: "Expert guidance to help you plan your move efficiently."
+  },
+  {
+    icon: <Box size={24} />,
+    text: "Packing Services",
+    description: "High-quality packing solutions to ensure item safety."
+  },
+  {
+    icon: <Truck size={24} />,
+    text: "Freight Services",
+    description: "Reliable freight transportation for your shipments."
+  },
+   {
+    icon: <Send size={24} />,
+    text: "Delivery Services",
+    description: "Fast and secure delivery solutions to your doorstep."
+  },
+   {
+    icon: <Boxes size={24} />,
+    text: "Unpacking Services",
+    description: "Hassle-free unpacking services to help you settle in quickly."
+  },
+  {
+    icon: <Wrench size={24} />,
+    text: "Handyman",
+    description: "Expert handyman services for setup and maintenance."
   }
+  
 ];
 
 
