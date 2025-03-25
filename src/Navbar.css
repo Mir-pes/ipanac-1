@@ -10,21 +10,65 @@
     transition: color 0.6s ease;
 }
 
-.address, .phone{
-    padding: 5px 20px;
-    color: black;
-    font-size: 16.3px;
-    font-weight: 400;
-    transition: color 0.3s ease;
+/* Contact Item (Icon + Text) */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1px; /* Space between icon and text */
 }
 
-.emailid{
+/* Contact Icons (MapPin, Phone, Mail) */
+.contact-icon {
+    color: red;
+    transition: color 0.3s ease;
+    
+  
+}
+
+.contact-icon:hover {
+    color: black; /* Match the hover color with other elements */
+    cursor: pointer;
+}
+
+.contact-icon-address {
+    color: red;
+    transition: color 0.3s ease;
+    margin-left: 0.48px;
+  
+}
+
+.contact-icon-address:hover{
+    color: black; /* Match the hover color with other elements */
+    cursor: pointer;
+}
+
+.address {
+    padding: 9px 10px;
+    color: black;
+    font-size: 16.3px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    margin-right: 38px;
+}
+
+
+.phone{
+padding: 5px 10px;
+color: black;
+font-size: 16.3px;
+font-weight: 400;
+transition: color 0.3s ease;
+margin-right: 56px;
+
+}
+
+.emailid {
     padding: 5px 20px;
     color: black;
     font-size: 16.3px;
     font-weight: 400;
     transition: color 0.3s ease;
-    margin-right:160px ;
+    margin-right: 43px; /* Reduced from 60px to fit the layout better */
 }
 
 /* Email and Social Container */
@@ -39,6 +83,7 @@
     display: flex;
     align-items: center;
     gap: 8px; /* Space between Instagram and LinkedIn icons */
+    margin-right: 7px;
 }
 
 /* Social Icons */
@@ -200,6 +245,10 @@
         margin: 5px 0;
     }
     
+    .contact-item {
+        justify-content: center;
+    }
+
     .email-and-social {
         flex-direction: row; /* Keep email and social icons in a row */
         align-items: center;
@@ -209,8 +258,9 @@
         gap: 6px; /* Slightly reduce gap on smaller screens */
     }
 
-    .social-icon {
-        size: 18px; /* Slightly smaller icons on mobile */
+    .contact-icon, .social-icon {
+        width: 18px; /* Slightly smaller icons on mobile */
+        height: 18px;
     }
     
     .navbar-content {
@@ -302,7 +352,8 @@
         width: 50px;
     }
 
-    .social-icon {
-        size: 16px; /* Even smaller icons on very small screens */
+    .contact-icon, .social-icon {
+        width: 16px; /* Even smaller icons on very small screens */
+        height: 16px;
     }
 }
