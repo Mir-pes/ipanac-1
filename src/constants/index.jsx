@@ -205,9 +205,10 @@ export const platformLinks = [
 ];
 
 export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Jobs" },
-  { href: "#", text: ".." },
+  { href: "#", text: "Tax Filing" },
+  { href: "#", text: "Tax Registration" },
+  { href: "#", text: "VAT Filing" },
+  { href: "#", text: "VAT Registration" },
+  { href: "#", text: "VAT Refunf" },
+  { href: "#", tetx: "Audit - Internal and External"},
 ];
