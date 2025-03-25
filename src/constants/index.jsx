@@ -184,22 +184,18 @@ export const checklistItems = [
 
 
 export const resourcesLinks = [
-  { href: "#", text: "Tax filing" },
-  { href: "#", text: "Tax registration" },
-  { href: "#", text: "VAT filing" },
-  { href: "#", text: "VAT registration" },
-  { href: "#", text: "VAT refund" },
-  { href: "#", text: "Audit - internal and external" },
+  { href: "#", text: "Canada Migration" },
+  { href: "#", text: "Visa" },
+  { href: "#", text: "Business Overview" },
+  { href: "#", text: "Citizenship" },
+  { href: "#", text: "Work Permits" },
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Canada migration" },
-  { href: "#", text: "Visa" },
-  { href: "#", text: "Immigration" },
-  { href: "#", text: "Accounting" },
-  { href: "#", text: "Anti Money Laundering Services" },
-  { href: "#", text: "Bank account opening" },
-  { href: "#", text: "Business set up" },
+  { href: "#", text: "Accounting and Book Keeping" },
+  { href: "#", text: "Anti Money Laudnering" },
+  { href: "#", text: "Bank Account Opening" },
+  { href: "#", text: "Business Set Up" },
   { href: "#", text: "Local sponsorship" },
   { href: "#", text: "PRO services" },
 ];
