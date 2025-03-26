@@ -8,6 +8,7 @@ import About from './about.jsx';
 import Enquire from './enquire.jsx';
 import ServicesPage from './services.jsx';
 import Quote from './quickquote.jsx';
+import ContactUs from './Contactus.jsx';
 
 function App() {
   return (
