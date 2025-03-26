@@ -29,6 +29,7 @@ function App() {
         <Route path = "/enquire" element={<Enquire/>}/>
         <Route path = "/services" element= {<FeatureSection/>}/>
         <Route path = "/quickquote" element={<Quote/>}/>
+        <Route path = "/contact" element={<ContactUs/>}/>
       </Routes>
     </>
   );
