@@ -184,11 +184,11 @@ export const checklistItems = [
 
 
 export const resourcesLinks = [
-  { href: "https://ipanacllc.com/immigration/canada-immigration-overview", text: "Canada Migration" },
-  { href: "#", text: "Visa" },
-  { href: "#", text: "Business Overview" },
-  { href: "#", text: "Citizenship" },
-  { href: "#", text: "Work Permits" },
+  { href: "https://ipanacllc.com/immigration/canada-immigration-overview", text: "Canada Immigration" },
+  { href: "https://ipanacllc.com/business/start-up-visa-program", text: "Visa" },
+  { href: "https://ipanacllc.com/business/business-immigration-overview", text: "Business Overview" },
+  { href: "https://ipanacllc.com/citizenship/who-qualifies-for-canadian-citizenship", text: "Citizenship" },
+  { href: "https://ipanacllc.com/work/work-permits", text: "Work Permits" },
 ];
 
 export const platformLinks = [
