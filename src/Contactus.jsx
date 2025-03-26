@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
-import './contactUs.css';
+import './contactus.css';
 
 function ContactUs() {
   const [formData, setFormData] = useState({
