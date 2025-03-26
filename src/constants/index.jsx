@@ -205,6 +205,6 @@ export const communityLinks = [
   { href: "#", text: "Tax Registration" },
   { href: "#", text: "VAT Filing" },
   { href: "#", text: "VAT Registration" },
-  { href: "#", text: "VAT Refunf" },
+  { href: "#", text: "VAT Refund" },
   { href: "#", tetx: "Audit - Internal and External"},
 ];
