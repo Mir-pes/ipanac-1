@@ -3,7 +3,7 @@ import "./Navbar.css"; // Import the CSS file
 import { Menu, X, InstagramIcon, LinkedinIcon, MapPin, Phone, Mail } from "lucide-react"; // Add MapPin, Phone, and Mail icons
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import img from "./assets/IPANAC.jpg";
+import img from "./assets/IpanacRelocationLogo.png";
 
 function Navbar() {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
@@ -45,8 +45,10 @@ function Navbar() {
                 <div className={`navbar-content ${mobileDrawerOpen ? 'mobileDrawerOpen' : ''}`}>
                     {/* Logo and Title */}
                     <div className="logo-container">
-                        <img className="logo" src={img} alt="logo" />
-                        <Link to="/" className="title">IPANAC Relocation</Link>
+                        <div className="logo-wrapper">
+                            <img className="logo" src={img} alt="IPANAC Relocation logo" />
+                            {/* <Link to="/" className="title">IPANAC Relocation</Link> */}
+                        </div>
                         <div className="mobile-menu-button">
                             <button onClick={toggleNavbar}>
                                 {mobileDrawerOpen ? <X /> : <Menu />}
