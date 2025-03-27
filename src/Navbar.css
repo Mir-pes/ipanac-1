@@ -209,7 +209,30 @@ margin-right: 56px;
     text-decoration: none;
     color: white;
     background-color: #ff3333;
+    box-shadow: 0 7px 7px rgba(85, 5, 5, 0.918);
+    background: linear-gradient(to right, red, darkred);
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    border-radius: 12.3px;
+
 }
+
+.sign-in:hover {
+    background-color: red;
+    transform: translateY(-3.2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sign-in:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(172, 13, 13);
+}
+  
 
 .register {
     padding: 8px 12px;
@@ -217,7 +240,28 @@ margin-right: 56px;
     text-decoration: none;
     background: linear-gradient(to right, red, darkred);
     color: white;
+    box-shadow: 0 7px 7px rgba(85, 5, 5, 0.918);
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    border-radius: 12.3px;
 }
+
+.register:hover{
+    background-color: red;
+    transform: translateY(-3.2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.register:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(172, 13, 13);
+}
+  
 
 /* Mobile menu button (hidden by default) */
 .mobile-menu-button {
