@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./enquire.css"; 
 import {User, Mail, Phone, Calendar} from "lucide-react";  
+import logo from "./assets/IpanacRelocationLogo.png";
 
 function Enquire() {
     const [locationType, setLocationType] = useState("local");
@@ -11,129 +12,105 @@ function Enquire() {
     const places = locationType === "local" ? localPlaces : internationalCountries;
     
     return (        
-        
-        <form>
-        <div className="container">             
-            <div className="header">                 
-                <h1>Register</h1>                 
-            </div>             
-            <div className="inputs">                 
-                <div className="input-group">                     
-                    <label className="name">Name:</label>                         
-                    <div className="input">                             
-                        <User size = {16.5}/>                             
-                        <input type="text" placeholder="Enter your name"  required/>                         
-                    </div>                     
-                </div>                   
-                <div className="input-group">                 
-                    <label className="name">Email:</label>                     
-                    <div className="input">                         
-                        <Mail size = {16.5}/>                         
-                        <input type="email" placeholder="Enter your email" required/>                     
-                    </div>                 
-                </div>                   
-                <div className="input-group">                 
-                    <label className="name">Contact No:</label>                     
-                    <div className="input">                         
-                        <Phone size = {16.5}/>                         
-                        <input type="tel" placeholder="Enter your contact number"  required/>                     
-                    </div>                  
-                </div>
-                
-                {/* <div>  */}
-                    {/* To go to next line immediately */}
-                    {/* <label className="Items">Items:</label>
-                </div>
-
-                <div className="checkbox-group1">
-                    <input type = "radio"
-                            name = "items"
-                            value="varying"/>
-                            Electronics
-                </div>
-
-
-                <div className="checkbox-group">
-                    <input type = "radio"
-                            name = "items"
-                            value="varying"/>
-                                Furniture
-                </div>
-
-                <div className="checkbox-group2">
-                    <input type = "radio"
-                            name = "items"
-                            value="varying"/>
-                            Option 3
-                </div>
-
-                <div className="checkbox-group3">
+        <div className="enquire-page">
+            <div className="enquire-wrapper">
+                <div className="enquire-logo-section">
+                    <img src={logo} alt="IPANAC Relocation Logo" className="enquire-logo" />
                     
-                    <input type = "radio"
-                            name = "items"
-                            value="varying"/>
-                            Option 4
-                </div> */}
-
-                <div className="checkbox-group">
-                    <label className="checkbox-label"> Origin: </label>
-                        <input 
-                            type="radio" 
-                            name="locationType" 
-                            value="local" 
-                            checked={locationType === "local"}
-                            onChange={() => setLocationType("local")}
-                        required/>
-                        Local
-                    
-                    <label className="checkbox-label">
-                        <input 
-                            type="radio" 
-                            name="locationType" 
-                            value="international"
-                            checked={locationType === "international"} 
-                            onChange={() => setLocationType("international")}
-                        required/>
-                        International
-                    </label>
-                </div>
-                
-                <div className="input-group">                 
-                    <label className="name">Base Location:</label>                     
-                    <div className="input">                        
-                        <select className="dropdown">
-                            <option value="">Select Origin</option>
-                            {places.map((place, index) => (
-                                <option key={index} value={place}>{place}</option>
-                            ))}
-                        </select>                     
-                    </div>                 
-                </div> 
-                
-                <div className="input-group">                 
-                    <label className="name">Destination:</label>                     
-                    <div className="input">                         
-                        <select className="dropdown">
-                            <option value="">Select Destination</option>
-                            {places.map((place, index) => (
-                                <option key={index} value={place}>{place}</option>
-                            ))}
-                        </select>                    
-                    </div>                 
-                </div>
-                
-                <div className="input-group">                 
-                    <label className="name">Expected moving date:</label>                     
-                    <div className="input">
-                        <Calendar />                         
-                        <input type="date" placeholder="Select date" />                     
-                    </div>                 
+                    <p className="tagline">Smooth Move, Easy Relocation</p>
                 </div>
 
+                <div className="enquire-form-section">
+                    <h2 className="Message" style = {{color: "red"} }>Register</h2>
 
+                    <form className="enquire-form">
+                        <div className="input-group"> 
+                            <label>Name:</label>                    
+                            <div className="input">   
+                                                   
+                                <User size={16.5}/>  
+                                                       
+                                <input type="text" placeholder="Full Name" required/>                         
+                            </div>                     
+                        </div>                   
+                        
+                        <div className="input-group"> 
+                            <label>Email:</label>                
+                            <div className="input">                         
+                                <Mail size={16.5}/>                         
+                                <input type="email" placeholder="Email" required/>                     
+                            </div>                 
+                        </div>                   
+                        
+                        <div className="input-group">  
+                            <label>Phone No:</label>               
+                            <div className="input">                         
+                                <Phone size={16.5}/>                         
+                                <input type="tel" placeholder="Contact Number" required/>                     
+                            </div>                  
+                        </div>
 
-                <div className="input-group">
-                            <label className="name">Description:</label>
+                        <div className="checkbox-group">
+                            <label className="checkbox-label"> 
+                                Origin:
+                                <input 
+                                    type="radio" 
+                                    name="locationType" 
+                                    value="local" 
+                                    checked={locationType === "local"}
+                                    onChange={() => setLocationType("local")}
+                                    required
+                                />
+                                Local
+                            </label>
+                            
+                            <label className="checkbox-label">
+                                <input 
+                                    type="radio" 
+                                    name="locationType" 
+                                    value="international"
+                                    checked={locationType === "international"} 
+                                    onChange={() => setLocationType("international")}
+                                    required
+                                />
+                                International
+                            </label>
+                        </div>
+                        
+                        <div className="input-group">  
+                            <label>Base Location:</label>                   
+                            <div className="input">                        
+                                <select className="dropdown">
+                                    <option value="">Select Origin</option>
+                                    {places.map((place, index) => (
+                                        <option key={index} value={place}>{place}</option>
+                                    ))}
+                                </select>                     
+                            </div>                 
+                        </div> 
+                        
+                        <div className="input-group">   
+                            <label>Destination:</label>                  
+                            <div className="input">                         
+                                <select className="dropdown">
+                                    <option value="">Select Destination</option>
+                                    {places.map((place, index) => (
+                                        <option key={index} value={place}>{place}</option>
+                                    ))}
+                                </select>                    
+                            </div>                 
+                        </div>
+                        
+                        <div className="input-group">  
+                            <label>Expected Moving Date:</label>                   
+                            <div className="input">
+                                <Calendar />                         
+                                <input type="date" placeholder="Expected moving date" />                     
+                            </div>                 
+                        </div>
+
+                        <div className="input-group">
+                            <label>Description:</label>
                             <textarea 
                                 rows={3}
                                 style={{ 
@@ -147,18 +124,16 @@ function Enquire() {
                                     minHeight: '100px'
                                 }}
                                 placeholder="Enter brief Description about the Products you wish to service..."
-                    />
+                            />
+                        </div>
+                                          
+                        <div className="submit-container">                         
+                            <button className="submit">Submit</button>                     
+                        </div>                 
+                    </form>
                 </div>
-                                      
-                <div className="submit-container">                         
-                    <button className="submit">                             
-                        Submit                         
-                    </button>                     
-                </div>                 
-            </div>             
-        </div>   
-        
-        </form>      
+            </div>
+        </div>
     ); 
 }  
 
