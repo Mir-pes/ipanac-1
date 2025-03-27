@@ -1,15 +1,10 @@
-
-
-.about-page{
+.about-page {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-
-  
 }
 
-
-.about{
+.about {
   color: red;
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -17,10 +12,7 @@
   text-align: center;
   letter-spacing: 0.6px;
   width: 100%;
-
 }
-
-
 
 .statement-heading {
   color: red;
@@ -31,7 +23,7 @@
   letter-spacing: 0.6px;
 }
 
-.statement-heading::after{
+.statement-heading::after {
   content: "";
   display: block;
   width: 50px;
@@ -41,15 +33,14 @@
   transition: all 0.3s ease;
 }
 
-.statement-heading:hover{
+.statement-heading:hover {
   transform: translate(-1.9px);
   background-color: black;
 }
 
-.statement-heading:hover::after{
+.statement-heading:hover::after {
   width: 178px;
 }
-
 
 .statement-heading1 {
   color: red;
@@ -60,7 +51,7 @@
   letter-spacing: 0.6px;
 }
 
-.statement-heading1::after{
+.statement-heading1::after {
   content: "";
   display: block;
   width: 550px;
@@ -70,12 +61,12 @@
   transition: all 0.3s ease;
 }
 
-.statement-heading1:hover{
+.statement-heading1:hover {
   transform: translate(-.9px);
   background-color: black;
 }
 
-.statement-heading1:hover::after{
+.statement-heading1:hover::after {
   width: 500px;
 }
 
@@ -83,20 +74,21 @@
   font-size: 15px;
   color: #333;
   display: flex;
-  flex-direction: column; /* This makes children stack vertically */
+  flex-direction: column;
   margin-top: 28px auto;
   justify-content: center;
   text-align: center;
-  align-items: center; /* This centers children horizontally */
+  align-items: center;
 }
 
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1100px;
-  height: 800px;
-  margin-top: 21px; /* Add some space between text and image */
+  max-width: 1100px; /* Changed from fixed width to max-width */
+  width: 100%; /* Allow it to scale down */
+  height: auto; /* Changed from fixed height to auto */
+  margin-top: 21px;
 }
 
 .image {
@@ -104,15 +96,13 @@
   height: auto;
 }
 
-
-.Work-container{
+.Work-container {
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: 12.8px 79.5px;
-  color:#333;
-  font-size:32px;
-
+  color: #333;
+  font-size: 32px;
 }
 
 .contact {
@@ -133,12 +123,8 @@
   letter-spacing: 0.6px;
   align-items: center;
   width: 140px;
-  height: 18px;
+  /* Removed height: 18px; let padding define height */
   text-decoration: none !important;
-
-  
-
-  
 }
 
 .contact:hover {
@@ -157,35 +143,28 @@
   box-shadow: 0 0 0 3px rgb(172, 13, 13);
 }
 
-
-.Clients{
+.Clients {
   display: flex;
   text-align: right;
   justify-content: flex-end;
   font-size: 13.5px;
   color: #333;
-  margin:-150px auto;
+  margin: -150px auto;
   padding-left: 450px;
-  
 }
 
-.end-end{
+.end-end {
   margin-right: 301px;
 }
 
-
-.end-end1{
+.end-end1 {
   margin-right: 401.5px;
-} 
-
-
+}
 
 .story-container {
   margin-top: 200px;
   padding: 40px 80px;
   text-align: center;
-  
-  
 }
 
 .story-container::before {
@@ -201,8 +180,6 @@
   animation: slideDown 1.5s ease forwards;
 }
 
-
-
 .story-heading {
   color: red;
   font-size: 1.8rem;
@@ -210,8 +187,6 @@
   font-weight: 600;
   position: relative;
   display: inline-block;
- 
- 
 }
 
 .story-heading::after {
@@ -221,12 +196,10 @@
   height: 3px;
   background-color: red;
   margin-top: 8px;
-
   transition: width 0.3s ease;
 }
 
 .story-heading:hover::after {
-  
   width: 100%;
 }
 
@@ -237,50 +210,14 @@
   margin-left: 20px;
   padding-left: 20px;
   position: relative;
-  
 }
 
-
-/* Core Values styling */
 .our-core-values {
   text-align: center;
   padding: 1px 20px;
   max-width: 1200px;
   margin: 50px auto 0;
-  
 }
-
-
-.statement-heading1 {
-  color: red;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 0.6px;
-}
-
-.statement-heading1::after{
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3.5px;
-  background-color: red;
-  margin: 8px auto 0;
-  transition: all 0.3s ease;
-}
-
-.statement-heading1:hover{
-  transform: translate(-1.9px);
-  background-color: black;
-}
-
-.statement-heading1:hover::after{
-  width: 178px;
-}
-
-
-
 
 .values-subtitle {
   color: #666;
@@ -291,7 +228,7 @@
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Explicitly set to 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   margin-top: 40px;
 }
@@ -313,9 +250,8 @@
   width: 40px;
   height: 40px;
   margin: 0 auto 20px;
-  background: linear-gradient(135deg, red , darkred);
+  background: linear-gradient(135deg, red, darkred);
   border-radius: 50%;
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -327,7 +263,6 @@
   height: 30px;
   color: whitesmoke;
   stroke-width: 2px;
-  
 }
 
 .value-card h3 {
@@ -343,36 +278,87 @@
   line-height: 1.5;
 }
 
-
-/* Add this to your about.css file */
-
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Explicitly set to 3 columns */
-  gap: 25px;
-  margin-top: 40px;
-}
-
-/* Update the responsive breakpoint to maintain the 3-column layout until smaller screens */
+/* Media Queries for Responsiveness */
 @media (max-width: 992px) {
   .values-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 576px) {
-  .values-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .start-content {
+    font-size: 14px;
+  }
+
+  .image-container {
+    margin-top: 10px;
+  }
+
+  .Work-container {
+    padding: 10px 20px;
+    font-size: 24px;
+  }
+
+  .contact {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .Clients {
+    padding-left: 0;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .end-end,
+  .end-end1 {
+    margin-right: 0;
+  }
+
+  .story-container {
+    margin-top: 100px;
+    padding: 20px;
+  }
+
+  .statement-heading,
+  .statement-heading1 {
+    font-size: 1.2rem;
+  }
+
+  .statement-heading1::after {
+    width: 50px; /* Reset to initial width on mobile */
+  }
+
+  .statement-heading1:hover::after {
+    width: 178px; /* Adjust hover effect for mobile */
+  }
+
+  .story-content {
+    font-size: 14px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .our-core-values {
+    padding: 20px;
+  }
+
+  .values-subtitle {
+    font-size: 16px;
+  }
+
+  .value-card h3 {
+    font-size: 16px;
+  }
+
+  .value-card p {
+    font-size: 14px;
   }
 }
 
-/* Make it responsive */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .values-grid {
     grid-template-columns: 1fr;
-  }
-  
-  .our-core-values h2 {
-    font-size: 2rem;
   }
 }
