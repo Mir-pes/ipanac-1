@@ -2,6 +2,7 @@ import React from 'react';
 import './about.css';
 import aboutimg from "./assets/about.png";
 import { Globe, Lock, Package, Shield, Brain, ArrowUpCircle , HandshakeIcon, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -26,7 +27,9 @@ function About() {
             How We Work With <br></br>Our Clients
 
             
+            {/* <button className="contact">Contact Us</button> */}
             <Link to = "/contact" className="contact">Contact Us</Link>
+            
           </div>
           </div>
         
@@ -45,7 +48,7 @@ function About() {
         </div>
         
         <div className="story-container">
-          <h3 className="statement-heading">
+          <h3 className="statement-heading1">
             Our Story – The Personal Touch
           </h3>
           <div className="story-content">
