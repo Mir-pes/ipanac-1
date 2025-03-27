@@ -26,7 +26,7 @@ function About() {
             How We Work With <br></br>Our Clients
 
             
-            <button className="contact">Contact Us</button>
+            <Link to = "/contact" className="contact">Contact Us</Link>
           </div>
           </div>
         
