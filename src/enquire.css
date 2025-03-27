@@ -1,3 +1,73 @@
+/* New Structure Styles */
+.enquire-page {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    min-height: 100vh;
+}
+
+.enquire-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.enquire-logo-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+    background-color: #ff3333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+}
+
+.enquire-logo-section h2 {
+    margin: 20px 0 10px;
+    font-size: 28px;
+}
+
+.enquire-logo {
+    height: 100px;
+    width: auto;
+    
+}
+
+.tagline {
+    font-size: 16px;
+    opacity: 0.9;
+    color:#666;
+}
+
+.enquire-form-section {
+    flex: 1;
+    min-width: 300px;
+    padding: 40px;
+}
+
+.enquire-form-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.Message{
+    display: flex;
+    margin-right: 3px;
+    margin-left: 130px;
+    font-size: 35px;
+}
+
+/* Original Styles (Preserved Exactly) */
 .container {
     display: flex;
     flex-direction: column;
@@ -8,17 +78,17 @@
 }
 
 .inputs {
-    width: 30%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto; /* Changed from margin-left: 400px to center it */
+    margin: 0 auto;
 }
 
 .input-group {
     width: 100%;
     max-width: 400px;
-    margin-top: 10px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +109,7 @@
     margin-top: 12px;
     width: 75%;
     max-width: 400px;
-    margin-left: 0; /* Changed from margin-left: 12px to center it */
+    margin-left: 0;
 }
 
 .name{
@@ -49,7 +119,6 @@
     margin-top: 1px;
 }
 
-/* Remove margin-top from input inside input-group */
 .input-group .input {
     margin-top: 0;
 }
@@ -67,7 +136,6 @@
     width: 100%;
 }
 
-/* For dropdown styling */
 .dropdown {
     flex: 1;
     border: none;
@@ -77,20 +145,19 @@
     width: 100%;
 }
 
-
 .Items{
     display: flex;
     margin-top: 12px;
 }
 
-
 .checkbox-group {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin: 15px 10px;
+    margin-left: -40px;
     width: 100%;
-    margin-top:5.2px;
+    margin-top:15.2px;
+
 }
 
 .checkbox-group1{
@@ -140,6 +207,7 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-right: 97px;
 }
 
 .submit {
@@ -150,10 +218,6 @@
     cursor: pointer;
     font-weight: 500;
 }
-
-/* .submit:hover {
-    background-color: #0056b3;
-} */
 
 /* Mobile responsive styles */
 @media screen and (max-width: 767px) {
@@ -211,5 +275,17 @@
     
     .input {
         width: 90%;
+    }
+}
+
+/* Additional responsive styles for new structure */
+@media (max-width: 768px) {
+    .enquire-wrapper {
+        flex-direction: column;
+    }
+
+    .enquire-logo-section,
+    .enquire-form-section {
+        padding: 20px;
     }
 }
