@@ -21,8 +21,6 @@
 .contact-icon {
     color: red;
     transition: color 0.3s ease;
-    
-  
 }
 
 .contact-icon:hover {
@@ -34,7 +32,6 @@
     color: red;
     transition: color 0.3s ease;
     margin-left: 0.48px;
-  
 }
 
 .contact-icon-address:hover{
@@ -51,15 +48,13 @@
     margin-right: 38px;
 }
 
-
-.phone{
-padding: 5px 10px;
-color: black;
-font-size: 16.3px;
-font-weight: 400;
-transition: color 0.3s ease;
-margin-right: 56px;
-
+.phone {
+    padding: 5px 10px;
+    color: black;
+    font-size: 16.3px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    margin-right: 56px;
 }
 
 .emailid {
@@ -113,6 +108,8 @@ margin-right: 56px;
     margin: 0 auto;
     position: relative;
     font-size: 14px;
+   
+    color: white;
 }
 
 /* Navbar Content */
@@ -122,34 +119,45 @@ margin-right: 56px;
     align-items: center;
 }
 
+/* Logo Wrapper */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 6.5px;
+}
+
+
 /* Logo and Title */
 .logo-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
 }
 
 .logo {
-    height: 75px;
-    width: 75px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
+    height: 60.5px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .title {
     font-size: 24px;
     font-weight: 700;
-    margin-left: 85px;
     color: red;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     position: relative;
-    padding-bottom: 8px;
-    margin-left: 100px;
-    margin-top: 30px;
+    padding-bottom: 1px;
+    padding-top: 24px;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .title::after {
@@ -157,10 +165,15 @@ margin-right: 56px;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 50px;
+    width: 260px;
     height: 2px;
     background-color: #ff3333;
     opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.title:hover::after {
+    opacity: 1;
 }
 
 .title, .title:hover, .title:visited, .title:active {
@@ -214,7 +227,6 @@ margin-right: 56px;
     text-decoration: none !important;
     transition: all 0.3s ease;
     border-radius: 12.3px;
-
 }
 
 .sign-in:hover {
@@ -232,7 +244,6 @@ margin-right: 56px;
     outline: none;
     box-shadow: 0 0 0 3px rgb(172, 13, 13);
 }
-  
 
 .register {
     padding: 8px 12px;
@@ -261,7 +272,6 @@ margin-right: 56px;
     outline: none;
     box-shadow: 0 0 0 3px rgb(172, 13, 13);
 }
-  
 
 /* Mobile menu button (hidden by default) */
 .mobile-menu-button {
@@ -317,26 +327,24 @@ margin-right: 56px;
         align-items: center;
         width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         position: relative;
         padding-top: 10px;
     }
     
+    .logo-wrapper {
+        flex-direction: row;
+        gap: 10px;
+    }
+    
     .logo {
-        position: relative;
-        left: auto;
-        top: auto;
-        height: 60px;
-        width: 60px;
-        margin-right: 10px;
+        height: 50px;
+        margin-right: 0;
     }
     
     .title {
-        margin-left: 0;
-        margin-top: 10px;
         font-size: 20px;
-        text-align: center;
+        margin-top: 0;
     }
     
     .title::after {
@@ -346,10 +354,10 @@ margin-right: 56px;
     
     .mobile-menu-button {
         display: block;
-        position: absolute;
+        position: relative;
         right: 0;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 0;
+        transform: none;
     }
     
     .nav-links {
@@ -392,12 +400,15 @@ margin-right: 56px;
     }
     
     .logo {
-        height: 50px;
-        width: 50px;
+        height: 40px;
     }
 
     .contact-icon, .social-icon {
         width: 16px; /* Even smaller icons on very small screens */
         height: 16px;
+    }
+    
+    .logo-wrapper {
+        gap: 8px;
     }
 }
