@@ -279,136 +279,86 @@
 }
 
 /* Media Queries for Mobile Responsiveness */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px 0;
-        height: auto;
-    }
-    
-    .container {
-        flex-direction: column;
-    }
-    
+/* Responsive adjustments - Add this at the end of your CSS */
+@media (max-width: 1024px) {
     .contact-info {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-    
-    .contact-info span {
-        margin: 5px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
     }
     
     .contact-item {
-        justify-content: center;
-    }
-
-    .email-and-social {
-        flex-direction: row; /* Keep email and social icons in a row */
-        align-items: center;
-    }
-
-    .social-handles {
-        gap: 6px; /* Slightly reduce gap on smaller screens */
-    }
-
-    .contact-icon, .social-icon {
-        width: 18px; /* Slightly smaller icons on mobile */
-        height: 18px;
+        margin: 5px 10px;
     }
     
+    .address, .phone, .emailid {
+        font-size: 14px;
+        margin-right: 0;
+        padding: 5px;
+    }
+    
+    .email-and-social {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
     .navbar-content {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
     }
     
     .logo-container {
-        margin-bottom: 1rem;
-        align-items: center;
-        width: 100%;
         display: flex;
         justify-content: space-between;
-        position: relative;
-        padding-top: 10px;
-    }
-    
-    .logo-wrapper {
-        flex-direction: row;
-        gap: 10px;
-    }
-    
-    .logo {
-        height: 50px;
-        margin-right: 0;
-    }
-    
-    .title {
-        font-size: 20px;
-        margin-top: 0;
-    }
-    
-    .title::after {
-        left: 50%;
-        transform: translateX(-50%);
+        align-items: center;
     }
     
     .mobile-menu-button {
         display: block;
-        position: relative;
-        right: 0;
-        top: 0;
-        transform: none;
     }
     
-    .nav-links {
+    .nav-links, .auth-buttons {
         display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        margin: 0.5rem 0;
     }
     
-    .mobileDrawerOpen .nav-links {
+    .mobileDrawerOpen .nav-links, 
+    .mobileDrawerOpen .auth-buttons {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .nav-item {
-        margin: 0.5rem 0;
         padding: 10px 0;
         width: 100%;
         text-align: center;
     }
     
     .auth-buttons {
-        display: none;
-        margin-top: 1rem;
-        width: 100%;
-        justify-content: center;
-        gap: 1rem;
-        padding-bottom: 10px;
-    }
-    
-    .mobileDrawerOpen .auth-buttons {
-        display: flex;
+        margin-top: 10px;
+        gap: 10px;
     }
 }
 
-/* For even smaller screens */
-@media screen and (max-width: 480px) {
-    .title {
-        font-size: 18px;
+@media (max-width: 480px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-item {
+        width: 100%;
+        justify-content: center;
     }
     
     .logo {
-        height: 40px;
-    }
-
-    .contact-icon, .social-icon {
-        width: 16px; /* Even smaller icons on very small screens */
-        height: 16px;
+        height: 50px;
     }
     
-    .logo-wrapper {
-        gap: 8px;
+    .sign-in, .register {
+        padding: 8px 15px;
+        font-size: 14px;
     }
 }
