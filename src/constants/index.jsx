@@ -63,7 +63,7 @@ export const features = [
   {
     icon: <Globe size={24} />,
     text: "International Relocation",
-    description: "We simplify the complexities of moving to a new country, handling everything from visas to customs clearance."
+    description: "We simplify the complexities of moving to a new country, handling everything from door to door."
   },
   {
     icon: <MapPin size={24} />,
