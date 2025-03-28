@@ -49,7 +49,7 @@ function Quote() {
                             </div>
                             
                             <div>  
-                                <label className="Items">Items:</label>
+                                <label className="Items" style={{marginBottom:"8px",marginTop:"20px"}}>Items:</label>
                             </div>
 
                             <div className="checkbox-group1" style={{marginLeft:"30px"}}>
@@ -57,17 +57,17 @@ function Quote() {
                                 Electronics
                             </div>
 
-                            <div className="checkbox-group" style={{margin:"6px 15px",marginLeft:"23px"}}>
+                            <div className="checkbox-group" style={{margin:"6px 15px",marginLeft:"25.5px"}}>
                                 <input type="checkbox" name="items" value="varying"/>
                                 Furniture
                             </div>
 
-                            <div className="checkbox-group2" style={{marginTop:"12.5px"}}>
+                            <div className="checkbox-group2" style={{marginTop:"8px"}}>
                                 <input type="checkbox" name="items" value="varying"/>
                                 Utilities
                             </div>
 
-                            <div className="checkbox-group3">
+                            <div className="checkbox-group3" style = {{marginLeft:"92px"}}>
                                 <input type="checkbox" name="items" value="varying"/>
                                 Decor
                             </div> 
