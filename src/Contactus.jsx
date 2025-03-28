@@ -55,7 +55,7 @@ function ContactUs() {
             </div>
             <div className="contact-box-text">
               <h3>Email</h3>
-              <p>info@ipanacllc.com</p>
+              <p>relocation@ipanacllc.com</p>
             </div>
           </div>
         </div>
