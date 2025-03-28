@@ -53,22 +53,22 @@ function Quote() {
                             </div>
 
                             <div className="checkbox-group1" style={{marginLeft:"30px"}}>
-                                <input type="radio" name="items" value="varying"/>
+                                <input type="checkbox" name="items" value="varying"/>
                                 Electronics
                             </div>
 
                             <div className="checkbox-group" style={{margin:"6px 15px",marginLeft:"23px"}}>
-                                <input type="radio" name="items" value="varying"/>
+                                <input type="checkbox" name="items" value="varying"/>
                                 Furniture
                             </div>
 
                             <div className="checkbox-group2" style={{marginTop:"12.5px"}}>
-                                <input type="radio" name="items" value="varying"/>
+                                <input type="checkbox" name="items" value="varying"/>
                                 Utilities
                             </div>
 
                             <div className="checkbox-group3">
-                                <input type="radio" name="items" value="varying"/>
+                                <input type="checkbox" name="items" value="varying"/>
                                 Decor
                             </div> 
 
