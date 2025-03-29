@@ -64,7 +64,7 @@ function Enquire() {
                                 Local
                             </label>
                             
-                            <label className="checkbox-label">
+                            {/* <label className="checkbox-label">
                                 <input 
                                     type="radio" 
                                     name="locationType" 
@@ -74,7 +74,7 @@ function Enquire() {
                                     required
                                 />
                                 International
-                            </label>
+                            </label> */}
                         </div>
                         
                         <div className="input-group">  
