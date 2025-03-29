@@ -62,9 +62,9 @@ function Quote() {
                                 Furniture
                             </div>
 
-                            <div className="checkbox-group2" style={{marginTop:"8px"}}>
+                            <div className="checkbox-group2" style={{marginTop:"8px",marginLeft:"145px"}}>
                                 <input type="checkbox" name="items" value="varying"/>
-                                Utilities
+                                Appliances
                             </div>
 
                             <div className="checkbox-group3" style = {{marginLeft:"92px"}}>
@@ -84,7 +84,7 @@ function Quote() {
                                 />
                                 Local
                             
-                                <label className="checkbox-label">
+                                {/* <label className="checkbox-label">
                                     <input 
                                         type="radio" 
                                         name="locationType" 
@@ -94,7 +94,7 @@ function Quote() {
                                         required
                                     />
                                     International
-                                </label>
+                                </label> */}
                             </div>
                             
                             <div className="input-group">                 
