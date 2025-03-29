@@ -4,21 +4,8 @@ import { Fingerprint } from "lucide-react";
 import { ShieldHalf } from "lucide-react";
 import { PlugZap } from "lucide-react";
 import { GlobeLock } from "lucide-react";
-// import { Globe, MapPin, Package, Archive, Briefcase, BarChart , HandshakeIcon } from "lucide-react";
-import { 
-  Globe, 
-  MapPin, 
-  Package, 
-  Archive, 
-  Briefcase, 
-  Handshake, 
-  ClipboardCheck, 
-  Box, 
-  Truck, 
-  Send, 
-  Boxes, 
-  Wrench 
-} from "lucide-react";
+import { Globe, MapPin, Package, Archive, Briefcase, BarChart , HandshakeIcon } from "lucide-react";
+
 // export const navItems = [
 //   { label: "Features", href: "#" },
 //   { label: "Workflow", href: "#" },
@@ -63,62 +50,38 @@ export const features = [
   {
     icon: <Globe size={24} />,
     text: "International Relocation",
-    description: "We simplify the complexities of moving to a new country, handling everything from door to door."
+    description:
+      "We simplify the complexities of moving to a new country, handling everything from visas to customs clearance",
   },
   {
     icon: <MapPin size={24} />,
-    text: "Local Relocation",
-    description: "Moving within the GCC region? Our local services ensure that every detail is taken care of, from packing to delivery at your new doorstep."
+    text: "Local Relocation:",
+    description:
+      "Moving within GCC region? Our local services ensure that every detail is taken care of, from packing to delivery at your new doorstep.",
   },
   {
     icon: <Package size={24} />,
-    text: "Packing and Unpacking",
-    description: "We offer professional packing services to protect your valuables during transit and unpacking services to help you settle in quickly."
+    text: "Packing and Unpacking:",
+    description:
+      "We offer professional packing services to protect your valuables during transit and unpacking services to help you settle in quickly."
   },
   {
     icon: <Archive size={24} />,
     text: "Storage Solution",
-    description: "Need temporary storage? Our secure storage facilities ensure your items are safe and accessible whenever you need them."
+    description:
+      "Need temporary storage? Our secure storage facilities ensure your items are safe and accessible whenever you need them."
   },
   {
     icon: <Briefcase size={24} />,
-    text: "Corporate Relocation",
-    description: "We cater to businesses relocating employees, offering tailored solutions to ensure a smooth transition for both the individual and the company."
+    text: "Corporate Relocation:",
+    description:
+      "We cater to businesses relocating employees, offering tailored solutions to ensure a smooth transition for both the individual and the company."
   },
   {
-    icon: <Handshake size={24} />,
+    icon: <HandshakeIcon size={24} />,
     text: "Customer Care",
-    description: "Gain valuable insights into our client service policy and behavior within our organization. We keep our clients' needs as our topmost priority and ensure their demands are fulfilled on time."
-  },
-  {
-    icon: <ClipboardCheck size={24} />,
-    text: "Free Consulting Survey",
-    description: "Expert guidance to help you plan your move efficiently."
-  },
-  {
-    icon: <Box size={24} />,
-    text: "Packing Services",
-    description: "High-quality packing solutions to ensure item safety."
-  },
-  {
-    icon: <Truck size={24} />,
-    text: "Freight Services",
-    description: "Reliable freight transportation for your shipments."
-  },
-  {
-    icon: <Send size={24} />,
-    text: "Delivery Services",
-    description: "Fast and secure delivery solutions to your doorstep."
-  },
-  {
-    icon: <Boxes size={24} />,
-    text: "Unpacking Services",
-    description: "Hassle-free unpacking services to help you settle in quickly."
-  },
-  {
-    icon: <Wrench size={24} />,
-    text: "Handyman",
-    description: "Expert handyman services for setup and maintenance."
+    description:
+      "Gain valuable insights into our Client service policy and behavior within our organization and how we keep our Client needs as our topmost priority and ensure their demands are fulfilled within the right time."
   }
 ];
 
@@ -128,7 +91,7 @@ export const checklistItems = [
   {
     title: "Global Reach, Local Expertise: ",
     description:
-    "We help you relocate anywhere in the world and within the GCC region, leveraging our global network of partners and in-depth local knowledge.",
+    "We help you relocate anywhere you desire,more specifically within the GCC region, leveraging our network of partners and in-depth local knowledge.",
   },
   {
     title: "End-to-End Solutions:",
@@ -180,9 +143,6 @@ export const checklistItems = [
 //   },
 // ];
 
-
-
-
 export const resourcesLinks = [
   { href: "https://ipanacllc.com/immigration/canada-immigration-overview", text: "Canada Immigration" },
   { href: "https://ipanacllc.com/business/start-up-visa-program", text: "Visa" },
@@ -193,18 +153,20 @@ export const resourcesLinks = [
 
 export const platformLinks = [
   { href: "#", text: "Accounting and Book Keeping" },
-  { href: "#", text: "Anti Money Laudnering" },
+  { href: "#", text: "Anti Money Laundering Services" },
   { href: "#", text: "Bank Account Opening" },
   { href: "#", text: "Business Set Up" },
   { href: "#", text: "Local sponsorship" },
   { href: "#", text: "PRO services" },
 ];
 
+
+
 export const communityLinks = [
-  { href: "#", text: "Tax Filing" },
-  { href: "#", text: "Tax Registration" },
-  { href: "#", text: "VAT Filing" },
-  { href: "#", text: "VAT Registration" },
-  { href: "#", text: "VAT Refund" },
-  { href: "#", tetx: "Audit - Internal and External"},
+  { href: "#", text: "Tax filing" },
+  { href: "#", text: "Tax registration" },
+  { href: "#", text: "VAT filing" },
+  { href: "#", text: "VAT registration" },
+  { href: "#", text: "VAT refund" },
+  { href: "#", text: "Audit – Internal and External" },
 ];
