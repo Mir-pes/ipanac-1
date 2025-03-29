@@ -79,6 +79,8 @@
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin-left: 10px;
+  
 }
 
 .image-container {
@@ -105,6 +107,10 @@
   font-size: 32px;
 }
 
+.Work{
+  margin-top: 8px;
+}
+
 .contact {
   display: flex;
   text-align: left;
@@ -112,7 +118,7 @@
   padding: 12px 23px;
   border-radius: 16.5px;
   font-size: 20px;
-  background-color: red;
+  background:linear-gradient(to right ,red,darkred);
   color: white;
   font-weight: 510;
   border: none;
@@ -149,16 +155,20 @@
   justify-content: flex-end;
   font-size: 13.5px;
   color: #333;
-  margin: -150px auto;
+  margin: -140px auto;
   padding-left: 450px;
 }
 
 .end-end {
-  margin-right: 301px;
+  margin-right: 258px;
 }
 
 .end-end1 {
-  margin-right: 401.5px;
+  margin-right: 385px;
+}
+
+.content{
+  margin-right: 23px;
 }
 
 .story-container {
@@ -166,6 +176,8 @@
   padding: 40px 80px;
   text-align: center;
 }
+
+
 
 .story-container::before {
   content: "";
@@ -307,7 +319,7 @@
 
   .Clients {
     padding-left: 0;
-    margin: 20px auto;
+    margin: 25px auto;
     text-align: center;
   }
 
