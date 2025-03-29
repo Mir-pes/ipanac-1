@@ -13,9 +13,12 @@ function About() {
           </h3>
 
           <div className="start-content">
-            At IPanac Relocation, we believe that moving to a new country should be an exciting journey, not a stressful one.
+            At IPanac Relocation, we believe that moving to a new location should be an exciting journey, not a stressful one.
             <br></br>
-            Our mission is to provide a seamless and hassle-free relocation experience for individuals, families, and businesses looking to establish themselves in a new country.
+            <br></br>
+            Our mission is to provide a seamless and hassle-free relocation experience for individuals, families, and businesses looking to establish themselves in a new location.
+              
+            
 
             <div className="image-container">
               <img src={aboutimg} className="image"/>
@@ -32,13 +35,15 @@ function About() {
 
         <div className="Clients">
           <div className="Client-content">
-            <span>
-            With expertise in immigration, visa processing, accounting, and anti-money laundering compliance,
+          <span>
+            <span className="content">
+            With expertise in immigration, visa processing, accounting, and anti-money laundering compliance,</span>
+            <br></br>
             <span className="end-end">we offer end-to-end solutions that simplify the transition process. </span>
               <br></br>
               <br></br>
             Whether you're seeking a work permit, permanent residency, or business setup assistance, our team is <span className="end-end1">committed to guiding you every step of the way.</span>
-           </span>
+          </span>
           </div>
         </div>
 
@@ -49,12 +54,12 @@ function About() {
           <div className="story-content">
             IPanac Relocation was founded with a simple yet powerful vision: to make relocation effortless and stress-free.
             <br></br> 
-            We understand that moving to a new country comes with uncertainties—finding a home, understanding legal requirements, 
+            We understand that moving to a new location comes with uncertainties—finding a home, understanding legal requirements, 
             <br></br>
             and adapting to a new environment. 
             <br></br>
             Having personally experienced the challenges of relocation, our founders saw a 
-            need for a trustworthy, client-centric service that prioritizes transparency, efficiency, and personalized care.
+            need for a trustworthy, client-centric service , assembling together a team which collectively consists of an experience over 20 years in relocation service,that prioritizes transparency,efficiency,and personalized care.
             <br></br>
             At IPanac Relocation, we don’t just offer services—we build relationships. Our team takes the time to understand your goals, provide tailored solutions, and ensure that your journey is smooth and successful.
             <br></br>
