@@ -152,21 +152,21 @@ export const resourcesLinks = [
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Accounting and Book Keeping" },
-  { href: "#", text: "Anti Money Laundering Services" },
-  { href: "#", text: "Bank Account Opening" },
-  { href: "#", text: "Business Set Up" },
-  { href: "#", text: "Local sponsorship" },
-  { href: "#", text: "PRO services" },
+  { href: "https://ipanacaccounting.com/", text: "Accounting and Book Keeping" },
+  { href: "https://ipanacaccounting.com/services/#Other-Services", text: "Anti Money Laundering Services" },
+  { href: "https://ipanacaccounting.com/services/#Bank-Accounts-Setup", text: "Bank Account Opening" },
+  { href: "https://ipanacaccounting.com/services/#Other-Services", text: "Business Set Up" },
+  { href: "https://ipanacaccounting.com/our-packages/#Standard", text: "Local sponsorship" },
+  { href: "https://ipanacaccounting.com/about-us/", text: "PRO services" },
 ];
 
 
 
 export const communityLinks = [
-  { href: "#", text: "Tax filing" },
-  { href: "#", text: "Tax registration" },
-  { href: "#", text: "VAT filing" },
-  { href: "#", text: "VAT registration" },
-  { href: "#", text: "VAT refund" },
-  { href: "#", text: "Audit – Internal and External" },
+  { href: "https://ipanacaccounting.com/services/Corporate-Tax", text: "Tax filing" },
+  { href: "https://ipanacaccounting.com/services/Corporate-Tax", text: "Tax registration" },
+  { href: "https://ipanacaccounting.com/services/#VAT", text: "VAT filing" },
+  { href: "https://ipanacaccounting.com/services/#VAT", text: "VAT registration" },
+  { href: "https://ipanacaccounting.com/services/#VAT", text: "VAT refund" },
+  { href: "https://ipanacaccounting.com/services/#Auditing", text: "Audit – Internal and External" },
 ];
