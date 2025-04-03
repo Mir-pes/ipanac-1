@@ -3,6 +3,7 @@ import Img from "./assets/src2.jpg";
 import mission from "./assets/mission.png";
 import { checklistItems } from "./constants";
 import "./WhyChoose.css";
+import { Link } from "react-router-dom";
 
 function Workflow() {
   return (
@@ -71,6 +72,16 @@ function Workflow() {
             "To be the leading global relocation partner, transforming the way people and businesses move by providing seamless, stress-free, and rewarding experiences. We envision a world where relocation is not a challenge but an opportunity—where individuals and organizations transition smoothly into new environments with confidence and ease. Through innovation, expertise, and personalized service, we aim to redefine global mobility, ensuring every move feels like a step toward a better future."
           </p>
         </div>
+      </div>
+
+      <div className="flash-message">
+        
+        For Free Survey and Quote -
+      
+        
+
+        <Link to="/contact" className="contact-us">Contact Us</Link>
+        
       </div>
     </div>
   );
