@@ -33,7 +33,7 @@ function About() {
           </div>
           </div>
 
-        <div className="Clients">
+{/*         <div className="Clients">
           <div className="Client-content">
           <span>
             <span className="content">
@@ -45,7 +45,7 @@ function About() {
             Whether you're seeking a work permit, permanent residency, or business setup assistance, our team is <span className="end-end1">committed to guiding you every step of the way.</span>
           </span>
           </div>
-        </div>
+        </div> */}
 
         <div className="story-container">
           <h3 className="statement-heading1">
