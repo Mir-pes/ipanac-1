@@ -85,6 +85,7 @@
 .social-icon {
     color: black;
     transition: color 0.3s ease;
+    margin-right: 7px;
 }
 
 .social-icon:hover {
