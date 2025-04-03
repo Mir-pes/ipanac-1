@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css"; // Import the CSS file
-import { Menu, X, InstagramIcon, LinkedinIcon, MapPin, Phone, Mail } from "lucide-react"; // Add MapPin, Phone, and Mail icons
+import { Menu, X, InstagramIcon, LinkedinIcon, FacebookIcon , MapPin, Phone, Mail } from "lucide-react"; // Add MapPin, Phone, and Mail icons
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import img from "./assets/IpanacRelocationLogo.png";
@@ -36,6 +36,10 @@ function Navbar() {
                             </a>
                             <a href="https://www.linkedin.com/company/ipanac-relocation/" target="_blank" rel="noopener noreferrer">
                                 <LinkedinIcon className="social-icon" size={20} />
+                            </a>
+
+                            <a href="https://www.facebook.com/profile.php?id=61574697290210/" target="_blank" rel="noopener noreferrer">
+                                <FacebookIcon className="social-icon" size={20} />
                             </a>
                         </div>
                     </div>
