@@ -19,7 +19,7 @@ function Navbar() {
                 <div className="contact-info">
                     <div className="contact-item">
                         <MapPin className="contact-icon-address" size={20} />
-                        <span className="address">104 | Khalid Bin Al Waleed Building | P.O.Box – 111923 | Dubai | UAE</span>
+                        <span className="address">104 | Khalid Bin Al Waleed Building | Dubai | UAE</span>
                     </div>
                     <div className="contact-item">
                         <Phone className="contact-icon" size={20} />
