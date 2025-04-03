@@ -165,6 +165,79 @@
   color: #737373;
 }
 
+.flash-message {
+  margin-top: 28px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  color: red;
+  font-size: 18.8px;
+  font-weight: 550;
+  text-transform: uppercase; 
+  letter-spacing: 0.6px; 
+  
+  animation: 
+    fadeIn 0.6s ease-out,
+    subtleBounce 2s infinite;
+  
+  transition: all 0.3s ease;
+}
+
+.flash-message:hover {
+  color: #ff0000; 
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.3); 
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes subtleBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+.contact-us{
+  display: inline-block;
+  margin-top: 17.2px;
+  border: 1px solid black;
+  border: none;
+  max-width: 300px;
+  padding: 7px 17px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  color:white;
+  border-radius:14px;
+  font-size: 18px;
+  font-weight: 450;
+  text-decoration: none !important;
+  box-shadow: 0 7px 7px rgba(85, 5, 5, 0.918);
+  transition: all 0.3s ease;
+
+  
+  
+}
+
+.contact-us:hover {
+  background-color: red;
+  transform: translateY(-3.2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-us:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(172, 13, 13);
+}
+
+
 /* Mobile Responsive Additions */
 @media (max-width: 768px) {
   .workflow-container {
