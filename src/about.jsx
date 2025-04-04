@@ -11,6 +11,16 @@ function About() {
           <h3 className="statement-heading">
             About IPANAC
           </h3>
+          
+          <h5>At IPANAC we have 3 services which we mainly operate in:</h5>
+          <div className="domain-links">
+            <a href="https://ipanacllc.com/" className="domain-link">IPANAC Consulting</a>
+            <a href="https://ipanacaccounting.com/" className="domain-link">IPANAC Accounting</a>
+            <a className="domain-link">IPANAC Relocation</a>
+          </div>
+          <br></br>
+          <div>IPANAC Relocation</div>
+          <br></br>
 
           <div className="start-content">
             At IPanac Relocation, we believe that moving to a new location should be an exciting journey, not a stressful one.
@@ -18,8 +28,6 @@ function About() {
             <br></br>
             Our mission is to provide a seamless and hassle-free relocation experience for individuals, families, and businesses looking to establish themselves in a new location.
               
-            
-
             <div className="image-container">
               <img src={aboutimg} className="image"/>
             </div>
@@ -33,7 +41,7 @@ function About() {
           </div>
           </div>
 
-{/*         <div className="Clients">
+        {/* <div className="Clients">
           <div className="Client-content">
           <span>
             <span className="content">
