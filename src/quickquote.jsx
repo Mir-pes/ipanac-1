@@ -62,7 +62,7 @@ function Quote() {
                                 Furniture
                             </div>
 
-                            <div className="checkbox-group2" style={{marginTop:"8px",marginLeft:"108px"}}>
+                            <div className="checkbox-group2" style={{marginTop:"8px",marginLeft:"258px"}}>
                                 <input type="checkbox" name="items" value="varying"/>
                                 Appliances
                             </div>
