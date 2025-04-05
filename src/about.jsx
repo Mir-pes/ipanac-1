@@ -19,7 +19,7 @@ function About() {
             <a className="domain-link">IPANAC Relocation</a>
           </div>
           <br></br>
-          <h3 classname = "statement-heading">IPANAC Relocation</h3>
+          <h3 className = "statement-heading">IPANAC Relocation</h3>
           <br></br>
 
           <div className="start-content">
