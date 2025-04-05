@@ -12,10 +12,12 @@ function About() {
             About Us
           </h3>
           
-          <h5>At IPANAC we have 3 services which we mainly operate in:</h5>
+          <p>iPANAC Relocation is a part of iPANAC consultancy LLC FZ:</p>
+
+          <h6>We serve our clients in the following domains:</h6>
           <div className="domain-links">
-            <a href="https://ipanacllc.com/" className="domain-link">IPANAC Consulting</a>
-            <a href="https://ipanacaccounting.com/" className="domain-link">IPANAC Accounting</a>
+            <a href="https://ipanacllc.com/" className="domain-link">IPANAC Immigration</a>
+            <a href="https://ipanacaccounting.com/" className="domain-link">IPANAC Accounting & Tax</a>
             <a className="domain-link">IPANAC Relocation</a>
           </div>
           <br></br>
@@ -33,13 +35,13 @@ function About() {
             </div>
           </div>
 
-        <div className="Work-container">
+{/*         <div className="Work-container">
           <div className="Work">
             How We Work With <br></br>Our Clients
 
             <Link to="/contact" className="contact">Contact Us</Link>
           </div>
-          </div>
+          </div> */}
 
         {/* <div className="Clients">
           <div className="Client-content">
