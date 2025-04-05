@@ -59,7 +59,7 @@ function About() {
 
         <div className="story-container">
           <h3 className="statement-heading1">
-            Our Story – The Personal Touch
+            Our Story – Professional Serives with Personal Touch
           </h3>
           <div className="story-content">
             IPanac Relocation was founded with a simple yet powerful vision: to make relocation effortless and stress-free.
