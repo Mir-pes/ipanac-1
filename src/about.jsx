@@ -9,7 +9,7 @@ function About() {
     <div className="about-page">
         <div className="about">
           <h3 className="statement-heading">
-            About IPANAC
+            About Us
           </h3>
           
           <h5>At IPANAC we have 3 services which we mainly operate in:</h5>
