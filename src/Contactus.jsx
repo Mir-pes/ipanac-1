@@ -35,7 +35,7 @@ function ContactUs() {
             </div>
             <div className="contact-box-text">
               <h3>Address</h3>
-              <p>Office 104 | Khalid Bin Al Waleed Bldg | Dubai | UAE</p>
+              <p>Office 104 | Khalid Bin Al Waleed Bldg | P.O.Box – 111923 | Dubai | UAE</p>
             </div>
           </div>
 
