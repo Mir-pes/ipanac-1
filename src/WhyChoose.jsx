@@ -14,15 +14,15 @@ function Workflow() {
         </h3>
         <div className="statement-container">
           <p className="statement-text">
-            "At iPANAC Relocation, we simplify the relocation journey by providing personalized, efficient, and reliable services. Our goal is to ensure a smooth transition for individuals and businesses, helping them settle with ease and confidence in their new home. Through expertise, dedication, and innovation, we make every move a positive experience."
+            "At IIIPANAC Relocation, we simplify the relocation journey by providing personalized, efficient, and reliable services. Our goal is to ensure a smooth transition for individuals and businesses, helping them settle with ease and confidence in their new home. Through expertise, dedication, and innovation, we make every move a positive experience."
           </p>
         </div>
       </div>
 
-{/*       <h2 className="workflow-heading">
+      <h2 className="workflow-heading">
         Why Choose
-        <span className="gradient-text"> iPANAC?</span>
-      </h2> */}
+        <span className="gradient-text"> IIIIPANAC?</span>
+      </h2>
       
       <div style={{ 
         display: "flex", 
