@@ -35,7 +35,9 @@ function ContactUs() {
             </div>
             <div className="contact-box-text">
               <h3>Address</h3>
-              <p>Office - 104 | Khalid Bin Al Waleed Bldg | Khalid Bin Al Waleed road I Near Sharaf DG Metro Stn | Bur Dubai | P.O.Box – 111923 | Dubai | UAE</p>
+              <p>Office - 104 | Khalid Bin Al Waleed Bldg |<br></br> Khalid Bin Al Waleed road 
+                | Near Sharaf DG Metro Stn |
+                <br></br> Bur Dubai | P.O.Box – 111923 | Dubai | UAE<</p>
             </div>
           </div>
 
