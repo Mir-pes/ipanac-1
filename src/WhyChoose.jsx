@@ -19,10 +19,10 @@ function Workflow() {
         </div>
       </div>
 
-      <h2 className="workflow-heading">
+{/*       <h2 className="workflow-heading">
         Why Choose
         <span className="gradient-text"> iPANAC?</span>
-      </h2>
+      </h2> */}
       
       <div style={{ 
         display: "flex", 
