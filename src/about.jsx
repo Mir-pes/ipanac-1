@@ -16,16 +16,16 @@ function About() {
 
           <h6>We serve our clients in the following domains:</h6>
           <div className="domain-links">
-            <a href="https://ipanacllc.com/" className="domain-link">IPANAC Immigration</a>
-            <a href="https://ipanacaccounting.com/" className="domain-link">IPANAC Accounting & Tax</a>
-            <a className="domain-link">IPANAC Relocation</a>
+            <a href="https://IPANACllc.com/" className="domain-link">iPANAC Immigration</a>
+            <a href="https://IPANACaccounting.com/" className="domain-link">iPANAC Accounting & Tax</a>
+            <a className="domain-link">iPANAC Relocation</a>
           </div>
           <br></br>
-          <h3 className = "statement-heading">IPANAC Relocation</h3>
+          <h3 className = "statement-heading">iPANAC Relocation</h3>
           <br></br>
 
           <div className="start-content">
-            At IPanac Relocation, we believe that moving to a new location should be an exciting journey, not a stressful one.
+            At iPANAC Relocation, we believe that moving to a new location should be an exciting journey, not a stressful one.
             <br></br>
             <br></br>
             Our mission is to provide a seamless and hassle-free relocation experience for individuals, families, and businesses looking to establish themselves in a new location.
@@ -62,7 +62,7 @@ function About() {
             Our Story – Professional Serives with Personal Touch
           </h3>
           <div className="story-content">
-            IPanac Relocation was founded with a simple yet powerful vision: to make relocation effortless and stress-free.
+            iPANAC Relocation was founded with a simple yet powerful vision: to make relocation effortless and stress-free.
             <br></br> 
             We understand that moving to a new location comes with uncertainties—finding a home, understanding legal requirements, 
             <br></br>
@@ -71,7 +71,7 @@ function About() {
             Having personally experienced the challenges of relocation, our founders saw a 
             need for a trustworthy, client-centric service , assembling together a team which collectively consists of an experience over 20 years in relocation service,that prioritizes transparency,efficiency,and personalized care.
             <br></br>
-            At IPanac Relocation, we don’t just offer services—we build relationships. Our team takes the time to understand your goals, provide tailored solutions, and ensure that your journey is smooth and successful.
+            At iPANAC Relocation, we don’t just offer services—we build relationships. Our team takes the time to understand your goals, provide tailored solutions, and ensure that your journey is smooth and successful.
             <br></br>
             Whether you are an aspiring professional, an international student, or a business looking to expand, we are here to turn your relocation dreams into reality.
           </div>
