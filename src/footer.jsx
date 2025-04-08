@@ -43,7 +43,7 @@ function Footer() {
 
                 </div>
                 <div className="copyright-section">
-                    <p>© Copyright 2024 by abc.com</p>
+                    <p>© Copyright 2024 by ipanacrelocation.com</p>
                 </div>
             </footer>
         </div>
