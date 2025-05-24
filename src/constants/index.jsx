@@ -4,7 +4,21 @@ import { Fingerprint } from "lucide-react";
 import { ShieldHalf } from "lucide-react";
 import { PlugZap } from "lucide-react";
 import { GlobeLock } from "lucide-react";
-import { Globe, MapPin, Package, Archive, Briefcase, BarChart , HandshakeIcon, } from "lucide-react";
+import { Globe, MapPin, Package, Archive, Briefcase, BarChart , HandshakeIcon } from "lucide-react";
+
+// Import local images with corrected paths
+import internationalRelocation from '../assets/Interantional.png';
+import Corporate from '../assets/corporate.png';
+import Local from '../assets/local.png';
+import pau from '../assets/PAU.png';
+import Storage from '../assets/storage.png';
+import C from '../assets/CustomerCare.png';
+import consult from '../assets/consulting.png';
+import packing from '../assets/pack.png';
+import f from '../assets/freight.png';
+import d from '../assets/delivery.png';
+import u from '../assets/unpack.png';
+import Handyman from '../assets/handy.png';
 
 // export const navItems = [
 //   { label: "Features", href: "#" },
@@ -48,81 +62,78 @@ import { Globe, MapPin, Package, Archive, Briefcase, BarChart , HandshakeIcon, }
 
 export const features = [
   {
-    icon: <Globe size={24} />,
+    image: internationalRelocation,
     text: "International Relocation",
     description:
       "We simplify the complexities of moving to a new country, handling everything from visas to customs clearance",
   },
   {
-    icon: <MapPin size={24} />,
+    image: Local,
     text: "Local Relocation:",
     description:
       "Moving within GCC region? Our local services ensure that every detail is taken care of, from packing to delivery at your new doorstep.",
   },
   {
-    icon: <Package size={24} />,
+    image: pau,
     text: "Packing and Unpacking:",
     description:
       "We offer professional packing services to protect your valuables during transit and unpacking services to help you settle in quickly."
   },
   {
-    icon: <Archive size={24} />,
+    image: Storage,
     text: "Storage Solution",
     description:
       "Need temporary storage? Our secure storage facilities ensure your items are safe and accessible whenever you need them."
   },
   {
-    icon: <Briefcase size={24} />,
+    image: Corporate,
     text: "Corporate Relocation:",
     description:
       "We cater to businesses relocating employees, offering tailored solutions to ensure a smooth transition for both the individual and the company."
   },
   {
-    icon: <HandshakeIcon size={24} />,
+    image: C,
     text: "Customer Care",
     description:
       "Gain valuable insights into our Client service policy and behavior within our organization and how we keep our Client needs as our topmost priority and ensure their demands are fulfilled within the right time."
-  }
-    ,
+  },
   {
-    icon: <Globe size={24} />,
+    image: consult,
     text: "Free Consulting Survey",
     description:
       "Expert guidance to help you plan your move efficiently.",
   },
   {
-    icon: <MapPin size={24} />,
+    image: packing,
     text: "Packing Services",
     description:
       "High-quality packing solutions to ensure item safety.",
   },
   {
-    icon: <Package size={24} />,
+    image: f,
     text: "Freight Services",
     description:
       "Reliable freight transportation for your shipments."
   },
   {
-    icon: <Archive size={24} />,
+    image: d,
     text: "Delivery Services",
     description:
       "Fast and secure delivery solutions to your doorstep."
   },
   {
-    icon: <Briefcase size={24} />,
+    image: u,
     text: "Unpacking Services",
     description:
       "Hassle-free unpacking services to help you settle in quickly."
   },
   {
-    icon: <HandshakeIcon size={24} />,
+    image: Handyman,
     text: "Handyman",
     description:
       "Expert handyman services for setup and maintenance"
   }
 ];
-
-
 
 export const checklistItems = [
   {
@@ -196,8 +207,6 @@ export const platformLinks = [
   { href: "https://ipanacaccounting.com/our-packages/#Standard", text: "Local sponsorship" },
   { href: "https://ipanacaccounting.com/about-us/", text: "PRO services" },
 ];
-
-
 
 export const communityLinks = [
   { href: "https://ipanacaccounting.com/services/Corporate-Tax", text: "Tax filing" },
