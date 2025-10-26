@@ -7,136 +7,263 @@ import Excellence from "./assets/excellence.png";
 import Innovation from "./assets/innovation.png";
 import Globalimg from "./assets/Global.png";
 import Reliable from "./assets/reliability.png";
-import { Globe, Lock, Package, Shield, Brain, ArrowUpCircle, HandshakeIcon, Clock, GlobeIcon } from "lucide-react";
+import { Users, Heart, Target, Sparkles, Award, Globe2, Shield, TrendingUp, CheckCircle2, Building2, Briefcase } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div className="about-page">
-        <div className="about">
-          <h3 className="statement-heading">
-            About IPANAC
-          </h3>
-          
-          <p>IPANAC Relocation is a part of IPANAC consultancy LLC FZ</p>
-          
-          <h6>We serve Our clients in the following domains</h6>
-          <div className="domain-links">
-            <a href="https://IPANACllc.com/" className="domain-link">IPANAC Immigration</a>
-            <a href="https://IPANACaccounting.com/" className="domain-link">IPANAC Accounting & Tax</a>
-            <a className="domain-link">IPANAC Relocation</a>
+    <div className="about-page-modern">
+      <div className="about-hero">
+        <div className="hero-background-about">
+          <div className="hero-orb hero-orb-1"></div>
+          <div className="hero-orb hero-orb-2"></div>
+        </div>
+        
+        <div className="hero-content-about">
+          <div className="hero-badge-about">
+            <Building2 size={16} />
+            <span>Established Excellence</span>
           </div>
-          <br></br>
-          <h3 className="statement-heading">IPANAC Relocation</h3>
-          <br></br>
+          
+          <h1 className="about-hero-title">
+            About <span className="gradient-about">iPANAC</span>
+          </h1>
+          
+          <p className="about-hero-subtitle">
+            Your trusted partner in seamless global relocations, backed by years of expertise and commitment to excellence
+          </p>
 
-          <div className="start-content">
-            At IPANAC Relocation, we believe that moving to a new location should be an exciting journey, not a stressful one.
-            <br></br>
-            <br></br>
-            Our mission is to provide a seamless and hassle-free relocation experience for individuals, families, and businesses looking to establish themselves in a new location.
-              
-            <div className="image-container">
-              <img src={aboutimg} className="image"/>
+          <div className="company-domains">
+            <div className="domain-card">
+              <div className="domain-icon">
+                <Globe2 size={24} />
+              </div>
+              <a href="https://IPANACllc.com/" target="_blank" rel="noopener noreferrer" className="domain-title">
+                iPANAC Immigration
+              </a>
+              <p className="domain-desc">Global visa & immigration services</p>
             </div>
-          </div>
-
-        {/* <div className="Work-container">
-          <div className="Work">
-            How We Work With <br></br>Our Clients
-
-            <Link to="/contact" className="contact">Contact Us</Link>
-          </div>
-          </div> */}
-
-        {/* <div className="Clients">
-          <div className="Client-content">
-          <span>
-            <span className="content">
-            With expertise in immigration, visa processing, accounting, and anti-money laundering compliance,</span>
-            <br></br>
-            <span className="end-end">we offer end-to-end solutions that simplify the transition process. </span>
-              <br></br>
-              <br></br>
-            Whether you're seeking a work permit, permanent residency, or business setup assistance, our team is <span className="end-end1">committed to guiding you every step of the way.</span>
-          </span>
-          </div>
-        </div> */}
-
-        <div className="story-container">
-          <h3 className="statement-heading1">
-            Our Story – Professional Services with Personal Touch
-          </h3>
-          <div className="story-content">
-            IPANAC Relocation was founded with a simple yet powerful vision: to make relocation effortless and stress-free.
-            <br></br> 
-            We understand that moving to a new location comes with uncertainties—finding a home, understanding legal requirements, 
-            <br></br>
-            and adapting to a new environment. 
-            <br></br>
-            Our founders, having personally faced the challenges of relocation, recognized the need for a reliable, client-centric service.
-            <br></br>
-            They assembled a team with a combined experience of over 20 years in the relocation industry—committed to transparency, efficiency, and personalized support.
-            <br></br>
-            At IPANAC Relocation, we go beyond providing services—we cultivate meaningful relationships.
-            <br></br>
-            Our team takes the time to understand your unique goals, deliver customized solutions, and make your relocation journey smooth and successful.
+            
+            <div className="domain-card">
+              <div className="domain-icon">
+                <Briefcase size={24} />
+              </div>
+              <a href="https://IPANACaccounting.com/" target="_blank" rel="noopener noreferrer" className="domain-title">
+                iPANAC Accounting
+              </a>
+              <p className="domain-desc">Professional accounting & tax solutions</p>
+            </div>
+            
+            <div className="domain-card active">
+              <div className="domain-icon">
+                <Building2 size={24} />
+              </div>
+              <div className="domain-title">
+                iPANAC Relocation
+              </div>
+              <p className="domain-desc">Seamless moving & relocation services</p>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div className="our-core-values">
-          <h2 className="statement-heading">Our Core Values</h2>
-          <p className="values-subtitle">Our values shape the culture of our organization and define the character of our company.</p>
-          
-          <div className="values-grid">
-            <div className="value-card">
-            <h3>Customer-Centric Approach</h3>
-            <div className="icon-container" style={{ width: '240px', height: '200px', marginLeft: '48px', borderRadius: '10px' }}>
-              <img src={customer} className="value-image" />
+      <div className="about-mission-section">
+        <div className="mission-content-wrapper">
+          <div className="mission-text-block">
+            <div className="section-badge">
+              <Heart size={16} />
+              <span>Who We Are</span>
             </div>
+            
+            <h2 className="section-title-about">
+              Making Relocation <span className="gradient-about">Effortless</span>
+            </h2>
+            
+            <p className="mission-paragraph">
+              At iPANAC Relocation, we believe that moving to a new location should be an exciting journey, not a stressful one. Our mission is to provide a seamless and hassle-free relocation experience for individuals, families, and businesses looking to establish themselves in a new location.
+            </p>
+            
+            <div className="mission-features">
+              <div className="mission-feature">
+                <CheckCircle2 size={20} className="feature-check" />
+                <span>Personalized service tailored to your needs</span>
+              </div>
+              <div className="mission-feature">
+                <CheckCircle2 size={20} className="feature-check" />
+                <span>End-to-end relocation support</span>
+              </div>
+              <div className="mission-feature">
+                <CheckCircle2 size={20} className="feature-check" />
+                <span>Professional care and expertise</span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mission-image-block">
+            <div className="image-frame">
+              <img src={aboutimg} alt="iPANAC Relocation Services" className="about-main-image" />
+              <div className="image-decoration"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="story-section-modern">
+        <div className="story-content-modern">
+          <div className="section-badge">
+            <Sparkles size={16} />
+            <span>Our Journey</span>
+          </div>
+          
+          <h2 className="section-title-about">
+            Professional Services with a <span className="gradient-about">Personal Touch</span>
+          </h2>
+          
+          <div className="story-timeline">
+            <div className="timeline-item">
+              <div className="timeline-icon">
+                <Target size={24} />
+              </div>
+              <div className="timeline-content">
+                <h3>Our Foundation</h3>
+                <p>
+                  iPANAC Relocation was founded with a simple yet powerful vision: to make relocation effortless and stress-free. We understand that moving to a new location comes with uncertainties—finding a home, understanding legal requirements, and adapting to a new environment.
+                </p>
+              </div>
+            </div>
+            
+            <div className="timeline-item">
+              <div className="timeline-icon">
+                <Users size={24} />
+              </div>
+              <div className="timeline-content">
+                <h3>Expert Team</h3>
+                <p>
+                  Our founders, having personally faced the challenges of relocation, recognized the need for a reliable, client-centric service. They assembled a team with a combined experience of over 20 years in the relocation industry—committed to transparency, efficiency, and personalized support.
+                </p>
+              </div>
+            </div>
+            
+            <div className="timeline-item">
+              <div className="timeline-icon">
+                <Heart size={24} />
+              </div>
+              <div className="timeline-content">
+                <h3>Client-Centric Approach</h3>
+                <p>
+                  At iPANAC Relocation, we go beyond providing services—we cultivate meaningful relationships. Our team takes the time to understand your unique goals, deliver customized solutions, and make your relocation journey smooth and successful.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="values-section-modern">
+        <div className="section-header-center">
+          <div className="section-badge">
+            <Award size={16} />
+            <span>What Drives Us</span>
+          </div>
+          
+          <h2 className="section-title-about">
+            Our Core <span className="gradient-about">Values</span>
+          </h2>
+          
+          <p className="section-subtitle-about">
+            Our values shape the culture of our organization and define the character of our company
+          </p>
+        </div>
+
+        <div className="values-grid-modern">
+          <div className="value-card-modern">
+            <div className="value-image-wrapper">
+              <img src={customer} alt="Customer-Centric Approach" className="value-img" />
+              <div className="value-overlay">
+                <Users size={40} />
+              </div>
+            </div>
+            <div className="value-card-content">
+              <h3>Customer-Centric Approach</h3>
               <p>We put our clients first, ensuring personalized and hassle-free relocation experiences tailored to their needs.</p>
             </div>
-            
-            <div className="value-card">
-            <h3>Integrity & Transparency</h3>
-            <div className="icon-container" style={{ width: '240px', height: '200px', marginLeft: '48px', borderRadius: '10px' }}>
-              <img src={integrity} className="value-image" />
-            </div>
-            <p>Honesty and trust are at the heart of our services. We operate with full transparency, ensuring our clients feel informed and confident at every step.</p>
           </div>
-            
-            <div className="value-card">
-            <h3>Excellence & Efficiency</h3>
-            <div className="icon-container" style={{ width: '240px', height: '200px', marginLeft: '48px', borderRadius: '10px' }}>
-            <img src={Innovation} className="value-image" />
+
+          <div className="value-card-modern">
+            <div className="value-image-wrapper">
+              <img src={integrity} alt="Integrity & Transparency" className="value-img" />
+              <div className="value-overlay">
+                <Shield size={40} />
+              </div>
             </div>
+            <div className="value-card-content">
+              <h3>Integrity & Transparency</h3>
+              <p>Honesty and trust are at the heart of our services. We operate with full transparency, ensuring our clients feel informed and confident at every step.</p>
+            </div>
+          </div>
+
+          <div className="value-card-modern">
+            <div className="value-image-wrapper">
+              <img src={Innovation} alt="Excellence & Efficiency" className="value-img" />
+              <div className="value-overlay">
+                <Award size={40} />
+              </div>
+            </div>
+            <div className="value-card-content">
+              <h3>Excellence & Efficiency</h3>
               <p>We are committed to delivering top-quality relocation services with precision, professionalism, and attention to detail.</p>
             </div>
-            
-            <div className="value-card">
-            <h3>Innovation & Adaptability</h3>
-            <div className="icon-container" style={{ width: '240px', height: '200px', marginLeft: '48px', borderRadius: '10px' }}>
-            <img src={Excellence} className="value-image" />
+          </div>
+
+          <div className="value-card-modern">
+            <div className="value-image-wrapper">
+              <img src={Excellence} alt="Innovation & Adaptability" className="value-img" />
+              <div className="value-overlay">
+                <Sparkles size={40} />
+              </div>
             </div>
+            <div className="value-card-content">
+              <h3>Innovation & Adaptability</h3>
               <p>The relocation industry is ever-changing, and we embrace new technologies and processes to provide modern, efficient, and seamless solutions.</p>
             </div>
-            
-            <div className="value-card">
-            <h3>Global Mindset</h3>
-            <div className="icon-container" style={{ width: '240px', height: '200px', marginLeft: '48px', borderRadius: '10px' }}>
-            <img src={Globalimg} className="value-image" />
+          </div>
+
+          <div className="value-card-modern">
+            <div className="value-image-wrapper">
+              <img src={Globalimg} alt="Global Mindset" className="value-img" />
+              <div className="value-overlay">
+                <Globe2 size={40} />
+              </div>
             </div>
+            <div className="value-card-content">
+              <h3>Global Mindset</h3>
               <p>With a deep understanding of international relocation challenges, we bridge cultures and make global transitions easier for individuals and businesses.</p>
             </div>
-            
-            <div className="value-card">
-              <h3>Reliability & Commitment</h3>
-            <div className="icon-container" style={{ width: '240px', height: '200px', marginLeft: '48px', borderRadius: '10px' }}>
-            <img src={Reliable} className="value-image" />
+          </div>
+
+          <div className="value-card-modern">
+            <div className="value-image-wrapper">
+              <img src={Reliable} alt="Reliability & Commitment" className="value-img" />
+              <div className="value-overlay">
+                <TrendingUp size={40} />
+              </div>
             </div>
+            <div className="value-card-content">
+              <h3>Reliability & Commitment</h3>
               <p>We are dedicated to delivering on our promises, ensuring smooth and stress-free relocations every time.</p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="cta-section-about">
+        <div className="cta-about-content">
+          <h2>Ready to Begin Your Journey?</h2>
+          <p>Let's make your relocation smooth, stress-free, and successful</p>
+          <Link to="/contact" className="cta-about-button">
+            Get Started Today
+            <span className="button-arrow-about">→</span>
+          </Link>
         </div>
       </div>
     </div>
