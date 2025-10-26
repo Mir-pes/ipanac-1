@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./enquire.css"; 
-import {User, Mail, Phone, Calendar} from "lucide-react";  
+import { User, Mail, Phone, Calendar, MapPin, Send, FileText, Building2 } from "lucide-react";  
 import logo from "./assets/IpanacRelocationLogo.png";
 
 function Enquire() {
@@ -12,125 +12,208 @@ function Enquire() {
     const places = locationType === "local" ? localPlaces : internationalCountries;
     
     return (        
-        <div className="enquire-page">
-            <div className="enquire-wrapper">
-                <div className="enquire-logo-section">
-                    <img src={logo} alt="IPANAC Relocation Logo" className="enquire-logo" />
+        <div className="enquire-page-modern">
+            <div className="enquire-hero-section">
+                <div className="hero-gradient-bg">
+                    <div className="gradient-orb orb-1"></div>
+                    <div className="gradient-orb orb-2"></div>
+                </div>
+                
+                <div className="enquire-hero-content">
+                    <div className="hero-badge-enquire">
+                        <Building2 size={16} />
+                        <span>Get Started Today</span>
+                    </div>
                     
-                    <p className="tagline">Smooth Move, Easy Relocation</p>
+                    <h1 className="enquire-title">
+                        Begin Your <span className="text-gradient">Relocation Journey</span>
+                    </h1>
+                    
+                    <p className="enquire-subtitle">
+                        Fill out the form below and our expert team will get back to you within 24 hours
+                    </p>
+                </div>
+            </div>
+
+            <div className="enquire-container-modern">
+                <div className="enquire-form-card">
+                    <div className="form-header-modern">
+                        <div className="form-icon-badge">
+                            <Send size={28} />
+                        </div>
+                        <h2>Registration Form</h2>
+                        <p>Let's make your move seamless and stress-free</p>
+                    </div>
+
+                    <form className="modern-form">
+                        <div className="form-grid">
+                            <div className="modern-input-group">
+                                <label className="modern-label">
+                                    <User size={18} />
+                                    <span>Full Name</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    className="modern-input" 
+                                    placeholder="Enter your full name" 
+                                    required
+                                />
+                            </div>
+
+                            <div className="modern-input-group">
+                                <label className="modern-label">
+                                    <Mail size={18} />
+                                    <span>Email Address</span>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    className="modern-input" 
+                                    placeholder="your.email@example.com" 
+                                    required
+                                />
+                            </div>
+
+                            <div className="modern-input-group">
+                                <label className="modern-label">
+                                    <Phone size={18} />
+                                    <span>Phone Number</span>
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    className="modern-input" 
+                                    placeholder="+971 XX XXX XXXX" 
+                                    required
+                                />
+                            </div>
+
+                            <div className="modern-input-group">
+                                <label className="modern-label">
+                                    <MapPin size={18} />
+                                    <span>Origin Type</span>
+                                </label>
+                                <div className="radio-group-modern">
+                                    <label className="radio-option">
+                                        <input 
+                                            type="radio" 
+                                            name="locationType" 
+                                            value="local" 
+                                            checked={locationType === "local"}
+                                            onChange={() => setLocationType("local")}
+                                            required
+                                        />
+                                        <span className="radio-custom"></span>
+                                        <span className="radio-label">Local</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div className="modern-input-group">
+                                <label className="modern-label">
+                                    <MapPin size={18} />
+                                    <span>Base Location</span>
+                                </label>
+                                <select className="modern-select" required>
+                                    <option value="">Select your origin</option>
+                                    {places.map((place, index) => (
+                                        <option key={index} value={place}>{place}</option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            <div className="modern-input-group">
+                                <label className="modern-label">
+                                    <MapPin size={18} />
+                                    <span>Destination</span>
+                                </label>
+                                <select className="modern-select" required>
+                                    <option value="">Select your destination</option>
+                                    {places.map((place, index) => (
+                                        <option key={index} value={place}>{place}</option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            <div className="modern-input-group">
+                                <label className="modern-label">
+                                    <Calendar size={18} />
+                                    <span>Expected Moving Date</span>
+                                </label>
+                                <input 
+                                    type="date" 
+                                    className="modern-input" 
+                                    required
+                                />
+                            </div>
+
+                            <div className="modern-input-group full-width">
+                                <label className="modern-label">
+                                    <FileText size={18} />
+                                    <span>Additional Details</span>
+                                </label>
+                                <textarea 
+                                    className="modern-textarea"
+                                    rows={5}
+                                    placeholder="Tell us about the items you're moving, any special requirements, or questions you may have..."
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div className="form-footer-modern">
+                            <button type="submit" className="submit-btn-modern">
+                                <span>Submit Registration</span>
+                                <Send size={20} />
+                            </button>
+                            
+                            <p className="form-note">
+                                By submitting this form, you agree to our terms and privacy policy
+                            </p>
+                        </div>
+                    </form>
                 </div>
 
-                <div className="enquire-form-section">
-                    <h2 className="Message" style = {{color: "red"} }>Register</h2>
+                <div className="enquire-info-sidebar">
+                    <div className="info-card">
+                        <img src={logo} alt="iPANAC Relocation" className="sidebar-logo" />
+                        <h3>Why Choose iPANAC?</h3>
+                        <ul className="benefits-list">
+                            <li>
+                                <div className="benefit-icon">✓</div>
+                                <span>20+ Years of Experience</span>
+                            </li>
+                            <li>
+                                <div className="benefit-icon">✓</div>
+                                <span>Fully Insured Services</span>
+                            </li>
+                            <li>
+                                <div className="benefit-icon">✓</div>
+                                <span>24/7 Customer Support</span>
+                            </li>
+                            <li>
+                                <div className="benefit-icon">✓</div>
+                                <span>Competitive Pricing</span>
+                            </li>
+                            <li>
+                                <div className="benefit-icon">✓</div>
+                                <span>Professional Team</span>
+                            </li>
+                        </ul>
+                    </div>
 
-                    <form className="enquire-form">
-                        <div className="input-group"> 
-                            <label>Name:</label>                    
-                            <div className="input">   
-                                                   
-                                <User size={16.5}/>  
-                                                       
-                                <input type="text" placeholder="Full Name" required/>                         
-                            </div>                     
-                        </div>                   
-                        
-                        <div className="input-group"> 
-                            <label>Email:</label>                
-                            <div className="input">                         
-                                <Mail size={16.5}/>                         
-                                <input type="email" placeholder="Email" required/>                     
-                            </div>                 
-                        </div>                   
-                        
-                        <div className="input-group">  
-                            <label>Phone No:</label>               
-                            <div className="input">                         
-                                <Phone size={16.5}/>                         
-                                <input type="tel" placeholder="Contact Number" required/>                     
-                            </div>                  
+                    <div className="contact-card">
+                        <h4>Need Help?</h4>
+                        <p>Our team is here to assist you</p>
+                        <div className="contact-info">
+                            <div className="contact-item">
+                                <Phone size={18} />
+                                <span>+971 XX XXX XXXX</span>
+                            </div>
+                            <div className="contact-item">
+                                <Mail size={18} />
+                                <span>info@ipanac.com</span>
+                            </div>
                         </div>
-
-                        <div className="checkbox-group">
-                            <label className="checkbox-label"> 
-                                Origin:
-                                <input 
-                                    type="radio" 
-                                    name="locationType" 
-                                    value="local" 
-                                    checked={locationType === "local"}
-                                    onChange={() => setLocationType("local")}
-                                    required
-                                />
-                                Local
-                            </label>
-                            
-                            {/* <label className="checkbox-label">
-                                <input 
-                                    type="radio" 
-                                    name="locationType" 
-                                    value="international"
-                                    checked={locationType === "international"} 
-                                    onChange={() => setLocationType("international")}
-                                    required
-                                />
-                                International
-                            </label> */}
-                        </div>
-                        
-                        <div className="input-group">  
-                            <label>Base Location:</label>                   
-                            <div className="input">                        
-                                <select className="dropdown">
-                                    <option value="">Select Origin</option>
-                                    {places.map((place, index) => (
-                                        <option key={index} value={place}>{place}</option>
-                                    ))}
-                                </select>                     
-                            </div>                 
-                        </div> 
-                        
-                        <div className="input-group">   
-                            <label>Destination:</label>                  
-                            <div className="input">                         
-                                <select className="dropdown">
-                                    <option value="">Select Destination</option>
-                                    {places.map((place, index) => (
-                                        <option key={index} value={place}>{place}</option>
-                                    ))}
-                                </select>                    
-                            </div>                 
-                        </div>
-                        
-                        <div className="input-group">  
-                            <label>Expected Moving Date:</label>                   
-                            <div className="input">
-                                <Calendar />                         
-                                <input type="date" placeholder="Expected moving date" />                     
-                            </div>                 
-                        </div>
-
-                        <div className="input-group">
-                            <label>Description:</label>
-                            <textarea 
-                                rows={3}
-                                style={{ 
-                                    width: '100%',
-                                    padding: '12px',
-                                    border: '1px solid #ccc',
-                                    borderRadius: '4px',
-                                    marginTop: '8px',
-                                    fontFamily: 'inherit',
-                                    fontSize: '14px',
-                                    minHeight: '100px'
-                                }}
-                                placeholder="Enter brief Description about the Products you wish to service..."
-                            />
-                        </div>
-                                          
-                        <div className="submit-container">                         
-                            <button className="submit">Submit</button>                     
-                        </div>                 
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
