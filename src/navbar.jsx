@@ -27,7 +27,7 @@ function Navbar() {
                         </a>
                         <div className="contact-link">
                             <MapPin size={16} />
-                            <span>Dubai, UAE</span>
+                            <span>104 | Khalid Bin Al Waleed Building | Dubai | UAE</span>
                         </div>
                     </div>
                     

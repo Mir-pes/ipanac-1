@@ -156,7 +156,7 @@
 }
 
 .quote-badge {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
+  background: linear-gradient(135deg, #ed0707, #e80505);
   box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
 }
 
@@ -380,8 +380,8 @@
 }
 
 .quote-submit {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
-  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.3);
+  background: linear-gradient(135deg, #da0808, #e90303);
+  box-shadow: 0 10px 30px rgba(215, 8, 8, 0.3);
 }
 
 .quote-submit:hover {
@@ -461,7 +461,7 @@
 }
 
 .quote-info .benefit-icon {
-  background: linear-gradient(135deg, #f59e0b, #d97706);
+  background: linear-gradient(135deg, #f20606, #eb0303);
 }
 
 .contact-info {

@@ -81,7 +81,7 @@ function Footer() {
 
                     <div className="footer-bottom">
                         <div className="copyright">
-                            <p>© 2024 IPANAC Relocation. All rights reserved.</p>
+                            <p>© 2025 IPANAC Relocation. All rights reserved.</p>
                         </div>
                         <button onClick={scrollToTop} className="back-to-top" aria-label="Back to top">
                             <ArrowUp size={20} />
