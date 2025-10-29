@@ -115,6 +115,18 @@
   z-index: 1;
 }
 
+@media (max-width: 1024px) {
+  .enquire-container-modern {
+    grid-template-columns: 1fr 320px;
+  }
+}
+
+@media (max-width: 900px) {
+  .enquire-container-modern {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Form Card */
 .enquire-form-card {
   background: white;
@@ -163,7 +175,7 @@
 /* Form Grid */
 .form-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
 }
 
@@ -286,7 +298,7 @@
 /* Items Grid (for Quick Quote) */
 .items-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1rem;
   margin-top: 0.5rem;
 }
@@ -520,17 +532,47 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1440px) {
+  .enquire-container-modern {
+    max-width: 1200px;
+    padding: 0 1.5rem;
+  }
+}
+
 @media (max-width: 1200px) {
   .enquire-container-modern {
     grid-template-columns: 1fr;
+    margin: -2rem auto 3rem;
   }
   
   .enquire-info-sidebar {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .enquire-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .enquire-hero-section {
+    padding: 4rem 1.5rem 2.5rem;
+  }
+  
+  .enquire-title {
+    font-size: 2.75rem;
+  }
+  
+  .enquire-form-card {
+    padding: 2.5rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .enquire-hero-section {
+    padding: 3.5rem 1.5rem 2rem;
+  }
+  
   .enquire-title {
     font-size: 2.5rem;
   }
@@ -539,24 +581,71 @@
     font-size: 1rem;
   }
   
+  .hero-badge-enquire {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+  
   .enquire-form-card {
     padding: 2rem 1.5rem;
   }
   
+  .form-header-modern h2 {
+    font-size: 1.5rem;
+  }
+  
+  .form-icon-badge {
+    width: 56px;
+    height: 56px;
+  }
+  
   .form-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
   
   .items-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
   
   .enquire-info-sidebar {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   
-  .form-header-modern h2 {
-    font-size: 1.5rem;
+  .submit-btn-modern {
+    padding: 14px 24px;
+    font-size: 0.95rem;
+  }
+  
+  .radio-group-modern {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .radio-option {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .enquire-title {
+    font-size: 2.25rem;
+  }
+  
+  .form-header-modern p {
+    font-size: 0.95rem;
+  }
+  
+  .modern-label {
+    font-size: 0.8125rem;
+  }
+  
+  .modern-input,
+  .modern-select,
+  .modern-textarea {
+    padding: 12px 14px;
+    font-size: 0.9375rem;
   }
 }
 
@@ -569,16 +658,76 @@
     font-size: 2rem;
   }
   
+  .enquire-subtitle {
+    font-size: 0.95rem;
+  }
+  
   .enquire-container-modern {
     padding: 0 1rem;
+    margin: -1.5rem auto 3rem;
   }
   
   .enquire-form-card {
     padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+  
+  .form-header-modern h2 {
+    font-size: 1.375rem;
+  }
+  
+  .form-icon-badge {
+    width: 52px;
+    height: 52px;
+  }
+  
+  .form-grid {
+    gap: 1rem;
+  }
+  
+  .modern-input,
+  .modern-select,
+  .modern-textarea {
+    padding: 11px 12px;
+    font-size: 0.875rem;
   }
   
   .submit-btn-modern {
     width: 100%;
     justify-content: center;
+    padding: 12px 20px;
+  }
+  
+  .item-checkbox {
+    padding: 14px;
+  }
+  
+  .contact-info {
+    gap: 0.5rem;
+  }
+  
+  .contact-item {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+  
+  .orb-1,
+  .orb-2 {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 360px) {
+  .enquire-title {
+    font-size: 1.75rem;
+  }
+  
+  .form-header-modern h2 {
+    font-size: 1.25rem;
+  }
+  
+  .enquire-form-card {
+    padding: 1.25rem 0.875rem;
   }
 }

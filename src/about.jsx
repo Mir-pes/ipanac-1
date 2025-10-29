@@ -26,11 +26,14 @@ function About() {
           </div>
           
           <h1 className="about-hero-title">
-            About <span className="gradient-about">iPANAC</span>
+            About <span className="gradient-about">IPANAC</span>
           </h1>
           
           <p className="about-hero-subtitle">
-            Your trusted partner in seamless global relocations, backed by years of expertise and commitment to excellence
+           
+            IPANAC Relocation is a part of IPANAC consultancy LLC FZ.
+            <br></br>
+            We serve Our clients in the following domains
           </p>
 
           <div className="company-domains">
@@ -39,7 +42,7 @@ function About() {
                 <Globe2 size={24} />
               </div>
               <a href="https://IPANACllc.com/" target="_blank" rel="noopener noreferrer" className="domain-title">
-                iPANAC Immigration
+                IPANAC Immigration
               </a>
               <p className="domain-desc">Global visa & immigration services</p>
             </div>
@@ -49,7 +52,7 @@ function About() {
                 <Briefcase size={24} />
               </div>
               <a href="https://IPANACaccounting.com/" target="_blank" rel="noopener noreferrer" className="domain-title">
-                iPANAC Accounting
+                IPANAC Accounting
               </a>
               <p className="domain-desc">Professional accounting & tax solutions</p>
             </div>
@@ -59,7 +62,7 @@ function About() {
                 <Building2 size={24} />
               </div>
               <div className="domain-title">
-                iPANAC Relocation
+                IPANAC Relocation
               </div>
               <p className="domain-desc">Seamless moving & relocation services</p>
             </div>
@@ -80,7 +83,7 @@ function About() {
             </h2>
             
             <p className="mission-paragraph">
-              At iPANAC Relocation, we believe that moving to a new location should be an exciting journey, not a stressful one. Our mission is to provide a seamless and hassle-free relocation experience for individuals, families, and businesses looking to establish themselves in a new location.
+              At IPANAC Relocation, we believe that moving to a new location should be an exciting journey, not a stressful one. Our mission is to provide a seamless and hassle-free relocation experience for individuals, families, and businesses looking to establish themselves in a new location.
             </p>
             
             <div className="mission-features">
@@ -127,7 +130,7 @@ function About() {
               <div className="timeline-content">
                 <h3>Our Foundation</h3>
                 <p>
-                  iPANAC Relocation was founded with a simple yet powerful vision: to make relocation effortless and stress-free. We understand that moving to a new location comes with uncertainties—finding a home, understanding legal requirements, and adapting to a new environment.
+                  IPANAC Relocation was founded with a simple yet powerful vision: to make relocation effortless and stress-free. We understand that moving to a new location comes with uncertainties—finding a home, understanding legal requirements, and adapting to a new environment.
                 </p>
               </div>
             </div>
@@ -151,7 +154,7 @@ function About() {
               <div className="timeline-content">
                 <h3>Client-Centric Approach</h3>
                 <p>
-                  At iPANAC Relocation, we go beyond providing services—we cultivate meaningful relationships. Our team takes the time to understand your unique goals, deliver customized solutions, and make your relocation journey smooth and successful.
+                  At IPANAC Relocation, we go beyond providing services—we cultivate meaningful relationships. Our team takes the time to understand your unique goals, deliver customized solutions, and make your relocation journey smooth and successful.
                 </p>
               </div>
             </div>

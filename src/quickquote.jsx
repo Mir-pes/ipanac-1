@@ -247,11 +247,11 @@ function Quote() {
                         <div className="contact-info">
                             <div className="contact-item">
                                 <Phone size={18} />
-                                <span>+971 XX XXX XXXX</span>
+                                <span>+971-4-3272129 </span>
                             </div>
                             <div className="contact-item">
                                 <Mail size={18} />
-                                <span>quotes@ipanac.com</span>
+                                <span>relocation@ipanacllc.com</span>
                             </div>
                         </div>
                     </div>

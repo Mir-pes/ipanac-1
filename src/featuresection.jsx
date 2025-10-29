@@ -1,32 +1,48 @@
 import { features } from "./constants";
 import "./FeatureSection.css";
+import { ArrowRight } from "lucide-react";
 
 function FeatureSection() {
   return (
-    <div className="feature-section">
-      <div className="feature-container" data-aos="fade-up">
-        <span className="service-badge" data-aos="zoom-in" data-aos-delay="100">
-          Our Services
-        </span>
+    <div className="services-section">
+      <div className="services-container">
+        <div className="services-header" data-aos="fade-up">
+          <span className="services-badge">Our Services</span>
+          <h2 className="services-heading">
+            Easily transit from
+            <span className="services-gradient-text"> one Location to another</span>
+          </h2>
+          <p className="services-subheading">
+            Comprehensive relocation solutions tailored to your needs
+          </p>
+        </div>
         
-        <h2 className="heading" data-aos="fade-up" data-aos-delay="200">
-          Easily transit from 
-          <span className="gradient-text">
-            {" "}one Location to another
-          </span>
-        </h2>
-        
-        <div className="features-grid">
+        <div className="services-grid">
           {features.map((feature, index) => (
-            <div key={index} className="feature-item" data-aos="fade-up" data-aos-delay={300 + index * 100}>
-              <h5 className="feature-title">{feature.text}</h5>
-              <div className="flex">
-                <div className="icon-container">
-                  <img src={feature.image} alt={feature.text} className="feature-image" />
-                </div>
+            <div 
+              key={index} 
+              className="service-card" 
+              data-aos="fade-up" 
+              data-aos-delay={100 + index * 50}
+            >
+              <div className="service-image-wrapper">
+                <img 
+                  src={feature.image} 
+                  alt={feature.text} 
+                  className="service-image" 
+                />
+                <div className="service-image-overlay"></div>
               </div>
               
-              <p className="feature-description">{feature.description}</p>
+              <div className="service-content">
+                <h3 className="service-title">{feature.text}</h3>
+                <p className="service-description">{feature.description}</p>
+                
+                <a href="#" className="service-learn-more">
+                  Learn More
+                  <ArrowRight className="learn-more-icon" size={18} />
+                </a>
+              </div>
             </div>
           ))}
         </div>

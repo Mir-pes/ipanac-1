@@ -24,13 +24,38 @@ function App() {
           </div>
         } />
         
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={
+          <div>
+            <About />
+            <Footer />
+          </div>
+        } />
         
       
-        <Route path = "/enquire" element={<Enquire/>}/>
-        <Route path = "/services" element= {<FeatureSection/>}/>
-        <Route path = "/quickquote" element={<Quote/>}/>
-        <Route path = "/contact" element={<ContactUs/>}/>
+        <Route path = "/enquire" element={
+          <div>
+            <Enquire/>
+            <Footer />
+          </div>
+        }/>
+        <Route path = "/services" element= {
+          <div>
+            <FeatureSection/>
+            <Footer />
+          </div>
+        }/>
+        <Route path = "/quickquote" element={
+          <div>
+            <Quote/>
+            <Footer />
+          </div>
+        }/>
+        <Route path = "/contact" element={
+          <div>
+            <ContactUs/>
+            <Footer />
+          </div>
+        }/>
       </Routes>
     </>
   );

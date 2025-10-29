@@ -1,5 +1,5 @@
 import "./hero.css";
-import { ArrowRight, Package, Globe, Truck } from "lucide-react";
+import { ArrowRight, Package, Globe, Truck, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function Head(){
@@ -23,7 +23,7 @@ function Head(){
           </h1>
           
           <p className="modern-hero-subtitle">
-            Experience stress-free relocation with iPANAC. Whether moving across the globe 
+            Experience stress-free relocation with IPANAC. Whether moving internationally 
             or within the GCC, we deliver personalized services tailored to your unique needs 
             with professionalism, care, and expertise.
           </p>
@@ -40,18 +40,26 @@ function Head(){
 
           <div className="hero-stats">
             <div className="stat-item">
-              <Package className="stat-icon" size={24} />
+              <Package className="stat-icon" size={21} />
               <div className="stat-content">
-                <div className="stat-number">10,000+</div>
+                <div className="stat-number">1000+</div>
                 <div className="stat-label">Successful Moves</div>
               </div>
             </div>
             <div className="stat-divider"></div>
             <div className="stat-item">
-              <Globe className="stat-icon" size={24} />
+              <Globe className="stat-icon" size={21} />
               <div className="stat-content">
                 <div className="stat-number">50+</div>
                 <div className="stat-label">Countries Covered</div>
+              </div>
+            </div>
+            <div className="stat-divider"></div>
+            <div className="stat-item">
+              <Award className="stat-icon" size={21} />
+              <div className="stat-content">
+                <div className="stat-number">10+</div>
+                <div className="stat-label">Years of Experience</div>
               </div>
             </div>
             <div className="stat-divider"></div>

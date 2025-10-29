@@ -275,10 +275,22 @@
 
 .stat-icon {
   color: #dc2626;
-  padding: 12px;
+  padding: 10px;
   background: rgba(220, 38, 38, 0.1);
   border-radius: 12px;
   transition: all 0.3s ease;
+  flex-shrink: 0;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+}
+
+.stat-icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 .stat-item:hover .stat-icon {
@@ -359,8 +371,28 @@
   }
 }
 
-/* Responsive Design */
+/* Comprehensive Responsive Design */
+@media (max-width: 1440px) {
+  .modern-hero-title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .modern-hero-title {
+    font-size: 3.75rem;
+  }
+  
+  .modern-hero-subtitle {
+    font-size: 1.15rem;
+  }
+}
+
 @media (max-width: 1024px) {
+  .modern-hero-container {
+    min-height: 95vh;
+  }
+
   .modern-hero-title {
     font-size: 3.5rem;
   }
@@ -368,35 +400,59 @@
   .modern-hero-subtitle {
     font-size: 1.1rem;
   }
+  
+  .hero-stats {
+    gap: 1.5rem;
+  }
+  
+  .stat-item {
+    padding: 1.25rem 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
   .modern-hero-container {
     min-height: 90vh;
-    padding: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-badge {
+    font-size: 13px;
+    padding: 8px 18px;
+    margin-bottom: 1.5rem;
   }
 
   .modern-hero-title {
     font-size: 2.5rem;
+    margin-bottom: 1.25rem;
   }
   
   .modern-hero-subtitle {
     font-size: 1rem;
+    margin-bottom: 2rem;
   }
   
   .hero-cta-container {
     flex-direction: column;
     align-items: stretch;
+    gap: 1rem;
   }
   
   .primary-cta, .secondary-cta {
     width: 100%;
     justify-content: center;
+    padding: 0.875rem 1.75rem;
+    font-size: 1rem;
   }
   
   .hero-stats {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.25rem;
+    margin-top: 3rem;
+  }
+  
+  .stat-item {
+    padding: 1rem 1.25rem;
   }
   
   .stat-divider {
@@ -404,19 +460,103 @@
     height: 1px;
   }
   
+  .stat-number {
+    font-size: 1.5rem;
+  }
+  
+  .stat-label {
+    font-size: 0.8125rem;
+  }
+  
   .orb-1, .orb-2, .orb-3 {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 640px) {
+  .modern-hero-title {
+    font-size: 2.25rem;
+  }
+  
+  .hero-stats {
+    gap: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .modern-hero-title {
-    font-size: 2rem;
+  .modern-hero-container {
+    min-height: 85vh;
+    padding: 1rem;
   }
-  
+
   .hero-badge {
     font-size: 12px;
-    padding: 8px 16px;
+    padding: 7px 16px;
+  }
+
+  .modern-hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .modern-hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.75rem;
+  }
+  
+  .primary-cta, .secondary-cta {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+  }
+  
+  .hero-stats {
+    margin-top: 2.5rem;
+  }
+  
+  .stat-item {
+    padding: 0.875rem 1rem;
+  }
+  
+  .stat-icon {
+    width: 34px !important;
+    height: 34px !important;
+  }
+  
+  .stat-icon svg {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  
+  .stat-number {
+    font-size: 1.375rem;
+  }
+  
+  .stat-label {
+    font-size: 0.75rem;
+  }
+  
+  .orb-1, .orb-2, .orb-3 {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .scroll-indicator {
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .modern-hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .modern-hero-subtitle {
+    font-size: 0.875rem;
+  }
+  
+  .primary-cta, .secondary-cta {
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
   }
 }

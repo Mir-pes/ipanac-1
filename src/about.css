@@ -107,7 +107,7 @@
 /* Company Domains */
 .company-domains {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
   max-width: 900px;
@@ -385,7 +385,7 @@
 
 .values-grid-modern {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
@@ -528,14 +528,25 @@
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
+  .about-hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .company-domains {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1200px) {
   .about-hero-title {
     font-size: 3rem;
   }
   
   .company-domains {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1.5rem;
+    max-width: 500px;
   }
   
   .mission-content-wrapper {
@@ -544,7 +555,25 @@
   }
   
   .values-grid-modern {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  
+  .about-mission-section {
+    padding: 5rem 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-hero {
+    min-height: 65vh;
+  }
+  
+  .about-hero-title {
+    font-size: 2.75rem;
+  }
+  
+  .section-title-about {
+    font-size: 2.25rem;
   }
 }
 
@@ -560,6 +589,26 @@
   
   .about-hero-subtitle {
     font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .hero-badge-about {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+  
+  .company-domains {
+    margin-top: 2rem;
+    gap: 1.25rem;
+  }
+  
+  .domain-card {
+    padding: 1.5rem;
+  }
+  
+  .domain-icon {
+    width: 48px;
+    height: 48px;
   }
   
   .section-title-about {
@@ -570,6 +619,10 @@
     font-size: 1rem;
   }
   
+  .about-mission-section {
+    padding: 4rem 1.5rem;
+  }
+  
   .timeline-item {
     flex-direction: column;
     text-align: center;
@@ -577,6 +630,7 @@
   
   .values-grid-modern {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   
   .cta-about-content h2 {
@@ -586,21 +640,121 @@
   .cta-about-content p {
     font-size: 1rem;
   }
+  
+  .cta-section-about {
+    padding: 4rem 1.5rem;
+  }
+  
+  .cta-about-button {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-hero-title {
+    font-size: 2.25rem;
+  }
+  
+  .section-badge {
+    font-size: 12px;
+    padding: 6px 16px;
+  }
+  
+  .mission-features {
+    gap: 0.75rem;
+  }
+  
+  .mission-feature {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .about-hero {
+    padding: 2.5rem 1rem;
+  }
+  
   .about-hero-title {
     font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
+  .company-domains {
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .domain-card {
+    padding: 1.25rem;
+  }
+  
+  .domain-title {
+    font-size: 1rem;
+  }
+  
+  .domain-desc {
+    font-size: 0.85rem;
   }
   
   .section-title-about {
     font-size: 1.75rem;
   }
   
+  .mission-paragraph {
+    font-size: 0.95rem;
+  }
+  
+  .about-mission-section {
+    padding: 3rem 1rem;
+  }
+  
+  .cta-about-content h2 {
+    font-size: 1.75rem;
+  }
+  
+  .cta-about-content p {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-section-about {
+    padding: 3rem 1rem;
+  }
+  
+  .cta-about-button {
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
   .hero-orb-1,
   .hero-orb-2 {
     width: 300px;
     height: 300px;
+  }
+  
+  .value-image-wrapper {
+    height: 180px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .section-title-about {
+    font-size: 1.5rem;
+  }
+  
+  .domain-card {
+    padding: 1rem;
   }
 }
 

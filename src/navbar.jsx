@@ -1,102 +1,111 @@
 import React, { useState } from "react";
-import "./Navbar.css"; // Import the CSS file
-import { Menu, X, InstagramIcon, LinkedinIcon, FacebookIcon, MapPin, Phone, Mail } from "lucide-react"; // Add MapPin, Phone, and Mail icons
+import "./Navbar.css";
+import { Menu, X, Instagram, Linkedin, Facebook, MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 import img from "./assets/IpanacRelocationLogo.png";
 
 function Navbar() {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
-    const [showAddress, setShowAddress] = useState(false);
-    const [showPhone, setShowPhone] = useState(false);
-    const [showEmail, setShowEmail] = useState(false);
 
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen);
     };
 
     return (
-        <nav className="navbar">
-            <div className={`navbar-content ${mobileDrawerOpen ? 'mobileDrawerOpen' : ''}`}>
-                {/* Logo and Title */}
-                <div className="logo-container">
-                    <div className="logo-wrapper">
-                        <img className="logo" src={img} alt="IPANAC Relocation logo" />
-                        {/* <Link to="/" className="title">IPANAC Relocation</Link> */}
+        <nav className="modern-navbar">
+            {/* Top Bar with Contact Info */}
+            <div className="navbar-top">
+                <div className="navbar-top-content">
+                    <div className="contact-quick-links">
+                        <a href="tel:+97143272129" className="contact-link">
+                            <Phone size={16} />
+                            <span>+971-4-3272129</span>
+                        </a>
+                        <a href="mailto:relocation@ipanacllc.com" className="contact-link">
+                            <Mail size={16} />
+                            <span>relocation@ipanacllc.com</span>
+                        </a>
+                        <div className="contact-link">
+                            <MapPin size={16} />
+                            <span>Dubai, UAE</span>
+                        </div>
                     </div>
-                    <div className="mobile-menu-button">
-                        <button onClick={toggleNavbar}>
-                            {mobileDrawerOpen ? <X /> : <Menu />}
-                        </button>
+                    
+                    <div className="social-links">
+                        <a href="https://www.instagram.com/ipanacrelocation/" target="_blank" rel="noopener noreferrer" className="social-link">
+                            <Instagram size={16} />
+                        </a>
+                        <a href="https://www.linkedin.com/company/ipanac-relocation/" target="_blank" rel="noopener noreferrer" className="social-link">
+                            <Linkedin size={16} />
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61574697290210/" target="_blank" rel="noopener noreferrer" className="social-link">
+                            <Facebook size={16} />
+                        </a>
                     </div>
-                </div>
-
-                {/* Navigation Links */}
-                <div className="nav-links">
-                    <Link to="/about" className="nav-item">About Us</Link>
-                    <Link to="/services" className="nav-item">Services</Link>
-                    <Link to="/contact" className="nav-item">Contact Us</Link>
-                </div>
-
-                {/* Sign In & Register Buttons */}
-                <div className="auth-buttons">
-                    <Link to="/enquire" className="sign-in">Enquire</Link>
-                    <Link to="/quickquote" className="register">Quick Quote</Link>
                 </div>
             </div>
 
-            <div className="container">
-                {/* Contact Info Section */}
-                <div className="contact-info">
-                    <div className="contact-icons-wrapper">
-                        <div className={`contact-item address-item ${showAddress ? 'moved' : ''}`}>
-                            <MapPin
-                                className="contact-icon-address"
-                                size={20}
-                                onClick={() => setShowAddress(!showAddress)}
-                            />
-                            {showAddress && (
-                                <span className={`address ${showAddress ? 'show' : ''}`}>
-                                    104 | Khalid Bin Al Waleed Building | Dubai | UAE
-                                </span>
-                            )}
-                        </div>
-                        <div className={`contact-item phone-item ${showPhone ? 'moved' : ''}`}>
-                            <Phone
-                                className="contact-icon"
-                                size={20}
-                                onClick={() => setShowPhone(!showPhone)}
-                            />
-                            {showPhone && (
-                                <span className={`phone ${showPhone ? 'show' : ''}`}>
-                                    +971-4-3272129
-                                </span>
-                            )}
-                        </div>
-                        <div className={`contact-item email-item ${showEmail ? 'moved' : ''}`}>
-                            <Mail
-                                className="contact-icon"
-                                size={20}
-                                onClick={() => setShowEmail(!showEmail)}
-                            />
-                            {showEmail && (
-                                <span className={`emailid ${showEmail ? 'show' : ''}`}>
-                                    relocation@ipanacllc.com
-                                </span>
-                            )}
-                        </div>
+            {/* Main Navbar */}
+            <div className="navbar-main">
+                <div className="navbar-main-content">
+                    {/* Logo */}
+                    <Link to="/" className="navbar-logo">
+                        <img src={img} alt="IPANAC Relocation" />
+                    </Link>
+
+                    {/* Desktop Navigation */}
+                    <div className="nav-menu">
+                        <Link to="/about" className="nav-link">About Us</Link>
+                        <Link to="/services" className="nav-link">Services</Link>
+                        <Link to="/contact" className="nav-link">Contact Us</Link>
                     </div>
-                    <div className="email-and-social">
-                        <div className="social-handles">
-                            <a href="https://www.instagram.com/ipanacrelocation/" target="_blank" rel="noopener noreferrer">
-                                <InstagramIcon className="social-icon" size={20} />
-                            </a>
-                            <a href="https://www.linkedin.com/company/ipanac-relocation/" target="_blank" rel="noopener noreferrer">
-                                <LinkedinIcon className="social-icon" size={20} />
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=61574697290210/" target="_blank" rel="noopener noreferrer">
-                                <FacebookIcon className="social-icon" size={20} />
-                            </a>
-                        </div>
+
+                    {/* CTA Buttons */}
+                    <div className="nav-actions">
+                        <Link to="/enquire" className="btn-enquire">Enquire</Link>
+                        <Link to="/quickquote" className="btn-quote">Quick Quote</Link>
+                    </div>
+
+                    {/* Mobile Menu Toggle */}
+                    <button className="mobile-toggle" onClick={toggleNavbar}>
+                        {mobileDrawerOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                </div>
+            </div>
+
+            {/* Mobile Menu */}
+            <div className={`mobile-menu ${mobileDrawerOpen ? 'active' : ''}`}>
+                <div className="mobile-menu-content">
+                    <Link to="/about" className="mobile-nav-link" onClick={toggleNavbar}>About Us</Link>
+                    <Link to="/services" className="mobile-nav-link" onClick={toggleNavbar}>Services</Link>
+                    <Link to="/contact" className="mobile-nav-link" onClick={toggleNavbar}>Contact Us</Link>
+                    
+                    <div className="mobile-actions">
+                        <Link to="/enquire" className="mobile-btn-enquire" onClick={toggleNavbar}>Enquire</Link>
+                        <Link to="/quickquote" className="mobile-btn-quote" onClick={toggleNavbar}>Quick Quote</Link>
+                    </div>
+
+                    <div className="mobile-contact">
+                        <a href="tel:+97143272129" className="mobile-contact-item">
+                            <Phone size={18} />
+                            <span>+971-4-3272129</span>
+                        </a>
+                        <a href="mailto:relocation@ipanacllc.com" className="mobile-contact-item">
+                            <Mail size={18} />
+                            <span>relocation@ipanacllc.com</span>
+                        </a>
+                    </div>
+
+                    <div className="mobile-social">
+                        <a href="https://www.instagram.com/ipanacrelocation/" target="_blank" rel="noopener noreferrer" className="mobile-social-link">
+                            <Instagram size={20} />
+                        </a>
+                        <a href="https://www.linkedin.com/company/ipanac-relocation/" target="_blank" rel="noopener noreferrer" className="mobile-social-link">
+                            <Linkedin size={20} />
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61574697290210/" target="_blank" rel="noopener noreferrer" className="mobile-social-link">
+                            <Facebook size={20} />
+                        </a>
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ function Workflow() {
           </div>
           <h3 className="card-heading">Our Mission</h3>
           <p className="card-description">
-            "At iPanac Relocation, we simplify the relocation journey by providing personalized, efficient, and reliable services. Our goal is to ensure a smooth transition for individuals and businesses, helping them settle with ease and confidence in their new home. Through expertise, dedication, and innovation, we make every move a positive experience."
+            "At IPANAC Relocation, we simplify the relocation journey by providing personalized, efficient, and reliable services. Our goal is to ensure a smooth transition for individuals and businesses, helping them settle with ease and confidence in their new home. Through expertise, dedication, and innovation, we make every move a positive experience."
           </p>
         </div>
 
@@ -31,7 +31,7 @@ function Workflow() {
 
       <div className="section-header">
         <h2 className="section-title">
-          Why Choose <span className="gradient-text-section">iPANAC?</span>
+          Why Choose <span className="gradient-text-section">IPANAC?</span>
         </h2>
         <p className="section-subtitle">
           Experience excellence in every aspect of your relocation journey
@@ -50,7 +50,7 @@ function Workflow() {
               <div className="overlay-badge">
                 <Users size={24} />
                 <div>
-                  <div className="overlay-number">15+</div>
+                  <div className="overlay-number">10+</div>
                   <div className="overlay-text">Years Experience</div>
                 </div>
               </div>

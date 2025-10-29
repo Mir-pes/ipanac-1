@@ -137,9 +137,9 @@ export const features = [
 
 export const checklistItems = [
   {
-    title: "Global Reach, Local Expertise: ",
+    title: "International Relocation: ",
     description:
-    "We help you relocate anywhere you desire,more specifically within the GCC region, leveraging our network of partners and in-depth local knowledge.",
+    "We help you relocate anywhere you desire,within the GCC region, and more broadly within Europe, Asia and America leveraging our network of partners and in-depth local knowledge.",
   },
   {
     title: "End-to-End Solutions:",
