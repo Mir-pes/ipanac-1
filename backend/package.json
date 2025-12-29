@@ -1,0 +1,12 @@
+{
+  "name": "ipanac-backend",
+  "version": "1.0.0",
+  "description": "Backend for iPANAC Relocation forms",
+  "main": "lambda/formHandler.js",
+  "scripts": {
+    "package": "zip -r function.zip lambda/ node_modules/"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1691.0"
+  }
+}

@@ -2,13 +2,23 @@ import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Building2, Send, User, FileText } from 'lucide-react';
 import logo from './assets/IpanacRelocationLogo.png';
 import './enquire.css';
+import { submitForm } from './services/api';
 
 function ContactUs() {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
+    phone: '',
+    baseLocation: '',
+    baseLocationDetails: '',
+    destination: '',
+    destinationDetails: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const places = ["Ajman", "Ras Al Khaimah", "Abu Dhabi", "Dubai", "Sharjah", "Fujairah", "Umm Al Quwain"];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,10 +28,20 @@ function ContactUs() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add form submission logic here
-    console.log(formData);
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      await submitForm('contact', formData);
+      setSubmitStatus({ type: 'success', message: 'Thank you! We will contact you soon.' });
+      setFormData({ fullName: '', email: '', phone: '', baseLocation: '', baseLocationDetails: '', destination: '', destinationDetails: '', message: '' });
+    } catch (error) {
+      setSubmitStatus({ type: 'error', message: 'Failed to submit form. Please try again.' });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -54,11 +74,17 @@ function ContactUs() {
                         <div className="form-icon-badge">
                             <Send size={28} />
                         </div>
-                        <h2>Registration Form</h2>
+                        <h2>Register Your Interest</h2>
                         <p>Let's make your move seamless and stress-free</p>
                     </div>
 
-                    <form className="modern-form">
+                    <form className="modern-form" onSubmit={handleSubmit}>
+                        {submitStatus && (
+                            <div className={`alert ${submitStatus.type === 'success' ? 'alert-success' : 'alert-error'}`}>
+                                {submitStatus.message}
+                            </div>
+                        )}
+                        
                         <div className="form-grid">
                             <div className="modern-input-group">
                                 <label className="modern-label">
@@ -66,7 +92,10 @@ function ContactUs() {
                                     <span>Full Name</span>
                                 </label>
                                 <input 
-                                    type="text" 
+                                    type="text"
+                                    name="fullName"
+                                    value={formData.fullName}
+                                    onChange={handleChange}
                                     className="modern-input" 
                                     placeholder="Enter your full name" 
                                     required
@@ -79,7 +108,10 @@ function ContactUs() {
                                     <span>Email Address</span>
                                 </label>
                                 <input 
-                                    type="email" 
+                                    type="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     className="modern-input" 
                                     placeholder="your.email@example.com" 
                                     required
@@ -92,9 +124,82 @@ function ContactUs() {
                                     <span>Phone Number</span>
                                 </label>
                                 <input 
-                                    type="tel" 
+                                    type="tel"
+                                    name="phone"
+                                    value={formData.phone}
+                                    onChange={handleChange}
                                     className="modern-input" 
                                     placeholder="+971 XX XXX XXXX" 
+                                    required
+                                />
+                            </div>
+
+                            <div className="modern-input-group">
+                                <label className="modern-label">
+                                    <MapPin size={18} />
+                                    <span>Moving From</span>
+                                </label>
+                                <select 
+                                    className="modern-select"
+                                    name="baseLocation"
+                                    value={formData.baseLocation}
+                                    onChange={handleChange}
+                                    required
+                                >
+                                    <option value="">Select City</option>
+                                    {places.map((place, index) => (
+                                        <option key={index} value={place}>{place}</option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            <div className="modern-input-group">
+                                <label className="modern-label">
+                                    <MapPin size={18} />
+                                    <span>Area / Building / Community</span>
+                                </label>
+                                <input 
+                                    type="text"
+                                    name="baseLocationDetails"
+                                    value={formData.baseLocationDetails}
+                                    onChange={handleChange}
+                                    className="modern-input" 
+                                    placeholder="Area / Building / Community" 
+                                    required
+                                />
+                            </div>
+
+                            <div className="modern-input-group">
+                                <label className="modern-label">
+                                    <MapPin size={18} />
+                                    <span>Moving To</span>
+                                </label>
+                                <select 
+                                    className="modern-select"
+                                    name="destination"
+                                    value={formData.destination}
+                                    onChange={handleChange}
+                                    required
+                                >
+                                    <option value="">Select City</option>
+                                    {places.map((place, index) => (
+                                        <option key={index} value={place}>{place}</option>
+                                    ))}
+                                </select>
+                            </div>
+
+                            <div className="modern-input-group">
+                                <label className="modern-label">
+                                    <MapPin size={18} />
+                                    <span>Area / Building / Community</span>
+                                </label>
+                                <input 
+                                    type="text"
+                                    name="destinationDetails"
+                                    value={formData.destinationDetails}
+                                    onChange={handleChange}
+                                    className="modern-input" 
+                                    placeholder="Area / Building / Community" 
                                     required
                                 />
                             </div>
@@ -103,9 +208,12 @@ function ContactUs() {
                             <div className="modern-input-group full-width">
                                 <label className="modern-label">
                                     <FileText size={18} />
-                                    <span>Additional Details</span>
+                                    <span>Please enter your Description Of Items </span>
                                 </label>
                                 <textarea 
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
                                     className="modern-textarea"
                                     rows={5}
                                     placeholder="Tell us about the items you're moving, any special requirements, or questions you may have..."
@@ -115,8 +223,8 @@ function ContactUs() {
                         </div>
 
                         <div className="form-footer-modern">
-                            <button type="submit" className="submit-btn-modern">
-                                <span>Submit Registration</span>
+                            <button type="submit" className="submit-btn-modern" disabled={isSubmitting}>
+                                <span>{isSubmitting ? 'Submitting...' : 'Submit Registration'}</span>
                                 <Send size={20} />
                             </button>
                             

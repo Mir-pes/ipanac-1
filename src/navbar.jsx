@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Menu, X, Instagram, Linkedin, Facebook, MapPin, Phone, Mail } from "lucide-react";
+import { Menu, X, Instagram, Linkedin, Facebook, MapPin, Phone, Mail, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 import img from "./assets/IpanacRelocationLogo.png";
 
 function Navbar() {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+    const [proposalDropdownOpen, setProposalDropdownOpen] = useState(false);
 
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen);
+    };
+
+    const toggleProposalDropdown = () => {
+        setProposalDropdownOpen(!proposalDropdownOpen);
     };
 
     return (
@@ -57,13 +62,28 @@ function Navbar() {
                     <div className="nav-menu">
                         <Link to="/about" className="nav-link">About Us</Link>
                         <Link to="/services" className="nav-link">Services</Link>
-                        <Link to="/contact" className="nav-link">Contact Us</Link>
+                        
+                        {/* Get a Proposal Dropdown */}
+                        <div 
+                            className="nav-dropdown"
+                            onMouseEnter={() => setProposalDropdownOpen(true)}
+                            onMouseLeave={() => setProposalDropdownOpen(false)}
+                        >
+                            <button className="nav-link dropdown-trigger">
+                                Get a Proposal
+                                <ChevronDown size={16} className={`dropdown-icon ${proposalDropdownOpen ? 'open' : ''}`} />
+                            </button>
+                            
+                            <div className={`dropdown-menu ${proposalDropdownOpen ? 'show' : ''}`}>
+                                <Link to="/enquire" className="dropdown-item">Home Relocation</Link>
+                                <Link to="/contact" className="dropdown-item">Office Relocation</Link>
+                                <Link to="/quickquote" className="dropdown-item">International Relocation</Link>
+                            </div>
+                        </div>
                     </div>
 
                     {/* CTA Buttons */}
                     <div className="nav-actions">
-                        <Link to="/enquire" className="btn-enquire">Enquire</Link>
-                        <Link to="/quickquote" className="btn-quote">Quick Quote</Link>
                     </div>
 
                     {/* Mobile Menu Toggle */}
@@ -78,11 +98,25 @@ function Navbar() {
                 <div className="mobile-menu-content">
                     <Link to="/about" className="mobile-nav-link" onClick={toggleNavbar}>About Us</Link>
                     <Link to="/services" className="mobile-nav-link" onClick={toggleNavbar}>Services</Link>
-                    <Link to="/contact" className="mobile-nav-link" onClick={toggleNavbar}>Contact Us</Link>
+                    
+                    {/* Get a Proposal Mobile Dropdown */}
+                    <div className="mobile-dropdown">
+                        <button 
+                            className="mobile-nav-link dropdown-trigger-mobile"
+                            onClick={toggleProposalDropdown}
+                        >
+                            Get a Proposal
+                            <ChevronDown size={16} className={`dropdown-icon ${proposalDropdownOpen ? 'open' : ''}`} />
+                        </button>
+                        
+                        <div className={`mobile-dropdown-menu ${proposalDropdownOpen ? 'show' : ''}`}>
+                            <Link to="/enquire" className="mobile-dropdown-item" onClick={toggleNavbar}>Enquire</Link>
+                            <Link to="/contact" className="mobile-dropdown-item" onClick={toggleNavbar}>Contact Us</Link>
+                            <Link to="/quickquote" className="mobile-dropdown-item" onClick={toggleNavbar}>Quick Quote</Link>
+                        </div>
+                    </div>
                     
                     <div className="mobile-actions">
-                        <Link to="/enquire" className="mobile-btn-enquire" onClick={toggleNavbar}>Enquire</Link>
-                        <Link to="/quickquote" className="mobile-btn-quote" onClick={toggleNavbar}>Quick Quote</Link>
                     </div>
 
                     <div className="mobile-contact">

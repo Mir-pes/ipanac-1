@@ -95,10 +95,10 @@ function FeatureSection() {
                   
                   <div className="card-footer">
                     <a href="#" className="service-cta-modern">
-                      <span>Explore Service</span>
-                      <div className="cta-icon-wrapper">
+                      {/* <span>Explore Service</span> */}
+                      {/* <div className="cta-icon-wrapper">
                         <ArrowRight className="cta-icon" size={18} strokeWidth={2.5} />
-                      </div>
+                      </div> */}
                     </a>
                   </div>
                 </div>

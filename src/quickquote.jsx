@@ -2,13 +2,26 @@ import { useState } from "react";
 import "./enquire.css"; 
 import { User, Mail, Phone, Calendar, MapPin, Zap, Package, FileText, Building2 } from "lucide-react";  
 import logo from "./assets/IpanacRelocationLogo.png";
+import { submitForm } from './services/api';
 
 function Quote() {
     const [locationType, setLocationType] = useState("local");
     const [selectedItems, setSelectedItems] = useState([]);
+    const [formData, setFormData] = useState({
+        fullName: '',
+        email: '',
+        phone: '',
+        relocationType: 'local',
+        baseLocation: '',
+        destination: '',
+        movingDate: '',
+        details: ''
+    });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState(null);
     
     const localPlaces = ["Ajman", "Ras Al Khaimah", "Abu Dhabi", "Dubai", "Sharjah", "Fujairah", "Umm Al Quwain"];
-    const internationalCountries = ["C1", "C2", "C3", "C4", "C5", "C6", "C7"];
+    const internationalCountries = ["United States", "United Kingdom", "Canada", "Australia", "Germany", "France", "Singapore", "India", "Pakistan", "Saudi Arabia", "Qatar", "Bahrain", "Kuwait", "Oman", "Egypt", "Jordan", "Lebanon", "Turkey", "China", "Japan", "South Korea", "Malaysia", "Philippines", "Thailand", "Indonesia"];
     
     const places = locationType === "local" ? localPlaces : internationalCountries;
     
@@ -25,6 +38,56 @@ function Quote() {
                 ? prev.filter(id => id !== itemId)
                 : [...prev, itemId]
         );
+    };
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleLocationTypeChange = (e) => {
+        const newType = e.target.value;
+        setLocationType(newType);
+        setFormData(prev => ({
+            ...prev,
+            relocationType: newType,
+            baseLocation: '',
+            destination: ''
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setSubmitStatus(null);
+
+        try {
+            const submitData = {
+                ...formData,
+                items: selectedItems
+            };
+            await submitForm('quote', submitData);
+            setSubmitStatus({ type: 'success', message: 'Thank you! Our team will get back to you within 24 hours with your quote.' });
+            setFormData({
+                fullName: '',
+                email: '',
+                phone: '',
+                relocationType: 'local',
+                baseLocation: '',
+                destination: '',
+                movingDate: '',
+                details: ''
+            });
+            setSelectedItems([]);
+            setLocationType('local');
+        } catch (error) {
+            setSubmitStatus({ type: 'error', message: 'Failed to submit form. Please try again.' });
+        } finally {
+            setIsSubmitting(false);
+        }
     };
     
     return (        
@@ -57,11 +120,17 @@ function Quote() {
                         <div className="form-icon-badge quote-badge">
                             <Zap size={28} />
                         </div>
-                        <h2>Quick Quote Request</h2>
+                        <h2>Quick Quote</h2>
                         <p>Get an accurate estimate for your relocation needs</p>
                     </div>
 
-                    <form className="modern-form">
+                    <form className="modern-form" onSubmit={handleSubmit}>
+                        {submitStatus && (
+                            <div className={`alert ${submitStatus.type === 'success' ? 'alert-success' : 'alert-error'}`}>
+                                {submitStatus.message}
+                            </div>
+                        )}
+                        
                         <div className="form-grid">
                             <div className="modern-input-group">
                                 <label className="modern-label">
@@ -69,7 +138,10 @@ function Quote() {
                                     <span>Full Name</span>
                                 </label>
                                 <input 
-                                    type="text" 
+                                    type="text"
+                                    name="fullName"
+                                    value={formData.fullName}
+                                    onChange={handleChange}
                                     className="modern-input" 
                                     placeholder="Enter your name" 
                                     required
@@ -82,7 +154,10 @@ function Quote() {
                                     <span>Email Address</span>
                                 </label>
                                 <input 
-                                    type="email" 
+                                    type="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     className="modern-input" 
                                     placeholder="your.email@example.com" 
                                     required
@@ -95,7 +170,10 @@ function Quote() {
                                     <span>Phone Number</span>
                                 </label>
                                 <input 
-                                    type="tel" 
+                                    type="tel"
+                                    name="phone"
+                                    value={formData.phone}
+                                    onChange={handleChange}
                                     className="modern-input" 
                                     placeholder="+971 XX XXX XXXX" 
                                     required
@@ -130,22 +208,18 @@ function Quote() {
                             <div className="modern-input-group">
                                 <label className="modern-label">
                                     <MapPin size={18} />
-                                    <span>Origin Type</span>
+                                    <span>Relocation Type</span>
                                 </label>
-                                <div className="radio-group-modern">
-                                    <label className="radio-option">
-                                        <input 
-                                            type="radio" 
-                                            name="locationType" 
-                                            value="local" 
-                                            checked={locationType === "local"}
-                                            onChange={() => setLocationType("local")}
-                                            required
-                                        />
-                                        <span className="radio-custom"></span>
-                                        <span className="radio-label">Local</span>
-                                    </label>
-                                </div>
+                                <select 
+                                    className="modern-select"
+                                    name="relocationType"
+                                    value={formData.relocationType}
+                                    onChange={handleLocationTypeChange}
+                                    required
+                                >
+                                    <option value="local">Local (Within UAE)</option>
+                                    <option value="international">International</option>
+                                </select>
                             </div>
 
                             <div className="modern-input-group">
@@ -153,7 +227,13 @@ function Quote() {
                                     <MapPin size={18} />
                                     <span>Base Location</span>
                                 </label>
-                                <select className="modern-select" required>
+                                <select 
+                                    className="modern-select"
+                                    name="baseLocation"
+                                    value={formData.baseLocation}
+                                    onChange={handleChange}
+                                    required
+                                >
                                     <option value="">Select your origin</option>
                                     {places.map((place, index) => (
                                         <option key={index} value={place}>{place}</option>
@@ -166,7 +246,13 @@ function Quote() {
                                     <MapPin size={18} />
                                     <span>Destination</span>
                                 </label>
-                                <select className="modern-select" required>
+                                <select 
+                                    className="modern-select"
+                                    name="destination"
+                                    value={formData.destination}
+                                    onChange={handleChange}
+                                    required
+                                >
                                     <option value="">Select destination</option>
                                     {places.map((place, index) => (
                                         <option key={index} value={place}>{place}</option>
@@ -180,7 +266,10 @@ function Quote() {
                                     <span>Moving Date</span>
                                 </label>
                                 <input 
-                                    type="date" 
+                                    type="date"
+                                    name="movingDate"
+                                    value={formData.movingDate}
+                                    onChange={handleChange}
                                     className="modern-input" 
                                     required
                                 />
@@ -192,6 +281,9 @@ function Quote() {
                                     <span>Additional Details</span>
                                 </label>
                                 <textarea 
+                                    name="details"
+                                    value={formData.details}
+                                    onChange={handleChange}
                                     className="modern-textarea"
                                     rows={5}
                                     placeholder="Provide any additional information about your move, special items, or specific requirements..."
@@ -201,13 +293,13 @@ function Quote() {
                         </div>
 
                         <div className="form-footer-modern">
-                            <button type="submit" className="submit-btn-modern quote-submit">
-                                <span>Get Instant Quote</span>
+                            <button type="submit" className="submit-btn-modern quote-submit" disabled={isSubmitting}>
+                                <span>{isSubmitting ? 'Submitting...' : 'Get Quote'}</span>
                                 <Zap size={20} />
                             </button>
                             
                             <p className="form-note">
-                                You'll receive your quote via email within 15 minutes
+                                Our Team will get back to you within 24 hours
                             </p>
                         </div>
                     </form>
