@@ -110,13 +110,10 @@ function Navbar() {
                         </button>
                         
                         <div className={`mobile-dropdown-menu ${proposalDropdownOpen ? 'show' : ''}`}>
-                            <Link to="/enquire" className="mobile-dropdown-item" onClick={toggleNavbar}>Enquire</Link>
-                            <Link to="/contact" className="mobile-dropdown-item" onClick={toggleNavbar}>Contact Us</Link>
-                            <Link to="/quickquote" className="mobile-dropdown-item" onClick={toggleNavbar}>Quick Quote</Link>
+                            <Link to="/enquire" className="mobile-dropdown-item" onClick={toggleNavbar}>Home Relocation</Link>
+                            <Link to="/contact" className="mobile-dropdown-item" onClick={toggleNavbar}>Office Relocation</Link>
+                            <Link to="/quickquote" className="mobile-dropdown-item" onClick={toggleNavbar}>International Relocation</Link>
                         </div>
-                    </div>
-                    
-                    <div className="mobile-actions">
                     </div>
 
                     <div className="mobile-contact">
