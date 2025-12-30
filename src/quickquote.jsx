@@ -120,8 +120,8 @@ function Quote() {
                         <div className="form-icon-badge quote-badge">
                             <Zap size={28} />
                         </div>
-                        <h2>Quick Quote</h2>
-                        <p>Get an accurate estimate for your relocation needs</p>
+                        <h2>International Relocation</h2>
+                        <p>Let's make your move seamless and stress-free</p>
                     </div>
 
                     <form className="modern-form" onSubmit={handleSubmit}>
