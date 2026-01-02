@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./enquire.css"; 
-import { User, Mail, Phone, Calendar, MapPin, Zap, Package, FileText, Building2 } from "lucide-react";  
+import { User, Mail, Phone, Calendar, MapPin, Zap, Package, FileText, Building2, Smartphone, Sofa, Plug, Palette, Car } from "lucide-react";  
 import logo from "./assets/IpanacRelocationLogo.png";
 import { submitForm } from './services/api';
 
@@ -20,16 +20,16 @@ function Quote() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState(null);
     
-    const localPlaces = ["Ajman", "Ras Al Khaimah", "Abu Dhabi", "Dubai", "Sharjah", "Fujairah", "Umm Al Quwain"];
-    const internationalCountries = ["United States", "United Kingdom", "Canada", "Australia", "Germany", "France", "Singapore", "India", "Pakistan", "Saudi Arabia", "Qatar", "Bahrain", "Kuwait", "Oman", "Egypt", "Jordan", "Lebanon", "Turkey", "China", "Japan", "South Korea", "Malaysia", "Philippines", "Thailand", "Indonesia"];
+    const internationalCountries = ["United Arab Emirates", "United States", "United Kingdom", "Canada", "Australia", "Germany", "France", "Singapore", "India", "Pakistan", "Saudi Arabia", "Qatar", "Bahrain", "Kuwait", "Oman", "Egypt", "Jordan", "Lebanon", "Turkey", "China", "Japan", "South Korea", "Malaysia", "Philippines", "Thailand", "Indonesia"];
     
-    const places = locationType === "local" ? localPlaces : internationalCountries;
+    const places = internationalCountries;
     
     const items = [
-        { id: "electronics", label: "Electronics", icon: "📱" },
-        { id: "furniture", label: "Furniture", icon: "🛋️" },
-        { id: "appliances", label: "Appliances", icon: "🔌" },
-        { id: "decor", label: "Decor", icon: "🎨" }
+        { id: "electronics", label: "Electronics", icon: Smartphone },
+        { id: "furniture", label: "Furniture", icon: Sofa },
+        { id: "appliances", label: "Appliances", icon: Plug },
+        { id: "decor", label: "Decor", icon: Palette },
+        { id: "vehicle", label: "Vehicle", icon: Car }
     ];
 
     const toggleItem = (itemId) => {
@@ -198,7 +198,7 @@ function Quote() {
                                                 onChange={() => {}}
                                                 className="item-checkbox"
                                             />
-                                            <span className="item-icon">{item.icon}</span>
+                                            <span className="item-icon"><item.icon size={24} color="#E63946" /></span>
                                             <span className="item-label">{item.label}</span>
                                         </div>
                                     ))}
@@ -208,24 +208,7 @@ function Quote() {
                             <div className="modern-input-group">
                                 <label className="modern-label">
                                     <MapPin size={18} />
-                                    <span>Relocation Type</span>
-                                </label>
-                                <select 
-                                    className="modern-select"
-                                    name="relocationType"
-                                    value={formData.relocationType}
-                                    onChange={handleLocationTypeChange}
-                                    required
-                                >
-                                    <option value="local">Local (Within UAE)</option>
-                                    <option value="international">International</option>
-                                </select>
-                            </div>
-
-                            <div className="modern-input-group">
-                                <label className="modern-label">
-                                    <MapPin size={18} />
-                                    <span>Base Location</span>
+                                    <span>From</span>
                                 </label>
                                 <select 
                                     className="modern-select"
@@ -244,7 +227,7 @@ function Quote() {
                             <div className="modern-input-group">
                                 <label className="modern-label">
                                     <MapPin size={18} />
-                                    <span>Destination</span>
+                                    <span>To</span>
                                 </label>
                                 <select 
                                     className="modern-select"
@@ -294,7 +277,7 @@ function Quote() {
 
                         <div className="form-footer-modern">
                             <button type="submit" className="submit-btn-modern quote-submit" disabled={isSubmitting}>
-                                <span>{isSubmitting ? 'Submitting...' : 'Get Quote'}</span>
+                                <span>{isSubmitting ? 'Submitting...' : 'Submit Your Interest'}</span>
                                 <Zap size={20} />
                             </button>
                             
@@ -339,7 +322,7 @@ function Quote() {
                         <div className="contact-info">
                             <div className="contact-item">
                                 <Phone size={18} />
-                                <span>+971-4-3272129 </span>
+                                <span>+971-527155024</span>
                             </div>
                             <div className="contact-item">
                                 <Mail size={18} />

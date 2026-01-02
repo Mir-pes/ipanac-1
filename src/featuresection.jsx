@@ -1,6 +1,6 @@
 import { features } from "./constants";
 import "./FeatureSection.css";
-import { ArrowRight, Sparkles, TrendingUp } from "lucide-react";
+import { ArrowRight, Sparkles, TrendingUp, Star } from "lucide-react";
 
 function FeatureSection() {
   return (
@@ -51,7 +51,7 @@ function FeatureSection() {
             <div className="stat-divider"></div>
             <div className="stat-item">
               <div className="stat-number">
-                <TrendingUp size={20} />
+                <Star size={20} />
                 <span>10+</span>
               </div>
               <div className="stat-label">Years Experience</div>

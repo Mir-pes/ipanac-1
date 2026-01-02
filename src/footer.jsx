@@ -21,11 +21,13 @@ function Footer() {
                             <div className="contact-details">
                                 <div className="contact-item-footer">
                                     <MapPin size={18} className="footer-icon" />
-                                    <span>104 | Khalid Bin Al Waleed Building<br/>Dubai, UAE</span>
+                                    <a href="https://www.google.com/maps/place/25%C2%B006'33.0%22N+55%C2%B012'15.2%22E/@25.109167,55.20423,18z/data=!4m4!3m3!8m2!3d25.109167!4d55.20423?hl=en-US&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>
+                                        <span>Barsha Horizon Building - Office # 101 1st floor<br/>Al Barsha 1 - Al Barsha - Dubai</span>
+                                    </a>
                                 </div>
                                 <div className="contact-item-footer">
                                     <Phone size={18} className="footer-icon" />
-                                    <span>+971-4-3272129</span>
+                                    <span>+971-527155024</span>
                                 </div>
                                 <div className="contact-item-footer">
                                     <Mail size={18} className="footer-icon" />

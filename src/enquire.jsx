@@ -345,7 +345,7 @@ function Enquire() {
 
                         <div className="form-footer-modern">
                             <button type="submit" className="submit-btn-modern" disabled={isSubmitting}>
-                                <span>{isSubmitting ? 'Submitting...' : 'Submit Registration'}</span>
+                                <span>{isSubmitting ? 'Submitting...' : 'Submit Your Interest'}</span>
                                 <Send size={20} />
                             </button>
                             
@@ -390,7 +390,7 @@ function Enquire() {
                         <div className="contact-info">
                             <div className="contact-item">
                                 <Phone size={18} />
-                                <span>+971-4-3272129 </span>
+                                <span>+971-527155024</span>
                             </div>
                             <div className="contact-item">
                                 <Mail size={18} />
