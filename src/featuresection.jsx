@@ -9,6 +9,7 @@ import Corporate from './assets/corporate.png';
 import Local from './assets/local.png';
 import pau from './assets/PAU.png';
 import Storage from './assets/storage.png';
+import pack from './assets/pack.png';
 
 function FeatureSection() {
   useEffect(() => {
@@ -167,7 +168,7 @@ function FeatureSection() {
               </Link>
             </div>
             <div className="service-visual">
-              <img src={Local} alt="UAE Domestic Relocation" className="service-image-large" />
+              <img src={pack} alt="UAE Domestic Relocation" className="service-image-large" />
               <div className="service-overlay"></div>
             </div>
           </div>
