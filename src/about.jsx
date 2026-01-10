@@ -26,14 +26,14 @@ function About() {
           </div>
           
           <h1 className="about-hero-title">
-            About <span className="gradient-about">IPANAC</span>
+            About <span className="gradient-about">IPANAC</span> Relocation Dubai
           </h1>
           
           <p className="about-hero-subtitle">
            
-            IPANAC Relocation is a part of IPANAC consultancy LLC FZ.
+            IPANAC Relocation is a part of IPANAC consultancy LLC FZ, based in Dubai, UAE.
             <br></br>
-            We serve Our clients in the following domains
+            We serve our clients across Dubai, Abu Dhabi, and the GCC region in the following domains
           </p>
 
           <div className="company-domains">
@@ -79,11 +79,11 @@ function About() {
             </div>
             
             <h2 className="section-title-about">
-              Making Relocation <span className="gradient-about">Effortless</span>
+              Making Relocation in Dubai <span className="gradient-about">Effortless</span>
             </h2>
             
             <p className="mission-paragraph">
-              At IPANAC Relocation, we believe that moving to a new location should be an exciting journey, not a stressful one. Our mission is to provide a seamless and hassle-free relocation experience for individuals, families, and businesses looking to establish themselves in a new location.
+              At IPANAC Relocation Dubai, we believe that moving to a new location in Dubai, UAE, or internationally should be an exciting journey, not a stressful one. Our mission is to provide a seamless and hassle-free relocation experience for individuals, families, and businesses looking to establish themselves in Dubai, Abu Dhabi, or anywhere across the GCC region.
             </p>
             
             <div className="mission-features">

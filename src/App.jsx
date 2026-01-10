@@ -9,11 +9,13 @@ import Enquire from './enquire.jsx';
 import ServicesPage from './services.jsx';
 import Quote from './quickquote.jsx';
 import ContactUs from './Contactus.jsx';
+import WhatsAppButton from './WhatsAppButton.jsx';
 
 function App() {
   return (
     <>
       <Navbar />
+      <WhatsAppButton />
       <Routes>
         <Route path="/" element={
           <div>

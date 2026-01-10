@@ -13,10 +13,10 @@ function Footer() {
                 <div className="footer-container">
                     <div className="footer-top">
                         <div className="footer-brand">
-                            <h3 className="brand-name">IPANAC Relocation</h3>
-                            <p className="brand-tagline">Smooth Move. Easy Relocation</p>
+                            <h3 className="brand-name">IPANAC Relocation Dubai</h3>
+                            <p className="brand-tagline">Smooth Move. Easy Relocation in Dubai & UAE</p>
                             <p className="brand-description">
-                                Your trusted partner for seamless relocation services across the globe.
+                                Your trusted partner for seamless relocation and moving services in Dubai, Abu Dhabi, across UAE and globally.
                             </p>
                             <div className="contact-details">
                                 <div className="contact-item-footer">

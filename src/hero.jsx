@@ -5,25 +5,25 @@ function Hero() {
   return (
     <div className="hero-container">
       <h1 className="hero-text">
-        <b>At IPANAC, we specialize in making your relocation experience stress-free,<br></br> 
-        smooth, and efficient.</b>
+        <b>Professional Movers and Packers in Dubai | IPANAC Relocation - Making Your Move Stress-Free,<br></br> 
+        Smooth, and Efficient</b>
       </h1>
-      <p className = "para">Whether you're moving across the globe or locally within the GCC, we are here to provide personalized services tailored to your unique needs. From packing to settling in, we handle all aspects of your move with professionalism, care, and expertise.
+      <p className = "para">Whether you're moving internationally or relocating locally within Dubai, Abu Dhabi, or the GCC region, we are here to provide personalized relocation services tailored to your unique needs. From expert packing to settling in, we handle all aspects of your move across Dubai and UAE with professionalism, care, and expertise.
         </p>
 
     <div className="why-choose-card">
         <div className="card-inner">
-            <h1 className="card-title">Why Choose IPANAC?</h1>
-            <h2 className="card-subtitle"><b className="bold">Global Reach and Local Expertise:</b> We help you relocate anywhere in the world and within the GCC region, leveraging our global network of partners and in-depth local knowledge.</h2>
+            <h1 className="card-title">Why Choose IPANAC for Relocation in Dubai?</h1>
+            <h2 className="card-subtitle"><b className="bold">Global Reach and Local Dubai Expertise:</b> We help you relocate anywhere in the world and within Dubai, Abu Dhabi, and the GCC region, leveraging our global network of partners and in-depth local knowledge of UAE's moving requirements.</h2>
 
-            <h2 className = "card-subtitle2"><b className = "bold2">End-End Solutions: </b>From pre-move planning, logistics, packing, and transportation to settling into your new home, we take care of everything so you can focus on your new beginning.
+            <h2 className = "card-subtitle2"><b className = "bold2">End-to-End Moving Solutions in Dubai: </b>From pre-move planning, logistics, professional packing, and transportation to settling into your new home in Dubai or across UAE, we take care of everything so you can focus on your new beginning.
 
             </h2>
 
-            <h2 className = "card-subtitle3"><b className = "bold3">Reliable and Safe: </b> With years of experience, we ensure that your belongings are handled with the utmost care. Our commitment to safety means peace of mind every step of the way.
+            <h2 className = "card-subtitle3"><b className = "bold3">Reliable and Safe Movers in Dubai: </b> With years of experience serving Dubai residents and businesses, we ensure that your belongings are handled with the utmost care. Our commitment to safety means peace of mind every step of the way.
             </h2>
 
-            <h2 className = "card-subtitle4"><b className = "bold4">Personalized Service:</b> No two moves are the same. Our team will work with you to understand your requirements and provide solutions that match your needs, timeline, and budget.
+            <h2 className = "card-subtitle4"><b className = "bold4">Personalized Relocation Service:</b> No two moves in Dubai are the same. Our experienced team will work with you to understand your requirements and provide customized moving solutions that match your needs, timeline, and budget.
 
             </h2>
 

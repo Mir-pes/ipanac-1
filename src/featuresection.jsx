@@ -20,7 +20,7 @@ function FeatureSection() {
           </div>
           
           <h1 className="services-mega-title">
-            <span className="title-line-1">Seamlessly Relocate</span>
+            <span className="title-line-1">Seamlessly Relocate in Dubai</span>
             <span className="title-line-2">
               From <span className="gradient-flow">One Location</span>
             </span>
@@ -28,8 +28,8 @@ function FeatureSection() {
           </h1>
           
           <p className="services-hero-description">
-            Experience world-class relocation solutions crafted with precision, 
-            care, and expertise. Your journey to a new destination starts here.
+            Experience world-class relocation and moving solutions in Dubai, UAE crafted with precision, 
+            care, and expertise. Your journey to a new destination in Dubai or internationally starts here.
           </p>
 
           <div className="stats-row">

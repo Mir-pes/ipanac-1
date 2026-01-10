@@ -14,7 +14,7 @@ function Workflow() {
           </div>
           <h3 className="card-heading">Our Mission</h3>
           <p className="card-description">
-            "At IPANAC Relocation, we simplify the relocation journey by providing personalized, efficient, and reliable services. Our goal is to ensure a smooth transition for individuals and businesses, helping them settle with ease and confidence in their new home. Through expertise, dedication, and innovation, we make every move a positive experience."
+            "At IPANAC Relocation Dubai, we simplify the relocation journey by providing personalized, efficient, and reliable moving services across Dubai, UAE, and internationally. Our goal is to ensure a smooth transition for individuals and businesses relocating to or from Dubai, helping them settle with ease and confidence in their new home. Through expertise, dedication, and innovation, we make every move in Dubai and beyond a positive experience."
           </p>
         </div>
 
@@ -24,17 +24,17 @@ function Workflow() {
           </div>
           <h3 className="card-heading">Our Vision</h3>
           <p className="card-description">
-            "To be the leading global relocation partner, transforming the way people and businesses move by providing seamless, stress-free, and rewarding experiences. We envision a world where relocation is not a challenge but an opportunity—where individuals and organizations transition smoothly into new environments with confidence and ease."
+            "To be the leading relocation partner in Dubai and the GCC region, transforming the way people and businesses move by providing seamless, stress-free, and rewarding experiences. We envision making Dubai relocation effortless—where individuals and organizations transition smoothly into new environments across UAE with confidence and ease."
           </p>
         </div>
       </div>
 
       <div className="section-header">
         <h2 className="section-title">
-          Why Choose <span className="gradient-text-section">IPANAC?</span>
+          Why Choose <span className="gradient-text-section">IPANAC</span> for Dubai Relocation?
         </h2>
         <p className="section-subtitle">
-          Experience excellence in every aspect of your relocation journey
+          Experience excellence in every aspect of your relocation journey in Dubai, Abu Dhabi, and across UAE
         </p>
       </div>
       
@@ -43,7 +43,7 @@ function Workflow() {
           <div className="image-wrapper">
             <img 
               src={Img} 
-              alt="Relocation Services" 
+              alt="Professional Relocation Services in Dubai UAE - IPANAC Movers and Packers" 
               className="showcase-image"
             />
             <div className="image-overlay">
