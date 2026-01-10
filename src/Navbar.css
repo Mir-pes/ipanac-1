@@ -164,10 +164,15 @@
   align-items: center;
   gap: 0.25rem;
   padding: 0.5rem 0;
+  color: #1a1a1a;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: inherit;
 }
 
 .dropdown-icon {
   transition: transform 0.3s ease;
+  
 }
 
 .dropdown-icon.open {

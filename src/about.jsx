@@ -1,274 +1,432 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './about.css';
-import aboutimg from "./assets/about.png";
-import integrity from "./assets/Integrity.png";
-import customer from "./assets/Customer.png";
-import Excellence from "./assets/excellence.png";
-import Innovation from "./assets/innovation.png";
-import Globalimg from "./assets/Global.png";
-import Reliable from "./assets/reliability.png";
-import { Users, Heart, Target, Sparkles, Award, Globe2, Shield, TrendingUp, CheckCircle2, Building2, Briefcase } from "lucide-react";
+import { Building2, MapPin, Shield, TrendingUp, Award, Users, Globe2, CheckCircle2, ArrowRight, Sparkles, Briefcase, Heart, Target, FileText, Truck, Map } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function About() {
+  useEffect(() => {
+    document.title = 'About Us - IPANAC Relocation Dubai | Trusted Relocation Specialists in UAE';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'IPANAC Relocation is Dubai\'s premier relocation specialist, offering comprehensive moving services across the UAE, GCC, and internationally. Learn about our local expertise, Dubai buildings knowledge, and trusted relocation services.');
+    }
+  }, []);
+
   return (
     <div className="about-page-modern">
-      <div className="about-hero">
-        <div className="hero-background-about">
-          <div className="hero-orb hero-orb-1"></div>
-          <div className="hero-orb hero-orb-2"></div>
-        </div>
-        
-        <div className="hero-content-about">
-          <div className="hero-badge-about">
-            <Building2 size={16} />
-            <span>Established Excellence</span>
+      {/* Hero Section */}
+      <section className="about-hero-section">
+        <div className="about-hero-background"></div>
+        <div className="about-hero-container">
+          <div className="about-hero-badge">
+            <Building2 size={18} strokeWidth={2.5} />
+            <span>Dubai Relocation Specialists</span>
           </div>
           
           <h1 className="about-hero-title">
-            About <span className="gradient-about">IPANAC</span> Relocation Dubai
+            Your Trusted Partner for <span className="gradient-text">Relocation in Dubai, UAE</span>
           </h1>
           
           <p className="about-hero-subtitle">
-           
-            IPANAC Relocation is a part of IPANAC consultancy LLC FZ, based in Dubai, UAE.
-            <br></br>
-            We serve our clients across Dubai, Abu Dhabi, and the GCC region in the following domains
+            IPANAC Relocation is Dubai's premier relocation specialist, offering comprehensive moving services 
+            across the UAE, GCC, and internationally. With deep local expertise in Dubai's buildings, regulations, 
+            customs, and logistics, we make your relocation journey seamless, safe, and stress-free.
           </p>
 
-          <div className="company-domains">
-            <div className="domain-card">
-              <div className="domain-icon">
-                <Globe2 size={24} />
-              </div>
-              <a href="https://IPANACllc.com/" target="_blank" rel="noopener noreferrer" className="domain-title">
-                IPANAC Immigration
-              </a>
-              <p className="domain-desc">Global visa & immigration services</p>
-            </div>
-            
-            <div className="domain-card">
-              <div className="domain-icon">
-                <Briefcase size={24} />
-              </div>
-              <a href="https://IPANACaccounting.com/" target="_blank" rel="noopener noreferrer" className="domain-title">
-                IPANAC Accounting
-              </a>
-              <p className="domain-desc">Professional accounting & tax solutions</p>
-            </div>
-            
-            <div className="domain-card active">
-              <div className="domain-icon">
-                <Building2 size={24} />
-              </div>
-              <div className="domain-title">
-                IPANAC Relocation
-              </div>
-              <p className="domain-desc">Seamless moving & relocation services</p>
-            </div>
+          <div className="about-hero-cta">
+            <Link to="/contact" className="about-primary-cta">
+              Start Your Relocation Journey
+              <ArrowRight size={20} strokeWidth={2.5} />
+            </Link>
+            <Link to="/services" className="about-secondary-cta">
+              Explore Our Services
+            </Link>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="about-mission-section">
-        <div className="mission-content-wrapper">
-          <div className="mission-text-block">
-            <div className="section-badge">
-              <Heart size={16} />
+      {/* Who We Are Section */}
+      <section className="about-intro-section">
+        <div className="about-section-container">
+          <div className="about-intro-content">
+            <div className="section-intro-badge">
+              <Heart size={16} strokeWidth={2.5} />
               <span>Who We Are</span>
             </div>
-            
-            <h2 className="section-title-about">
-              Making Relocation in Dubai <span className="gradient-about">Effortless</span>
+            <h2 className="section-intro-heading">
+              Dubai-Based Relocation Experts <span className="gradient-text">You Can Trust</span>
             </h2>
-            
-            <p className="mission-paragraph">
-              At IPANAC Relocation Dubai, we believe that moving to a new location in Dubai, UAE, or internationally should be an exciting journey, not a stressful one. Our mission is to provide a seamless and hassle-free relocation experience for individuals, families, and businesses looking to establish themselves in Dubai, Abu Dhabi, or anywhere across the GCC region.
+            <p className="section-intro-description">
+              IPANAC Relocation is part of <b><b>IPANAC Consultancy LLC FZ</b></b>, a trusted name in Dubai's business landscape. 
+              We specialize in helping individuals, families, and businesses relocate within Dubai, across the UAE, 
+              throughout the GCC region, and internationally. Our team understands the unique challenges of moving 
+              in Dubai—from navigating building regulations and customs procedures to managing complex logistics in 
+              one of the world's most dynamic cities.
             </p>
-            
-            <div className="mission-features">
-              <div className="mission-feature">
-                <CheckCircle2 size={20} className="feature-check" />
-                <span>Personalized service tailored to your needs</span>
-              </div>
-              <div className="mission-feature">
-                <CheckCircle2 size={20} className="feature-check" />
-                <span>End-to-end relocation support</span>
-              </div>
-              <div className="mission-feature">
-                <CheckCircle2 size={20} className="feature-check" />
-                <span>Professional care and expertise</span>
-              </div>
+            <p className="section-intro-description">
+              What sets us apart is our deep local knowledge combined with international expertise. We know Dubai 
+              inside out—from the finest residential communities in Marina and Downtown to the bustling business 
+              districts of DIFC and Business Bay. We're familiar with Dubai's customs requirements, documentation 
+              processes, and the logistical nuances that make relocations here unique.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Local Expertise Features - Matching Image Style */}
+      <section className="about-expertise-features">
+        <div className="about-section-container">
+          
+          {/* Deep Knowledge of Dubai Buildings */}
+          <div className="expertise-feature-block">
+            <div className="expertise-feature-icon-wrapper">
+              <div className="expertise-icon-background"></div>
+              <Building2 size={32} strokeWidth={2} className="expertise-icon" />
+            </div>
+            <div className="expertise-feature-content">
+              <h3 className="expertise-feature-heading">
+                <span className="heading-line">Deep</span>
+                <span className="heading-line">Knowledge</span>
+                <span className="heading-line">of Dubai</span>
+                <span className="heading-line">Buildings</span>
+              </h3>
+              <p className="expertise-feature-description">
+                We understand Dubai's diverse residential and commercial properties—from luxury towers in 
+                Burj Khalifa area to family-friendly communities in Jumeirah and Arabian Ranches. We know 
+                access restrictions, parking regulations, and building-specific requirements that ensure smooth moves.
+              </p>
             </div>
           </div>
-          
-          <div className="mission-image-block">
-            <div className="image-frame">
-              <img src={aboutimg} alt="iPANAC Relocation Services" className="about-main-image" />
-              <div className="image-decoration"></div>
+
+          {/* Regulations & Compliance Expertise */}
+          <div className="expertise-feature-block">
+            <div className="expertise-feature-icon-wrapper">
+              <div className="expertise-icon-background"></div>
+              <Shield size={32} strokeWidth={2} className="expertise-icon" />
+            </div>
+            <div className="expertise-feature-content">
+              <h3 className="expertise-feature-heading">
+                <span className="heading-line">Regulations</span>
+                <span className="heading-line">&</span>
+                <span className="heading-line">Compliance</span>
+                <span className="heading-line">Expertise</span>
+              </h3>
+              <p className="expertise-feature-description">
+                Navigating Dubai's regulations can be complex. We handle all compliance requirements, from 
+                customs documentation and permits to building management approvals and visa-related logistics. 
+                Our team stays current with UAE regulations to keep your move legally compliant.
+              </p>
+            </div>
+          </div>
+
+          {/* Customs & International Logistics */}
+          <div className="expertise-feature-block">
+            <div className="expertise-feature-icon-wrapper">
+              <div className="expertise-icon-background"></div>
+              <Globe2 size={32} strokeWidth={2} className="expertise-icon" />
+            </div>
+            <div className="expertise-feature-content">
+              <h3 className="expertise-feature-heading">
+                <span className="heading-line">Customs</span>
+                <span className="heading-line">&</span>
+                <span className="heading-line">International</span>
+                <span className="heading-line">Logistics</span>
+              </h3>
+              <p className="expertise-feature-description">
+                Moving internationally from or to Dubai? We manage complex customs procedures, documentation, 
+                and international shipping logistics. Our partnerships with global carriers ensure your belongings 
+                reach their destination safely and on time, whether you're relocating within the GCC or to Europe, 
+                Asia, or the Americas.
+              </p>
+            </div>
+          </div>
+
+          {/* Streamlined Logistics Management */}
+          <div className="expertise-feature-block">
+            <div className="expertise-feature-icon-wrapper">
+              <div className="expertise-icon-background"></div>
+              <Truck size={32} strokeWidth={2} className="expertise-icon" />
+            </div>
+            <div className="expertise-feature-content">
+              <h3 className="expertise-feature-heading">
+                <span className="heading-line">Streamlined</span>
+                <span className="heading-line">Logistics</span>
+                <span className="heading-line">Management</span>
+              </h3>
+              <p className="expertise-feature-description">
+                Dubai's logistics can be challenging—from traffic considerations and access timing to coordinating 
+                with multiple vendors. We excel at managing complex logistics, ensuring efficient timelines and 
+                seamless coordination between packing, transportation, and delivery teams.
+              </p>
+            </div>
+          </div>
+
+          {/* Local Relocation Within Dubai */}
+          <div className="expertise-feature-block">
+            <div className="expertise-feature-icon-wrapper">
+              <div className="expertise-icon-background"></div>
+              <MapPin size={32} strokeWidth={2} className="expertise-icon" />
+            </div>
+            <div className="expertise-feature-content">
+              <h3 className="expertise-feature-heading">
+                <span className="heading-line">Local Relocation</span>
+                <span className="heading-line">Within Dubai</span>
+              </h3>
+              <p className="expertise-feature-description">
+                Expert moves between Dubai neighborhoods—from Downtown to Marina, Business Bay to Jumeirah. 
+                We know every building, every area, and every requirement.<br></br>
+                Seamless moves between Dubai, Abu Dhabi, Sharjah, and other Emirates. We handle inter-emirate 
+                documentation and logistics with precision.
+              </p>
+            </div>
+          </div>
+
+          {/* UAE Domestic Relocation */}
+          {/* <div className="expertise-feature-block">
+            <div className="expertise-feature-icon-wrapper">
+              <div className="expertise-icon-background"></div>
+              <Target size={32} strokeWidth={2} className="expertise-icon" />
+            </div>
+            <div className="expertise-feature-content">
+              <h3 className="expertise-feature-heading">
+                <span className="heading-line">UAE Domestic</span>
+                <span className="heading-line">Relocation</span>
+              </h3>
+              <p className="expertise-feature-description">
+                Seamless moves between Dubai, Abu Dhabi, Sharjah, and other Emirates. We handle inter-emirate 
+                documentation and logistics with precision.
+              </p>
+            </div>
+          </div> */}
+
+          {/* GCC Regional Relocation */}
+          <div className="expertise-feature-block">
+            <div className="expertise-feature-icon-wrapper">
+              <div className="expertise-icon-background"></div>
+              <Map size={32} strokeWidth={2} className="expertise-icon" />
+            </div>
+            <div className="expertise-feature-content">
+              <h3 className="expertise-feature-heading">
+                <span className="heading-line">GCC Regional</span>
+                <span className="heading-line">Relocation</span>
+              </h3>
+              <p className="expertise-feature-description">
+                Moving across the GCC region? We facilitate relocations to and from Saudi Arabia, Qatar, Kuwait, 
+                Oman, and Bahrain with ease.
+              </p>
+            </div>
+          </div>
+
+          {/* International Relocation */}
+          <div className="expertise-feature-block">
+            <div className="expertise-feature-icon-wrapper">
+              <div className="expertise-icon-background"></div>
+              <Globe2 size={32} strokeWidth={2} className="expertise-icon" />
+            </div>
+            <div className="expertise-feature-content">
+              <h3 className="expertise-feature-heading">
+                <span className="heading-line">International</span>
+                <span className="heading-line">Relocation</span>
+              </h3>
+              <p className="expertise-feature-description">
+                Global moves from Dubai to destinations worldwide. Our international network and customs expertise 
+                ensure smooth cross-border relocations.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="about-why-choose-section">
+        <div className="about-section-container">
+          <div className="section-header-modern">
+            <div className="section-label-modern">
+              <Users size={16} strokeWidth={2.5} />
+              <span>Why Choose Us</span>
+            </div>
+            <h2 className="section-heading-modern">
+              Why Clients Relocating to <span className="gradient-text">Dubai Choose IPANAC</span>
+            </h2>
+            <p className="section-subtitle-modern">
+              Our commitment to excellence and deep understanding of Dubai's unique relocation landscape 
+              makes us the preferred choice for individuals and businesses moving to or within the UAE.
+            </p>
+          </div>
+
+          <div className="why-choose-grid">
+            <div className="why-choose-item">
+              <div className="why-choose-icon">
+                <CheckCircle2 size={28} strokeWidth={2.5} />
+              </div>
+              <h3>Local Expertise That Matters</h3>
+              <p>We know Dubai—its buildings, regulations, customs, and logistics. This local knowledge translates to smoother, faster, and more cost-effective relocations.</p>
+            </div>
+
+            <div className="why-choose-item">
+              <div className="why-choose-icon">
+                <CheckCircle2 size={28} strokeWidth={2.5} />
+              </div>
+              <h3>Comprehensive Service Range</h3>
+              <p>From packing and unpacking to storage solutions and vehicle relocation, we offer everything you need under one roof.</p>
+            </div>
+
+            <div className="why-choose-item">
+              <div className="why-choose-icon">
+                <CheckCircle2 size={28} strokeWidth={2.5} />
+              </div>
+              <h3>Proven Track Record</h3>
+              <p>Over 1000 successful relocations speak to our expertise and reliability. We've helped countless families and businesses settle into Dubai and beyond.</p>
+            </div>
+
+            <div className="why-choose-item">
+              <div className="why-choose-icon">
+                <CheckCircle2 size={28} strokeWidth={2.5} />
+              </div>
+              <h3>Personalized Approach</h3>
+              <p>Every relocation is unique. We work closely with you to understand your specific needs and tailor our services accordingly.</p>
+            </div>
+
+            <div className="why-choose-item">
+              <div className="why-choose-icon">
+                <CheckCircle2 size={28} strokeWidth={2.5} />
+              </div>
+              <h3>End-to-End Support</h3>
+              <p>From initial consultation to settling into your new space, we're with you every step of the way, providing guidance and support throughout.</p>
+            </div>
+
+            <div className="why-choose-item">
+              <div className="why-choose-icon">
+                <CheckCircle2 size={28} strokeWidth={2.5} />
+              </div>
+              <h3>Trusted Partner</h3>
+              <p>Part of IPANAC Consultancy LLC FZ—a reputable Dubai-based company with a proven track record in business services across the UAE.</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="story-section-modern">
-        <div className="story-content-modern">
-          <div className="section-badge">
-            <Sparkles size={16} />
-            <span>Our Journey</span>
+      {/* Our Values Section */}
+      <section className="about-values-section">
+        <div className="about-section-container">
+          <div className="section-header-modern">
+            <div className="section-label-modern">
+              <Sparkles size={16} strokeWidth={2.5} />
+              <span>Our Values</span>
+            </div>
+            <h2 className="section-heading-modern">
+              Built on <span className="gradient-text">Trust, Safety & Transparency</span>
+            </h2>
+            <p className="section-subtitle-modern">
+              Our core values guide every relocation we handle. They're not just words—they're our commitment to you.
+            </p>
           </div>
-          
-          <h2 className="section-title-about">
-            Professional Services with a <span className="gradient-about">Personal Touch</span>
-          </h2>
-          
-          <div className="story-timeline">
-            <div className="timeline-item">
-              <div className="timeline-icon">
-                <Target size={24} />
-              </div>
-              <div className="timeline-content">
-                <h3>Our Foundation</h3>
-                <p>
-                  IPANAC Relocation was founded with a simple yet powerful vision: to make relocation effortless and stress-free. We understand that moving to a new location comes with uncertainties—finding a home, understanding legal requirements, and adapting to a new environment.
-                </p>
-              </div>
+
+          <div className="values-grid-modern">
+            <div className="value-block-modern">
+              <div className="value-number">01</div>
+              <h3>Trust</h3>
+              <p>We build lasting relationships based on reliability and integrity. Your belongings, your timeline, and your peace of mind are our top priorities.</p>
             </div>
-            
-            <div className="timeline-item">
-              <div className="timeline-icon">
-                <Users size={24} />
-              </div>
-              <div className="timeline-content">
-                <h3>Expert Team</h3>
-                <p>
-                  Our founders, having personally faced the challenges of relocation, recognized the need for a reliable, client-centric service. They assembled a team with a combined experience of over 20 years in the relocation industry—committed to transparency, efficiency, and personalized support.
-                </p>
-              </div>
+
+            <div className="value-block-modern">
+              <div className="value-number">02</div>
+              <h3>Safety</h3>
+              <p>Your possessions are handled with the utmost care. We use premium packing materials, insured transportation, and trained professionals to ensure everything arrives safely.</p>
             </div>
-            
-            <div className="timeline-item">
-              <div className="timeline-icon">
-                <Heart size={24} />
-              </div>
-              <div className="timeline-content">
-                <h3>Client-Centric Approach</h3>
-                <p>
-                  At IPANAC Relocation, we go beyond providing services—we cultivate meaningful relationships. Our team takes the time to understand your unique goals, deliver customized solutions, and make your relocation journey smooth and successful.
-                </p>
-              </div>
+
+            <div className="value-block-modern">
+              <div className="value-number">03</div>
+              <h3>Transparency</h3>
+              <p>No hidden fees, no surprises. We provide clear, upfront pricing and keep you informed at every step of your relocation journey.</p>
+            </div>
+
+            <div className="value-block-modern">
+              <div className="value-number">04</div>
+              <h3>Professionalism</h3>
+              <p>Our team represents the highest standards of professional service. Punctual, courteous, and expert in every aspect of relocation.</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="values-section-modern">
-        <div className="section-header-center">
-          <div className="section-badge">
-            <Award size={16} />
-            <span>What Drives Us</span>
-          </div>
-          
-          <h2 className="section-title-about">
-            Our Core <span className="gradient-about">Values</span>
-          </h2>
-          
-          <p className="section-subtitle-about">
-            Our values shape the culture of our organization and define the character of our company
-          </p>
-        </div>
-
-        <div className="values-grid-modern">
-          <div className="value-card-modern">
-            <div className="value-image-wrapper">
-              <img src={customer} alt="Customer-Centric Approach" className="value-img" />
-              <div className="value-overlay">
-                <Users size={40} />
+      {/* Trust Indicators Section */}
+      <section className="about-trust-section">
+        <div className="about-section-container">
+          <div className="trust-indicators-grid">
+            <div className="trust-indicator-block">
+              <div className="trust-indicator-icon">
+                <Shield size={48} strokeWidth={1.5} />
               </div>
+              <h3>Fully Insured</h3>
+              <p>All shipments are comprehensively insured for your peace of mind</p>
             </div>
-            <div className="value-card-content">
-              <h3>Customer-Centric Approach</h3>
-              <p>We put our clients first, ensuring personalized and hassle-free relocation experiences tailored to their needs.</p>
-            </div>
-          </div>
 
-          <div className="value-card-modern">
-            <div className="value-image-wrapper">
-              <img src={integrity} alt="Integrity & Transparency" className="value-img" />
-              <div className="value-overlay">
-                <Shield size={40} />
+            <div className="trust-indicator-block">
+              <div className="trust-indicator-icon">
+                <Award size={48} strokeWidth={1.5} />
               </div>
+              <h3>Licensed & Certified</h3>
+              <p>Properly licensed in Dubai and UAE with all necessary certifications</p>
             </div>
-            <div className="value-card-content">
-              <h3>Integrity & Transparency</h3>
-              <p>Honesty and trust are at the heart of our services. We operate with full transparency, ensuring our clients feel informed and confident at every step.</p>
-            </div>
-          </div>
 
-          <div className="value-card-modern">
-            <div className="value-image-wrapper">
-              <img src={Innovation} alt="Excellence & Efficiency" className="value-img" />
-              <div className="value-overlay">
-                <Award size={40} />
+            <div className="trust-indicator-block">
+              <div className="trust-indicator-icon">
+                <Briefcase size={48} strokeWidth={1.5} />
               </div>
-            </div>
-            <div className="value-card-content">
-              <h3>Excellence & Efficiency</h3>
-              <p>We are committed to delivering top-quality relocation services with precision, professionalism, and attention to detail.</p>
-            </div>
-          </div>
-
-          <div className="value-card-modern">
-            <div className="value-image-wrapper">
-              <img src={Excellence} alt="Innovation & Adaptability" className="value-img" />
-              <div className="value-overlay">
-                <Sparkles size={40} />
-              </div>
-            </div>
-            <div className="value-card-content">
-              <h3>Innovation & Adaptability</h3>
-              <p>The relocation industry is ever-changing, and we embrace new technologies and processes to provide modern, efficient, and seamless solutions.</p>
-            </div>
-          </div>
-
-          <div className="value-card-modern">
-            <div className="value-image-wrapper">
-              <img src={Globalimg} alt="Global Mindset" className="value-img" />
-              <div className="value-overlay">
-                <Globe2 size={40} />
-              </div>
-            </div>
-            <div className="value-card-content">
-              <h3>Global Mindset</h3>
-              <p>With a deep understanding of international relocation challenges, we bridge cultures and make global transitions easier for individuals and businesses.</p>
-            </div>
-          </div>
-
-          <div className="value-card-modern">
-            <div className="value-image-wrapper">
-              <img src={Reliable} alt="Reliability & Commitment" className="value-img" />
-              <div className="value-overlay">
-                <TrendingUp size={40} />
-              </div>
-            </div>
-            <div className="value-card-content">
-              <h3>Reliability & Commitment</h3>
-              <p>We are dedicated to delivering on our promises, ensuring smooth and stress-free relocations every time.</p>
+              <h3>Part of IPANAC Group</h3>
+              <p>Backed by IPANAC Consultancy LLC FZ's reputation and resources</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="cta-section-about">
-        <div className="cta-about-content">
-          <h2>Ready to Begin Your Journey?</h2>
-          <p>Let's make your relocation smooth, stress-free, and successful</p>
-          <Link to="/contact" className="cta-about-button">
-            Get Started Today
-            <span className="button-arrow-about">→</span>
-          </Link>
+      {/* Stats Section */}
+      <section className="about-stats-section">
+        <div className="about-section-container">
+          <div className="stats-grid-modern">
+            <div className="stat-block-modern">
+              <div className="stat-number-modern">1000+</div>
+              <div className="stat-label-modern">Successful Relocations</div>
+            </div>
+            <div className="stat-block-modern">
+              <div className="stat-number-modern">10+</div>
+              <div className="stat-label-modern">Years of Experience</div>
+            </div>
+            <div className="stat-block-modern">
+              <div className="stat-number-modern">100%</div>
+              <div className="stat-label-modern">Client Satisfaction</div>
+            </div>
+            <div className="stat-block-modern">
+              <div className="stat-number-modern">50+</div>
+              <div className="stat-label-modern">Countries </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="about-cta-section">
+        <div className="about-section-container">
+          <div className="cta-content-modern">
+            <h2>Ready to Begin Your Relocation Journey in Dubai?</h2>
+            <p>
+              Let us make your move to, from, or within Dubai smooth, stress-free, and successful. 
+              Get in touch for a free consultation and personalized relocation plan.
+            </p>
+            <div className="cta-buttons-modern">
+              <Link to="/contact" className="cta-primary-modern">
+                Get Free Consultation
+                <ArrowRight size={20} strokeWidth={2.5} />
+              </Link>
+              <Link to="/services" className="cta-secondary-modern">
+                View Our Services
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

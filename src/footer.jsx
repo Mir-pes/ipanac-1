@@ -1,6 +1,7 @@
 import { resourcesLinks, platformLinks, communityLinks } from "./constants";
 import { Mail, Phone, MapPin, ArrowUp } from "lucide-react";
 import "./footer.css";
+import logo from './assets/IpanacRelocationLogo.png';
 
 function Footer() {
     const scrollToTop = () => {
@@ -13,8 +14,8 @@ function Footer() {
                 <div className="footer-container">
                     <div className="footer-top">
                         <div className="footer-brand">
-                            <h3 className="brand-name">IPANAC Relocation Dubai</h3>
-                            <p className="brand-tagline">Smooth Move. Easy Relocation in Dubai & UAE</p>
+                            <img src={logo} alt="IPANAC Relocation Dubai" className="footer-logo" />
+                            {/* <p className="brand-tagline">Smooth Move. Easy Relocation in Dubai & UAE</p> */}
                             <p className="brand-description">
                                 Your trusted partner for seamless relocation and moving services in Dubai, Abu Dhabi, across UAE and globally.
                             </p>

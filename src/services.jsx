@@ -14,20 +14,22 @@ const services = [
 
 function ServicesPage() {
   return (
-    <div className="container">
-      <h1 className="page-title">Our Relocation Services in Dubai, UAE</h1>
-      <p className="page-description">
-        We offer top-tier moving and packing services in Dubai, including international relocation, local moves within UAE, professional packing, secure storage solutions, and corporate relocation across Dubai and GCC region.
-      </p>
-      <div className="services-grid">
-        {services.map((service, index) => (
-          <div key={index} className="service-card">
-            <div className="service-icon">{service.icon}</div>
-            <h2 className="service-title">{service.title}</h2>
-            <p className="service-description">{service.description}</p>
-            <button className="button">Request a Free Consultation</button>
-          </div>
-        ))}
+    <div className="services-page-wrapper">
+      <div className="container">
+        <h1 className="page-title">Our Relocation Services in Dubai, UAE</h1>
+        <p className="page-description">
+          We offer top-tier moving and packing services in Dubai, including international relocation, local moves within UAE, professional packing, secure storage solutions, and corporate relocation across Dubai and GCC region.
+        </p>
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div key={index} className="service-card">
+              <div className="service-icon">{service.icon}</div>
+              <h2 className="service-title">{service.title}</h2>
+              <p className="service-description">{service.description}</p>
+              <button className="button">Request a Free Consultation</button>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
