@@ -29,7 +29,7 @@ function Head(){
           </p>
 
           <div className="hero-cta-container">
-            <Link to="/quickquote" className="primary-cta">
+            <Link to="/international-relocation-dubai" className="primary-cta">
               Get Free Quote
               <ArrowRight className="cta-icon" size={20} />
             </Link>

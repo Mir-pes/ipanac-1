@@ -38,7 +38,7 @@ function Enquire() {
         setSubmitStatus(null);
 
         try {
-            await submitForm('enquire', formData);
+            await submitForm('home-relocation-dubai', formData);
             setSubmitStatus({ type: 'success', message: 'Thank you! We will get back to you within 24 hours.' });
             setFormData({
                 fullName: '',

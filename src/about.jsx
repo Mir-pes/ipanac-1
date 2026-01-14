@@ -45,6 +45,31 @@ function About() {
         </div>
       </section>
 
+
+      
+      <section className="about-stats-section">
+        <div className="about-section-container">
+          <div className="stats-grid-modern">
+            <div className="stat-block-modern">
+              <div className="stat-number-modern">1000+</div>
+              <div className="stat-label-modern">Successful Relocations</div>
+            </div>
+            <div className="stat-block-modern">
+              <div className="stat-number-modern">10+</div>
+              <div className="stat-label-modern">Years of Experience</div>
+            </div>
+            <div className="stat-block-modern">
+              <div className="stat-number-modern">100%</div>
+              <div className="stat-label-modern">Client Satisfaction</div>
+            </div>
+            <div className="stat-block-modern">
+              <div className="stat-number-modern">50+</div>
+              <div className="stat-label-modern">Countries </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Who We Are Section */}
       <section className="about-intro-section">
         <div className="about-section-container">
@@ -238,6 +263,8 @@ function About() {
         </div>
       </section>
 
+
+
       {/* Why Choose Us Section */}
       <section className="about-why-choose-section">
         <div className="about-section-container">
@@ -306,6 +333,11 @@ function About() {
           </div>
         </div>
       </section>
+
+
+
+      
+
 
       {/* Our Values Section */}
       <section className="about-values-section">
@@ -383,7 +415,7 @@ function About() {
       </section>
 
       {/* Stats Section */}
-      <section className="about-stats-section">
+      {/* <section className="about-stats-section">
         <div className="about-section-container">
           <div className="stats-grid-modern">
             <div className="stat-block-modern">
@@ -404,7 +436,7 @@ function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="about-cta-section">

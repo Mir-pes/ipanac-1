@@ -96,7 +96,7 @@ function Workflow() {
           <h3 className="cta-heading">Ready to Start Your Journey?</h3>
           <p className="cta-text">Get a free consultation and personalized quote today</p>
         </div>
-        <Link to="/contact" className="cta-button">
+        <Link to="/office-relocation-dubai" className="cta-button">
           Get Free Survey & Quote
           <span className="button-arrow">→</span>
         </Link>

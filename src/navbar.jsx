@@ -75,9 +75,9 @@ function Navbar() {
                             </button>
                             
                             <div className={`dropdown-menu ${proposalDropdownOpen ? 'show' : ''}`}>
-                                <Link to="/enquire" className="dropdown-item">Home Relocation</Link>
-                                <Link to="/contact" className="dropdown-item">Office Relocation</Link>
-                                <Link to="/quickquote" className="dropdown-item">International Relocation</Link>
+                                <Link to="/home-relocation-dubai" className="dropdown-item">Home Relocation</Link>
+                                <Link to="/office-relocation-dubai" className="dropdown-item">Office Relocation</Link>
+                                <Link to="/international-relocation-dubai" className="dropdown-item">International Relocation</Link>
                             </div>
                         </div>
                     </div>
@@ -110,8 +110,8 @@ function Navbar() {
                         </button>
                         
                         <div className={`mobile-dropdown-menu ${proposalDropdownOpen ? 'show' : ''}`}>
-                            <Link to="/enquire" className="mobile-dropdown-item" onClick={toggleNavbar}>Home Relocation</Link>
-                            <Link to="/contact" className="mobile-dropdown-item" onClick={toggleNavbar}>Office Relocation</Link>
+                            <Link to="/home-relocation-dubai" className="mobile-dropdown-item" onClick={toggleNavbar}>Home Relocation</Link>
+                            <Link to="/office-relocation-dubai" className="mobile-dropdown-item" onClick={toggleNavbar}>Office Relocation</Link>
                             <Link to="/quickquote" className="mobile-dropdown-item" onClick={toggleNavbar}>International Relocation</Link>
                         </div>
                     </div>

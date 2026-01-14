@@ -35,18 +35,18 @@ exports.handler = async (event) => {
     let html = '';
 
     switch (formType) {
-      case 'contact':
-        subject = `📩 Contact Form – ${formData.fullName}`;
+      case 'office-relocation-dubai':
+        subject = `📩 Office Relocation Form – ${formData.fullName}`;
         html = contactTemplate(formData);
         break;
 
-      case 'enquire':
-        subject = `📦 Enquiry Form – ${formData.fullName}`;
+      case 'home-relocation-dubai':
+        subject = `📦 Home Relocation Enquiry – ${formData.fullName}`;
         html = enquireTemplate(formData);
         break;
 
-      case 'quote':
-        subject = `💰 Quote Request – ${formData.fullName}`;
+      case 'international-relocation-dubai':
+        subject = `💰 International Relocation Quote – ${formData.fullName}`;
         html = quoteTemplate(formData);
         break;
 

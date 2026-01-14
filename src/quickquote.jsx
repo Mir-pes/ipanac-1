@@ -69,7 +69,7 @@ function Quote() {
                 ...formData,
                 items: selectedItems
             };
-            await submitForm('quote', submitData);
+            await submitForm('international-relocation-dubai', submitData);
             setSubmitStatus({ type: 'success', message: 'Thank you! Our team will get back to you within 24 hours with your quote.' });
             setFormData({
                 fullName: '',

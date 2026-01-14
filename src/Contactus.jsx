@@ -34,7 +34,7 @@ function ContactUs() {
     setSubmitStatus(null);
 
     try {
-      await submitForm('contact', formData);
+      await submitForm('office-relocation-dubai', formData);
       setSubmitStatus({ type: 'success', message: 'Thank you! We will contact you soon.' });
       setFormData({ fullName: '', email: '', phone: '', baseLocation: '', baseLocationDetails: '', destination: '', destinationDetails: '', message: '' });
     } catch (error) {

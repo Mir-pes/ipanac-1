@@ -34,7 +34,7 @@ function App() {
         } />
         
       
-        <Route path = "/enquire" element={
+        <Route path = "/home-relocation-dubai" element={
           <div>
             <Enquire/>
             <Footer />
@@ -46,13 +46,13 @@ function App() {
             <Footer />
           </div>
         }/>
-        <Route path = "/quickquote" element={
+        <Route path = "/international-relocation-dubai" element={
           <div>
             <Quote/>
             <Footer />
           </div>
         }/>
-        <Route path = "/contact" element={
+        <Route path = "/office-relocation-dubai" element={
           <div>
             <ContactUs/>
             <Footer />

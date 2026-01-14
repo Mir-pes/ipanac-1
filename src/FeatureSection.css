@@ -124,7 +124,7 @@
 
 .hero-stat-number {
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 500;
   color: var(--primary-red);
   line-height: 1;
 }
