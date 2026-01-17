@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from 'react-helmet-async';
 import "./enquire.css"; 
 import { User, Mail, Phone, Calendar, MapPin, Zap, Package, FileText, Building2, Smartphone, Sofa, Plug, Palette, Car } from "lucide-react";  
 import logo from "./assets/IpanacRelocationLogo.png";
@@ -90,8 +91,14 @@ function Quote() {
         }
     };
     
-    return (        
-        <div className="enquire-page-modern">
+    return (
+        <>
+            <Helmet>
+                <title>International Relocation Services Dubai | Get Quick Quote | IPANAC</title>
+                <meta name="description" content="Get instant quote for international relocation from Dubai. Worldwide moving services, customs clearance, door-to-door delivery across USA, UK, Europe, Asia, GCC." />
+                <link rel="canonical" href="https://ipanacrelocation.com/international-relocation-dubai" />
+            </Helmet>
+            <div className="enquire-page-modern">
             <div className="enquire-hero-section">
                 <div className="hero-gradient-bg">
                     <div className="gradient-orb orb-1"></div>
@@ -291,7 +298,7 @@ function Quote() {
                 <div className="enquire-info-sidebar">
                     <div className="info-card quote-info">
                         <img src={logo} alt="iPANAC Relocation" className="sidebar-logo" />
-                        <h3>What's Included?</h3>
+                        <h3>Why Choose IPANAC?</h3>
                         <ul className="benefits-list">
                             <li>
                                 <div className="benefit-icon">✓</div>
@@ -333,6 +340,7 @@ function Quote() {
                 </div>
             </div>
         </div>
+        </>
     ); 
 }  
 

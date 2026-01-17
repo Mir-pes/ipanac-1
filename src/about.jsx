@@ -1,19 +1,18 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import './about.css';
 import { Building2, MapPin, Shield, TrendingUp, Award, Users, Globe2, CheckCircle2, ArrowRight, Sparkles, Briefcase, Heart, Target, FileText, Truck, Map } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function About() {
-  useEffect(() => {
-    document.title = 'About Us - IPANAC Relocation Dubai | Trusted Relocation Specialists in UAE';
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'IPANAC Relocation is Dubai\'s premier relocation specialist, offering comprehensive moving services across the UAE, GCC, and internationally. Learn about our local expertise, Dubai buildings knowledge, and trusted relocation services.');
-    }
-  }, []);
-
   return (
-    <div className="about-page-modern">
+    <>
+      <Helmet>
+        <title>About Us - IPANAC Relocation Dubai | Trusted Relocation Specialists in UAE</title>
+        <meta name="description" content="IPANAC Relocation is Dubai's premier relocation specialist, offering comprehensive moving services across the UAE, GCC, and internationally. Learn about our local expertise, Dubai buildings knowledge, and trusted relocation services." />
+        <link rel="canonical" href="https://ipanacrelocation.com/about" />
+      </Helmet>
+      <div className="about-page-modern">
       {/* Hero Section */}
       <section className="about-hero-section">
         <div className="about-hero-background"></div>
@@ -460,6 +459,7 @@ function About() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 

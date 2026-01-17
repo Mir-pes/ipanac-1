@@ -1,10 +1,17 @@
+import { Helmet } from 'react-helmet-async';
 import "./hero.css";
 import { ArrowRight, Package, Globe, Truck, Award } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function Head(){
     return(
-      <div className="modern-hero-container">
+      <>
+        <Helmet>
+          <title>IPANAC Relocation | Trusted Movers & Packers in Dubai, UAE</title>
+          <meta name="description" content="Leading relocation services in Dubai, UAE. Professional movers and packers offering international and local moving, packing, storage solutions across Dubai, Abu Dhabi, and GCC region. Get free quote today!" />
+          <link rel="canonical" href="https://ipanacrelocation.com/" />
+        </Helmet>
+        <div className="modern-hero-container">
         <div className="hero-background">
           <div className="gradient-orb orb-1"></div>
           <div className="gradient-orb orb-2"></div>
@@ -77,6 +84,7 @@ function Head(){
           <div className="scroll-arrow"></div>
         </div>
       </div>
+      </>
     );
 }
 

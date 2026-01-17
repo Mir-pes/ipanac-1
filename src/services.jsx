@@ -1,5 +1,6 @@
 // Services.jsx
 import React from "react";
+import { Helmet } from 'react-helmet-async';
 import { FaGlobe, FaTruck, FaBox, FaWarehouse, FaPaw, FaBuilding } from "react-icons/fa";
 import "./services.css"; // Import the CSS file
 
@@ -14,7 +15,13 @@ const services = [
 
 function ServicesPage() {
   return (
-    <div className="services-page-wrapper">
+    <>
+      <Helmet>
+        <title>Our Relocation Services in Dubai, UAE | IPANAC Relocation</title>
+        <meta name="description" content="Top-tier moving and packing services in Dubai - international relocation, local moves within UAE, professional packing, secure storage solutions, and corporate relocation across Dubai and GCC." />
+        <link rel="canonical" href="https://ipanacrelocation.com/services" />
+      </Helmet>
+      <div className="services-page-wrapper">
       <div className="container">
         <h1 className="page-title">Our Relocation Services in Dubai, UAE</h1>
         <p className="page-description">
@@ -32,6 +39,7 @@ function ServicesPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

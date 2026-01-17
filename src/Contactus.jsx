@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Mail, Building2, Send, User, FileText } from 'lucide-react';
 import logo from './assets/IpanacRelocationLogo.png';
 import './enquire.css';
@@ -45,7 +46,13 @@ function ContactUs() {
   };
 
   return (
-    <div className="enquire-page-modern">
+    <>
+      <Helmet>
+        <title>Office Relocation Services in Dubai | IPANAC Relocation</title>
+        <meta name="description" content="Expert office relocation services in Dubai. Complete business moving solutions, IT equipment handling, furniture relocation, and minimal downtime guarantee across UAE." />
+        <link rel="canonical" href="https://ipanacrelocation.com/office-relocation-dubai" />
+      </Helmet>
+      <div className="enquire-page-modern">
             <div className="enquire-hero-section">
                 <div className="hero-gradient-bg">
                     <div className="gradient-orb orb-1"></div>
@@ -238,7 +245,7 @@ function ContactUs() {
                 <div className="enquire-info-sidebar">
                     <div className="info-card">
                         <img src={logo} alt="iPANAC Relocation" className="sidebar-logo" />
-                        <h3>Why Choose iPANAC?</h3>
+                        <h3>Why Choose IPANAC?</h3>
                         <ul className="benefits-list">
                             <li>
                                 <div className="benefit-icon">✓</div>
@@ -279,7 +286,8 @@ function ContactUs() {
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
+        </>  
         
       );
 }

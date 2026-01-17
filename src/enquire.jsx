@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from 'react-helmet-async';
 import "./enquire.css"; 
 import { User, Mail, Phone, Calendar, MapPin, Send, FileText, Building2 } from "lucide-react";  
 import logo from "./assets/IpanacRelocationLogo.png";
@@ -61,8 +62,14 @@ function Enquire() {
         }
     };
     
-    return (        
-        <div className="enquire-page-modern">
+    return (
+        <>
+            <Helmet>
+                <title>Home Relocation Services in Dubai | IPANAC Relocation</title>
+                <meta name="description" content="Professional home relocation services in Dubai. Safe packing, transport, door-to-door moving solutions for apartments, villas, and townhouses in UAE." />
+                <link rel="canonical" href="https://ipanacrelocation.com/home-relocation-dubai" />
+            </Helmet>
+            <div className="enquire-page-modern">
             <div className="enquire-hero-section">
                 <div className="hero-gradient-bg">
                     <div className="gradient-orb orb-1"></div>
@@ -359,7 +366,7 @@ function Enquire() {
                 <div className="enquire-info-sidebar">
                     <div className="info-card">
                         <img src={logo} alt="iPANAC Relocation" className="sidebar-logo" />
-                        <h3>Why Choose iPANAC?</h3>
+                        <h3>Why Choose IPANAC?</h3>
                         <ul className="benefits-list">
                             <li>
                                 <div className="benefit-icon">✓</div>
@@ -401,6 +408,7 @@ function Enquire() {
                 </div>
             </div>
         </div>
+        </>
     ); 
 }  
 

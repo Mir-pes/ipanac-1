@@ -112,7 +112,7 @@ function Navbar() {
                         <div className={`mobile-dropdown-menu ${proposalDropdownOpen ? 'show' : ''}`}>
                             <Link to="/home-relocation-dubai" className="mobile-dropdown-item" onClick={toggleNavbar}>Home Relocation</Link>
                             <Link to="/office-relocation-dubai" className="mobile-dropdown-item" onClick={toggleNavbar}>Office Relocation</Link>
-                            <Link to="/quickquote" className="mobile-dropdown-item" onClick={toggleNavbar}>International Relocation</Link>
+                            <Link to="/international-relocation-dubai" className="mobile-dropdown-item" onClick={toggleNavbar}>International Relocation</Link>
                         </div>
                     </div>
 
